@@ -1,3 +1,7 @@
-.about_me_text {
-  display: inline;
+.about-me {
+  display: flex;
+}
+
+.about-me-text {
+  margin-left: 50px;
 }
