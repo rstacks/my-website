@@ -5,5 +5,11 @@
 .my-photo {
   display: block;
   margin: auto;
-  width: 400px;
+  width: 350px;
+}
+
+.about-me-text {
+  width: 700px;
+  margin: auto;
+  display: block;
 }
