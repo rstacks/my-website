@@ -23,7 +23,14 @@
 }
 
 .about-me-text {
-  width: 500px;
+  width: 510px;
   margin: auto;
   display: block;
+  font-family: 'Rubik', 'Trebuchet MS', sans-serif;
+  color: #FFFFF0;
+  font-size: 18px;
+}
+
+.name-text {
+  font-weight: bold;
 }
