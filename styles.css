@@ -1,34 +1,40 @@
+html {
+  height: 100%;
+}
+
+.page-head {
+  display: block;
+}
+
 .background {
   background-color: #292929;
+  height: 100%;
 }
 
 .home-content-container {
   display: flex;
-  flex-flow: column;
-  width: 800px;
+  max-width: 1000px;
+  width: 95%;
   height: 100%;
   background-color: #3D3D3D;
+  justify-content: center;
   margin: auto;
-}
-
-.about-me {
-  display: block;
-  flex-grow: 1;
 }
 
 .my-photo {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: auto;
-  width: 350px;
 }
 
 .about-me-text {
-  width: 510px;
-  margin: auto;
+  max-width: 800px;
   display: block;
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
-  font-size: 18px;
+  font-size: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .name-text {
