@@ -36,6 +36,12 @@ html {
   padding-right: 40px;
 }
 
+@media screen and (max-width: 700px) {
+  .about-me-text {
+    font-size: 20px;
+  }
+}
+
 .name-text {
   font-weight: bold;
 }
