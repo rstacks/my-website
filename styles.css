@@ -14,19 +14,24 @@ body {
 .home-content-container {
   display: flex;
   max-width: 1000px;
+  /* Limit homepage content so that we'll always see the background*/
   width: 95%;
   background-color: #3D3D3D;
+  /* Centers all interior divs */
   justify-content: center;
+  /* With flex display, this centers this div on the page */
   margin: auto;
 }
 
 .my-photo {
+  /* Center photo */
   display: flex;
   justify-content: center;
   margin: auto;
 }
 
 .my-photo-img-tag {
+  /* Scale image with the viewport */
   max-width: 400px;
   width: 70%;
 }
@@ -41,6 +46,7 @@ body {
   padding-right: 40px;
 }
 
+/* Reduce text size at smaller viewport size */
 @media screen and (max-width: 700px) {
   .about-me-text {
     font-size: 20px;
