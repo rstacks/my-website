@@ -54,7 +54,7 @@ body {
 }
 
 .page-head-name {
-  display: block;
+  display: inline-block;
 }
 
 .header-name {
@@ -68,4 +68,8 @@ body {
   font-size: 24px;
   /* Control space between headers using only my name */
   margin-top: 0px;
+}
+
+.header-links {
+  display: inline-block;
 }
