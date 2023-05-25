@@ -2,10 +2,6 @@ html {
   height: 100%;
 }
 
-.page-head {
-  display: block;
-}
-
 body {
   background-color: #292929;
   height: 100%;
@@ -36,11 +32,15 @@ body {
   width: 70%;
 }
 
+/* Properties apply to all text elements */
+.about-me-text, .header-name, .tagline {
+  font-family: 'Rubik', 'Trebuchet MS', sans-serif;
+  color: #FFFFF0;
+}
+
 .about-me-text {
   max-width: 800px;
   display: block;
-  font-family: 'Rubik', 'Trebuchet MS', sans-serif;
-  color: #FFFFF0;
   font-size: 22px;
   padding-left: 40px;
   padding-right: 40px;
@@ -51,4 +51,21 @@ body {
   .about-me-text {
     font-size: 20px;
   }
+}
+
+.page-head {
+  display: block;
+}
+
+.header-name {
+  font-size: 72px;
+  /* Reduce space between headers */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 24px;
+  /* Control space between headers using only my name */
+  margin-top: 0px;
 }
