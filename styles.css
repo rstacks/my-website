@@ -1,10 +1,10 @@
-html {
+html, body {
   height: 100%;
+  margin: 0px;
 }
 
 body {
   background-color: #292929;
-  height: 100%;
 }
 
 main {
@@ -27,6 +27,7 @@ main {
 }
 
 .my-photo-img-tag {
+  padding-top: 25px;
   /* Scale image with the viewport */
   max-width: 400px;
   width: 70%;
@@ -53,6 +54,10 @@ main {
   }
 }
 
+.page-head {
+  background-color: #3D3D3D;
+}
+
 .page-head-name {
   display: inline-block;
 }
@@ -72,4 +77,9 @@ main {
 
 .header-links {
   display: inline-block;
+}
+
+.main-nav {
+  background-color: #047377;
+  height: 5%;
 }
