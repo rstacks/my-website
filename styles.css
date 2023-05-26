@@ -61,7 +61,7 @@ main {
 .page-head-name {
   display: inline-block;
   margin-left: 60px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 30px;
 }
 
@@ -86,4 +86,10 @@ main {
 .main-nav {
   background-color: #047377;
   height: 5%;
+}
+
+.in-logo {
+  width: 40px;
+  margin-right: 60px;
+  margin-top: 30px;
 }
