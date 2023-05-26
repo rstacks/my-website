@@ -60,22 +60,26 @@ main {
 
 .page-head-name {
   display: inline-block;
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .header-name {
-  font-size: 72px;
+  font-size: 108px;
   /* Reduce space between headers */
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .tagline {
-  font-size: 24px;
+  font-size: 30px;
   /* Control space between headers using only my name */
   margin-top: 0px;
 }
 
 .header-links {
+  /* Aligns content to the right side of the header */
   float: right;
 }
 
