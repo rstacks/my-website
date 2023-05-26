@@ -76,6 +76,7 @@ main {
   font-size: 30px;
   /* Control space between headers using only my name */
   margin-top: 0px;
+  margin-left: 5px;
 }
 
 .header-links {
@@ -88,8 +89,15 @@ main {
   height: 5%;
 }
 
+/* Limits size of anchor element to the image widths */
+.in-link, .github-link {
+  display: inline-block;
+}
+
 .in-logo {
-  width: 40px;
-  margin-right: 60px;
-  margin-top: 30px;
+  width: 60px;
+}
+
+.github-logo {
+  width: 63px;
 }
