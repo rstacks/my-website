@@ -90,7 +90,7 @@ main {
 }
 
 /* Limits size of anchor element to the image widths */
-.in-link, .github-link {
+.in-link, .github-link, .contact-link {
   display: inline-block;
 }
 
@@ -100,4 +100,8 @@ main {
 
 .github-logo {
   width: 63px;
+}
+
+.mail-icon {
+  width: 62px;
 }
