@@ -86,11 +86,6 @@ main {
   margin-top: 80px;
 }
 
-.main-nav {
-  background-color: #047377;
-  height: 5%;
-}
-
 /* Limits size of anchor element to the image widths */
 .in-link, .github-link, .contact-link {
   display: inline-block;
@@ -140,8 +135,6 @@ main {
   }
 }
 
-
-
 /* Resize header text at smaller viewports */
 @media screen and (max-width: 840px) {
   /* Text scales with viewport width */
@@ -152,4 +145,9 @@ main {
   .tagline {
     font-size: 3.4vw;
   }
+}
+
+.main-nav {
+  background-color: #047377;
+  height: 80px;
 }
