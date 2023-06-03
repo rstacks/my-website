@@ -50,7 +50,7 @@ main {
 /* Reduce text size at smaller viewport size */
 @media screen and (max-width: 700px) {
   .about-me-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -60,7 +60,7 @@ main {
 
 .page-head-name {
   display: inline-block;
-  margin-left: 60px;
+  margin-left: 45px;
   margin-top: 25px;
   margin-bottom: 30px;
 }
@@ -76,7 +76,7 @@ main {
   font-size: 30px;
   /* Control space between headers using only my name */
   margin-top: 0px;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .header-links {
@@ -118,7 +118,7 @@ main {
   .header-links {
     float: none;
     margin-top: 0px;
-    margin-left: 65px;
+    margin-left: 48px;
     padding-bottom: 30px;
   }
 
@@ -140,8 +140,16 @@ main {
   }
 }
 
-/*
-@media screen and (max-width: 1000px) {
 
+
+/* Resize header text at smaller viewports */
+@media screen and (max-width: 840px) {
+  /* Text scales with viewport width */
+  .header-name {
+    font-size: 12vw;
+  }
+  
+  .tagline {
+    font-size: 3.4vw;
+  }
 }
-*/
