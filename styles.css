@@ -105,11 +105,43 @@ main {
   margin-right: 26px;
 }
 
-.github-logo {
+.github-logo, .mail-icon {
   width: 85px;
+}
+
+.github-logo {
   margin-right: 20px;
 }
 
-.mail-icon {
-  width: 85px;
+/* Reposition & resize header links when viewport shrinks */
+@media screen and (max-width: 1275px) {
+  .header-links {
+    float: none;
+    margin-top: 0px;
+    margin-left: 65px;
+    padding-bottom: 30px;
+  }
+
+  .in-logo {
+    width: 50px;
+    margin-right: 12px;
+  }
+
+  .github-logo, .mail-icon {
+    width: 53px;
+  }
+
+  .github-logo {
+    margin-right: 10px;
+  }
+
+  .page-head-name {
+    margin-bottom: 0px;
+  }
 }
+
+/*
+@media screen and (max-width: 1000px) {
+
+}
+*/
