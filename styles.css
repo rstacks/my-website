@@ -82,7 +82,7 @@ main {
 .header-links {
   /* Aligns content to the right side of the header */
   float: right;
-  margin-right: 70px;
+  margin-right: 120px;
   margin-top: 80px;
 }
 
