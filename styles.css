@@ -115,6 +115,7 @@ main {
     margin-top: 0px;
     margin-left: 48px;
     padding-bottom: 30px;
+    min-width: 200px;
   }
 
   .in-logo {
