@@ -34,7 +34,7 @@ main {
 }
 
 /* Properties apply to all text elements */
-.about-me-text, .header-name, .tagline {
+.about-me-text, .header-name, .tagline, .attribution {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
 }
@@ -146,6 +146,31 @@ main {
   .tagline {
     font-size: 3.4vw;
   }
+}
+
+footer {
+  background-color: #3D3D3D;
+}
+
+.footer-separator {
+  background-color: #047377;
+  height: 20px;
+}
+
+.attribution {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #A3A3A3;
+  font-size: 16px;
+  text-align: center;
+}
+
+.openmoji-links {
+  color: #A3A3A3;
+  text-decoration: underline;
+  display: inline-block;
 }
 
 .main-nav {
