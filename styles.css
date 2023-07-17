@@ -200,8 +200,21 @@ footer {
   border-color: #035b5d;
   border-width: 2px;
   text-align: center;
+  /* Centers text vertically */
+  padding-top: 1.1em;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
 }
 
+/* 
+  TODO: figure out how to format navbar text at 
+  different viewport sizes
+
+  Add hover actions to navbar elements
+*/
+
+/* Remove borders on ends of navbar */
 .home-button {
   border-left: none;
 }
