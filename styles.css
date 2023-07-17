@@ -34,7 +34,8 @@ main {
 }
 
 /* Properties apply to all text elements */
-.about-me-text, .header-name, .tagline, .attribution {
+.about-me-text, .header-name, .tagline, .attribution, .home-button,
+  .resume-button, .qual-button, .contact-button {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
 }
@@ -187,4 +188,23 @@ footer {
 .main-nav {
   background-color: #047377;
   height: 80px;
+  display: flex;
+}
+
+/* General styling for navbar */
+.home-button, .resume-button, .qual-button, .contact-button {
+  width: 25%;
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-color: #035b5d;
+  border-width: 2px;
+}
+
+.home-button {
+  border-left: none;
+}
+
+.contact-button {
+  border-right: none;
 }
