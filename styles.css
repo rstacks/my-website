@@ -222,3 +222,25 @@ footer {
 .contact-button {
   border-right: none;
 }
+
+/* Qualifications button gets more padding */
+.qual-button {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Shrink navbar text at smaller viewports */
+@media screen and (max-width: 870px) {
+  .home-button, .resume-button, .qual-button, .contact-button {
+    font-size: 20px;
+    padding-top: 1.4em;
+  }
+}
+
+/* Wrap qual-button text as viewport shrinks */
+@media screen and (max-width: 681px) {
+  .qual-button {
+    padding-top: 0.9em;
+    hyphens: manual;
+  }
+}
