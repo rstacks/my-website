@@ -208,8 +208,10 @@ footer {
 }
 
 /* 
-  TODO: figure out how to format navbar text at 
-  different viewport sizes
+  TODO: deal with navbar appearance at high zoom (more media queries for screen size?)
+  that could maybe apply to header text too
+
+  test navbar appearance on windows (make sure qual-button padding-top change is perfect)
 
   Add hover actions to navbar elements
 */
