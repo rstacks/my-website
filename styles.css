@@ -91,6 +91,14 @@ main {
   display: inline-block;
 }
 
+.in-link:hover, .github-link:hover, .contact-link:hover {
+  opacity: 70%;
+}
+
+.in-link:active, .github-link:active, .contact-link:active {
+  opacity: 30%;
+}
+
 .link-separator {
   display: none;
 }
