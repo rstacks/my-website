@@ -89,6 +89,7 @@ main {
 /* Limits size of anchor element to the image widths */
 .in-link, .github-link, .contact-link {
   display: inline-block;
+  transition: opacity 200ms;
 }
 
 .in-link:hover, .github-link:hover, .contact-link:hover {
