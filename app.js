@@ -28,8 +28,6 @@ function qualOverflowStyles() {
 
 // Undo style changes if there is no longer overflow
 function qualNormalStyles() {
-  // Ensures this function will only do anything if styles aren't
-  // already set
   if (qualButton.style.paddingTop == "0.9em") {
     qualButton.style.paddingTop = "1.4em";
     qualButton.style.overflow = "scroll";
@@ -43,14 +41,12 @@ function qualNormalStyles() {
 function applyQualButtonStyles(overflowViewportWidth) {
   // If overflow, apply styles and exit
   if (qualOverflowDetector()) {
-    console.log("overflowing");
     qualOverflowStyles();
     return true;
   }
   
   // Revert style changes once viewport widens back up
   if (document.defaultView.innerWidth > overflowViewportWidth.width) {
-    console.log("back to normal");
     qualNormalStyles();
   }
 
@@ -64,8 +60,26 @@ function qualRunner(overflowViewportWidth) {
   }
 }
 
+// Set top padding for qual-button if it is not in overflow; media
+// queries in CSS no longer work once JS has applied styles to button
+function setQualPadding() {
+  // Do not change padding if overflow styles are currently active
+  if (qualButton.style.paddingTop == "0.9em") {
+    return;
+  }
+
+  if (document.defaultView.innerWidth <= 870) {
+    qualButton.style.paddingTop = "1.4em";
+  } else {
+    qualButton.style.paddingTop = "1.1em";
+  }
+}
+
 // Check for overflow constantly and apply styles as needed
 // Using object to represent viewport width at overflow so that the
 // value is preserved between function calls
 let overflowViewportWidthObj = {width: -1};
 setInterval(function() {qualRunner(overflowViewportWidthObj)}, 10);
+
+// Make sure qual-button padding is correct at all times
+setInterval(setQualPadding, 10);
