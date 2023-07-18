@@ -19,14 +19,14 @@ main {
   margin: auto;
 }
 
-.my-photo {
+#my-photo {
   /* Center photo */
   display: flex;
   justify-content: center;
   margin: auto;
 }
 
-.my-photo-img-tag {
+#my-photo-img-tag {
   padding-top: 25px;
   /* Scale image with the viewport */
   max-width: 400px;
@@ -34,13 +34,13 @@ main {
 }
 
 /* Properties apply to all text elements */
-.about-me-text, .header-name, .tagline, .attribution, .home-button,
-  .resume-button, .qual-button, .contact-button {
+#about-me-text, #header-name, #tagline, #attribution, #home-button,
+  #resume-button, #qual-button, #contact-button {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
 }
 
-.about-me-text {
+#about-me-text {
   max-width: 800px;
   display: block;
   font-size: 22px;
@@ -50,37 +50,37 @@ main {
 
 /* Reduce text size at smaller viewport size */
 @media screen and (max-width: 700px) {
-  .about-me-text {
+  #about-me-text {
     font-size: 18px;
   }
 }
 
-.page-head {
+#page-head {
   background-color: #3D3D3D;
 }
 
-.page-head-name {
+#page-head-name {
   display: inline-block;
   margin-left: 45px;
   margin-top: 25px;
   margin-bottom: 30px;
 }
 
-.header-name {
+#header-name {
   font-size: 108px;
   /* Reduce space between headers */
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.tagline {
+#tagline {
   font-size: 30px;
   /* Control space between headers using only my name */
   margin-top: 0px;
   margin-left: 3px;
 }
 
-.header-links {
+#header-links {
   /* Aligns content to the right side of the header */
   float: right;
   margin-right: 120px;
@@ -88,16 +88,16 @@ main {
 }
 
 /* Limits size of anchor element to the image widths */
-.in-link, .github-link, .contact-link {
+#in-link, #github-link, #contact-link {
   display: inline-block;
   transition: opacity 200ms;
 }
 
-.in-link:hover, .github-link:hover, .contact-link:hover {
+#in-link:hover, #github-link:hover, #contact-link:hover {
   opacity: 70%;
 }
 
-.in-link:active, .github-link:active, .contact-link:active {
+#in-link:active, #github-link:active, #contact-link:active {
   opacity: 30%;
 }
 
@@ -105,22 +105,22 @@ main {
   display: none;
 }
 
-.in-logo {
+#in-logo {
   width: 83px;
   margin-right: 26px;
 }
 
-.github-logo, .mail-icon {
+#github-logo, #mail-icon {
   width: 85px;
 }
 
-.github-logo {
+#github-logo {
   margin-right: 20px;
 }
 
 /* Reposition & resize header links when viewport shrinks */
 @media screen and (max-width: 1275px) {
-  .header-links {
+  #header-links {
     float: none;
     margin-top: 0px;
     margin-left: 48px;
@@ -128,20 +128,20 @@ main {
     min-width: 200px;
   }
 
-  .in-logo {
+  #in-logo {
     width: 52px;
     margin-right: 12px;
   }
 
-  .github-logo, .mail-icon {
+  #github-logo, #mail-icon {
     width: 53px;
   }
 
-  .github-logo {
+  #github-logo {
     margin-right: 10px;
   }
 
-  .page-head-name {
+  #page-head-name {
     margin-bottom: 0px;
   }
 }
@@ -149,11 +149,11 @@ main {
 /* Resize header text at smaller viewports */
 @media screen and (max-width: 840px) {
   /* Text scales with viewport width */
-  .header-name {
+  #header-name {
     font-size: 12vw;
   }
   
-  .tagline {
+  #tagline {
     font-size: 3.4vw;
   }
 }
@@ -162,12 +162,12 @@ footer {
   background-color: #3D3D3D;
 }
 
-.footer-separator {
+#footer-separator {
   background-color: #047377;
   height: 20px;
 }
 
-.attribution {
+#attribution {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 15px;
@@ -179,20 +179,20 @@ footer {
   text-align: center;
 }
 
-.openmoji-links {
+#openmoji-links {
   color: #A3A3A3;
   text-decoration: underline;
   display: inline-block;
 }
 
-.main-nav {
+#main-nav {
   background-color: #047377;
   height: 80px;
   display: flex;
 }
 
 /* General styling for navbar */
-.home-button, .resume-button, .qual-button, .contact-button {
+#home-button, #resume-button, #qual-button, #contact-button {
   width: 25%;
   border-style: solid;
   border-top: none;
@@ -217,16 +217,16 @@ footer {
 */
 
 /* Remove borders on ends of navbar */
-.home-button {
+#home-button {
   border-left: none;
 }
 
-.contact-button {
+#contact-button {
   border-right: none;
 }
 
 
-.qual-button {
+#qual-button {
   /* Qualifications button gets more padding */
   padding-left: 10px;
   padding-right: 10px;
@@ -237,7 +237,7 @@ footer {
 
 /* Shrink navbar text at smaller viewports */
 @media screen and (max-width: 870px) {
-  .home-button, .resume-button, .qual-button, .contact-button {
+  #home-button, #resume-button, #qual-button, #contact-button {
     font-size: 20px;
     padding-top: 1.4em;
   }
@@ -245,7 +245,7 @@ footer {
 
 /* Wrap qual-button text as viewport shrinks 
 @media screen and (max-width: 681px) {
-  .qual-button {
+  #qual-button {
     padding-top: 0.9em;
   }
 }*/
