@@ -211,7 +211,12 @@ footer {
   TODO: deal with navbar appearance at high zoom (more media queries for screen size?)
   that could maybe apply to header text too
 
-  test navbar appearance on windows (make sure qual-button padding-top change is perfect)
+  finish JS for qual-button
+    - need to make padding return to normal for wide viewports
+    - remove console logs and clean up code
+  
+  maybe make the font size slightly smaller for nav buttons so
+  the qual-button isn't so close to the right border before overflow?
 
   Add hover actions to navbar elements
 */
@@ -247,5 +252,7 @@ footer {
 @media screen and (max-width: 681px) {
   #qual-button {
     padding-top: 0.9em;
+    overflow: visible;
+    hyphens: manual;
   }
 }*/
