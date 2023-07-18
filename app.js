@@ -7,9 +7,12 @@
 const qualButton = document.getElementById("qual-button");
 
 // Check for text overflow by comparing viewable width to scroll width
-// These values should be equal if there is no overflow
+// These values should be equal if there is no overflow.
+// Alternatively, if screen width is below threshold, consider this
+// overflow
 function qualOverflowDetector() {
-  if (qualButton.clientWidth < qualButton.scrollWidth) {
+  if (qualButton.clientWidth < qualButton.scrollWidth ||
+    document.defaultView.innerWidth <= 670) {
     return true;
   }
   return false;

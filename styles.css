@@ -248,6 +248,29 @@ footer {
   }
 }
 
+/* Specifically increase right padding for qual-button as viewport shrinks
+@media screen and (max-width: 670px) {
+  #qual-button {
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 665px) {
+  #qual-button {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 660px) {
+  #qual-button {
+    padding-right: 25px;
+  }
+}
+@media screen and (max-width: 655px) {
+  #qual-button {
+    padding-right: 30px;
+    color:red;
+  }
+}*/
+
 /* Wrap qual-button text as viewport shrinks 
 @media screen and (max-width: 681px) {
   #qual-button {
