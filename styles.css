@@ -225,10 +225,14 @@ footer {
   border-right: none;
 }
 
-/* Qualifications button gets more padding */
+
 .qual-button {
+  /* Qualifications button gets more padding */
   padding-left: 10px;
   padding-right: 10px;
+  /* Overflow settings */
+  overflow: scroll;
+  hyphens: none;
 }
 
 /* Shrink navbar text at smaller viewports */
@@ -239,10 +243,9 @@ footer {
   }
 }
 
-/* Wrap qual-button text as viewport shrinks */
+/* Wrap qual-button text as viewport shrinks 
 @media screen and (max-width: 681px) {
   .qual-button {
     padding-top: 0.9em;
-    hyphens: manual;
   }
-}
+}*/
