@@ -93,10 +93,10 @@ main {
   transition: opacity 200ms;
 }
 
+/* Header link hover and click actions (dim the images) */
 #in-link:hover, #github-link:hover, #contact-link:hover {
   opacity: 70%;
 }
-
 #in-link:active, #github-link:active, #contact-link:active {
   opacity: 30%;
 }
@@ -205,6 +205,7 @@ footer {
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
+  transition: background-color 200ms;
 }
 
 /* Cutoff navbar text at high browser zoom */
@@ -229,7 +230,7 @@ footer {
     - maybe change header text to abbreviations at high zoom (ex:
       RS, CS @ TAMU)
 
-  Add hover actions to navbar elements
+  edit/expand homepage text?
 */
 
 /* Remove borders on ends of navbar */
@@ -255,4 +256,14 @@ footer {
     font-size: 20px;
     padding-top: 1.4em;
   }
+}
+
+/* Navbar hover and click actions (brighten each link) */
+#home-button:hover, #resume-button:hover, #qual-button:hover,
+  #contact-button:hover {
+  background-color: #069ba0;
+}
+#home-button:active, #resume-button:active, #qual-button:active,
+  #contact-button:active {
+  background-color: #07b2b8;
 }
