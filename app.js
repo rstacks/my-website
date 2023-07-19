@@ -11,8 +11,8 @@ const qualButton = document.getElementById("qual-button");
 // Alternatively, if screen width is below threshold, consider this
 // overflow
 function qualOverflowDetector() {
-  if (qualButton.clientWidth < qualButton.scrollWidth ||
-    document.defaultView.innerWidth <= 670) {
+  if (qualButton.clientWidth < qualButton.scrollWidth /*||
+    document.defaultView.innerWidth <= 670*/) {
     return true;
   }
   return false;
@@ -33,7 +33,7 @@ function qualOverflowStyles() {
 function qualNormalStyles() {
   if (qualButton.style.paddingTop == "0.9em") {
     qualButton.style.paddingTop = "1.4em";
-    qualButton.style.overflow = "scroll";
+    qualButton.style.overflow = "auto";
     qualButton.style.hyphens = "none";
   }
 }

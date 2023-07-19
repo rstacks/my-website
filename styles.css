@@ -236,7 +236,7 @@ footer {
   padding-left: 10px;
   padding-right: 10px;
   /* Overflow settings */
-  overflow: scroll;
+  overflow: auto;
   hyphens: none;
 }
 
