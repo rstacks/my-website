@@ -207,16 +207,27 @@ footer {
   font-weight: bold;
 }
 
-/* 
-  TODO: deal with navbar appearance at high zoom (more media queries for screen size?)
-  that could maybe apply to header text too
+/* Cutoff navbar text at high browser zoom */
+#home-button, #resume-button, #contact-button {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
-  finish JS for qual-button
-    - need to make padding return to normal for wide viewports
-    - remove console logs and clean up code
-  
-  maybe make the font size slightly smaller for nav buttons so
-  the qual-button isn't so close to the right border before overflow?
+/* 
+  TODO: deal with high zoom issues across the board
+    - for the qual-button specifically, maybe add a JS function
+      that checks for a viewport width less than 450px (do a
+      console log at the minimum browser width at 100% zoom to
+      confirm that number) and then makes it behave like the other
+      3 buttons
+    - I'm thinking about hiding the header buttons entirely at super
+      high zoom and instead leaving a message of some kind ("zoom out
+      pls" or "links hidden due to zoom -- see page x for links" idk)
+    - maybe lock homepage text after a certain zoom size by making
+      the font size use vw units to prevent nasty overflow
+    - maybe change header text to abbreviations at high zoom (ex:
+      RS, CS @ TAMU)
 
   Add hover actions to navbar elements
 */
@@ -225,11 +236,9 @@ footer {
 #home-button {
   border-left: none;
 }
-
 #contact-button {
   border-right: none;
 }
-
 
 #qual-button {
   /* Qualifications button gets more padding */
@@ -247,35 +256,3 @@ footer {
     padding-top: 1.4em;
   }
 }
-
-/* Specifically increase right padding for qual-button as viewport shrinks
-@media screen and (max-width: 670px) {
-  #qual-button {
-    padding-right: 15px;
-  }
-}
-@media screen and (max-width: 665px) {
-  #qual-button {
-    padding-right: 20px;
-  }
-}
-@media screen and (max-width: 660px) {
-  #qual-button {
-    padding-right: 25px;
-  }
-}
-@media screen and (max-width: 655px) {
-  #qual-button {
-    padding-right: 30px;
-    color:red;
-  }
-}*/
-
-/* Wrap qual-button text as viewport shrinks 
-@media screen and (max-width: 681px) {
-  #qual-button {
-    padding-top: 0.9em;
-    overflow: visible;
-    hyphens: manual;
-  }
-}*/
