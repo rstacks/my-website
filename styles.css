@@ -48,10 +48,40 @@ main {
   padding-right: 40px;
 }
 
+#content-separator {
+  border-width: 1px;
+  border-color: #FFFFF0;
+}
+
+#more-about-me-header {
+  font-weight: bolder;
+  font-size: 40px;
+  margin-top: 1em;
+  margin-bottom: 0px;
+}
+
+.about-me-subheading {
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+/* Final paragraphs of each section get a little more padding below */
+.ending-paragraph {
+  margin-bottom: 1.5em;
+}
+
 /* Reduce text size at smaller viewport size */
 @media screen and (max-width: 700px) {
   #about-me-text {
     font-size: 18px;
+  }
+
+  #more-about-me-header {
+    font-size: 36px;
+  }
+
+  .about-me-subheading {
+    font-size: 24px;
   }
 }
 
