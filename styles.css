@@ -35,7 +35,7 @@ main {
 
 /* Properties apply to all text elements */
 #about-me-text, #header-name, #tagline, #attribution, #home-button,
-  #resume-button, #qual-button, #contact-button {
+  #resume-button, #qual-button, #contact-button, #read-more-button {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
 }
@@ -46,6 +46,31 @@ main {
   font-size: 22px;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+/* Will display when visitor chooses to read more */
+#more-about-me {
+  display: none;
+}
+
+/* This button activates more-about-me */
+#read-more-button {
+  color: #A3A3A3;
+  font-size: 22px;
+  background-color: transparent;
+  border-width: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  text-decoration: underline;
+  margin-bottom: 1.5em;
+}
+
+/* Read more button hover and click actions */
+#read-more-button:hover {
+  cursor: pointer;
+}
+#read-more-button:active {
+  opacity: 50%;
 }
 
 #content-separator {

@@ -83,3 +83,23 @@ setInterval(function() {qualRunner(overflowViewportWidthObj)}, 10);
 
 // Make sure qual-button padding is correct at all times
 setInterval(setQualPadding, 10);
+
+/**
+ * The following makes the "Read more" button on the home page work
+ */
+
+// Grab the "Read more" button and content to toggle display on
+const readMoreButton = document.getElementById("read-more-button");
+const moreAboutMe = document.getElementById("more-about-me");
+
+// Change button text between "more" and "less" depending on previous
+// state and display contents accordingly
+function readMore() {
+  if (readMoreButton.innerHTML != "Read less") {
+    readMoreButton.innerHTML = "Read less";
+    moreAboutMe.style.display = "inherit";
+  } else {
+    readMoreButton.innerHTML = "Read more";
+    moreAboutMe.style.display = "none";
+  }
+}
