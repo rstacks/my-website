@@ -127,10 +127,15 @@ main {
   width: 80%;
 }
 
+#contact-paragraph1 {
+  margin-bottom: 0px;
+}
+
 /* Button to reveal email address */
 #reveal-email-button {
   /* Centers button horizontally */
   display: flex;
+  display: none;
   margin: auto;
   background-color: #047377;
   font-size: 18px;
@@ -148,6 +153,19 @@ main {
 /* Set mouse pointer when hovering over reveal email button */
 #reveal-email-button:hover {
   cursor: pointer;
+}
+
+#email {
+  /* Center address */
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+#copy-email {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-left: 1.2em;
 }
 
 /* Reduce text size at smaller viewport size */
