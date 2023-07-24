@@ -50,14 +50,14 @@ main {
 }
 
 /* Properties apply to all text elements */
-#about-me-text, #header-name, #tagline, #attribution, #home-button,
+.article-text, #header-name, #tagline, #attribution, #home-button,
   #resume-button, #qual-button, #contact-button, #read-more-button,
   .page-title {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
 }
 
-#about-me-text {
+.article-text {
   max-width: 800px;
   display: block;
   font-size: 22px;
@@ -116,11 +116,12 @@ main {
 .page-title {
   font-size: 66px;
   font-weight: bolder;
+  display: block;
 }
 
 /* Reduce text size at smaller viewport size */
 @media screen and (max-width: 700px) {
-  #about-me-text {
+  .article-text {
     font-size: 18px;
   }
 
