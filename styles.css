@@ -52,7 +52,7 @@ main {
 /* Properties apply to all text elements */
 .article-text, #header-name, #tagline, #attribution, #home-button,
   #resume-button, #qual-button, #contact-button, #read-more-button,
-  .page-title, #contact-main-text {
+  .page-title, #contact-main-text, #reveal-email-button {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
 }
@@ -121,8 +121,33 @@ main {
   margin-bottom: 0.5em;
 }
 
+/* Bigger font for contact page */
 #contact-main-text {
-  font-size: 30px;
+  font-size: 26px;
+  width: 80%;
+}
+
+/* Button to reveal email address */
+#reveal-email-button {
+  /* Centers button horizontally */
+  display: flex;
+  margin: auto;
+  background-color: #047377;
+  font-size: 18px;
+  border-color: #FFFFF0;
+  border-style: solid;
+  border-radius: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  /* For hover and click transitions */
+  transition: background-color 200ms;
+}
+
+/* Set mouse pointer when hovering over reveal email button */
+#reveal-email-button:hover {
+  cursor: pointer;
 }
 
 /* Reduce text size at smaller viewport size */
@@ -145,6 +170,10 @@ main {
 
   #contact-main-text {
     font-size: 24px;
+  }
+
+  #reveal-email-button {
+    font-size: 16px;
   }
 }
 
@@ -334,11 +363,12 @@ footer {
 }
 
 /* Navbar hover and click actions (brighten each link) */
+/* Also applies to reveal email button on contact page */
 #home-button:hover, #resume-button:hover, #qual-button:hover,
-  #contact-button:hover {
+  #contact-button:hover, #reveal-email-button:hover {
   background-color: #069ba0;
 }
 #home-button:active, #resume-button:active, #qual-button:active,
-  #contact-button:active {
+  #contact-button:active, #reveal-email-button:active {
   background-color: #07b2b8;
 }
