@@ -52,12 +52,13 @@ main {
 /* Properties apply to all text elements */
 .article-text, #header-name, #tagline, #attribution, #home-button,
   #resume-button, #qual-button, #contact-button, #read-more-button,
-  .page-title {
+  .page-title, #contact-main-text {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
 }
 
-.article-text {
+/* Text in main content of pages */
+.article-text, #contact-main-text {
   max-width: 800px;
   display: block;
   font-size: 22px;
@@ -114,9 +115,14 @@ main {
 
 /* General styling for title on each page */
 .page-title {
-  font-size: 66px;
+  font-size: 72px;
   font-weight: bolder;
-  display: block;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+#contact-main-text {
+  font-size: 30px;
 }
 
 /* Reduce text size at smaller viewport size */
@@ -134,7 +140,11 @@ main {
   }
 
   .page-title {
-    font-size: 48px;
+    font-size: 54px;
+  }
+
+  #contact-main-text {
+    font-size: 24px;
   }
 }
 
