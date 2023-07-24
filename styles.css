@@ -1,3 +1,19 @@
+/* 
+  TODO: deal with high zoom issues across the board
+    - for the qual-button specifically, maybe add a JS function
+      that checks for a viewport width less than 450px (do a
+      console log at the minimum browser width at 100% zoom to
+      confirm that number) and then makes it behave like the other
+      3 buttons
+    - I'm thinking about hiding the header buttons entirely at super
+      high zoom and instead leaving a message of some kind ("zoom out
+      pls" or "links hidden due to zoom -- see page x for links" idk)
+    - maybe lock homepage text after a certain zoom size by making
+      the font size use vw units to prevent nasty overflow
+    - maybe change header text to abbreviations at high zoom (ex:
+      RS, CS @ TAMU)
+*/
+
 html, body {
   height: 100%;
   margin: 0px;
@@ -35,7 +51,8 @@ main {
 
 /* Properties apply to all text elements */
 #about-me-text, #header-name, #tagline, #attribution, #home-button,
-  #resume-button, #qual-button, #contact-button, #read-more-button {
+  #resume-button, #qual-button, #contact-button, #read-more-button,
+  .page-title {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
 }
@@ -95,6 +112,12 @@ main {
   margin-bottom: 1.5em;
 }
 
+/* General styling for title on each page */
+.page-title {
+  font-size: 66px;
+  font-weight: bolder;
+}
+
 /* Reduce text size at smaller viewport size */
 @media screen and (max-width: 700px) {
   #about-me-text {
@@ -107,6 +130,10 @@ main {
 
   .about-me-subheading {
     font-size: 24px;
+  }
+
+  .page-title {
+    font-size: 48px;
   }
 }
 
@@ -269,24 +296,6 @@ footer {
   overflow: hidden;
   white-space: nowrap;
 }
-
-/* 
-  TODO: deal with high zoom issues across the board
-    - for the qual-button specifically, maybe add a JS function
-      that checks for a viewport width less than 450px (do a
-      console log at the minimum browser width at 100% zoom to
-      confirm that number) and then makes it behave like the other
-      3 buttons
-    - I'm thinking about hiding the header buttons entirely at super
-      high zoom and instead leaving a message of some kind ("zoom out
-      pls" or "links hidden due to zoom -- see page x for links" idk)
-    - maybe lock homepage text after a certain zoom size by making
-      the font size use vw units to prevent nasty overflow
-    - maybe change header text to abbreviations at high zoom (ex:
-      RS, CS @ TAMU)
-
-  edit/expand homepage text?
-*/
 
 /* Remove borders on ends of navbar */
 #home-button {
