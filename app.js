@@ -84,6 +84,8 @@ setInterval(function() {qualRunner(overflowViewportWidthObj)}, 10);
 // Make sure qual-button padding is correct at all times
 setInterval(setQualPadding, 10);
 
+/****************************************************************/
+
 /**
  * The following makes the "Read more" button on the home page work
  */
