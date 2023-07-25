@@ -163,9 +163,8 @@ main {
 }
 
 #copy-email {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  margin-left: 1.2em;
+  width: 45px;
+  height: 45px;
 }
 
 /* Reduce text size at smaller viewport size */
