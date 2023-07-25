@@ -128,14 +128,15 @@ main {
 }
 
 #contact-paragraph1 {
-  margin-bottom: 0px;
+  /* Changes with button press */
+  margin-bottom: 1em;
 }
 
 /* Button to reveal email address */
 #reveal-email-button {
   /* Centers button horizontally */
+  /* Changes with button press */
   display: flex;
-  display: none;
   margin: auto;
   background-color: #047377;
   font-size: 18px;
@@ -157,7 +158,8 @@ main {
 
 #email {
   /* Center address */
-  display: flex;
+  /* Changes with button press */
+  display: none;
   margin: auto;
   justify-content: center;
   font-size: 22px;

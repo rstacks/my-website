@@ -105,3 +105,34 @@ function readMore() {
     moreAboutMe.style.display = "none";
   }
 }
+
+/****************************************************************/
+
+/**
+ * This reveals email on contact page after a button is pressed
+ */
+
+// Grab the reveal email button and all elements whose styles will
+// be changed
+const revealEmailButton = document.getElementById("reveal-email-button");
+const emailParagraph = document.getElementById("contact-paragraph1");
+const emailSection = document.getElementById("email");
+const addrElement = document.getElementById("no-peeking");
+
+// Hide reveal email button, reveal email element, and insert
+// address from here
+function revealEmail() {
+  // Hide reveal button
+  revealEmailButton.style.display = "none";
+  // Show email
+  emailSection.style.display = "flex";
+  // Change spacing between email and paragraph above it
+  emailParagraph.style.marginBottom = "0px";
+
+  // Insert address into HTML
+  const addr1 = "stack";
+  const addr2 = "srob910";
+  const addr3 = "@gma";
+  const addr4 = "il.com";
+  addrElement.innerHTML = addr1 + addr2 + addr3 + addr4;
+}
