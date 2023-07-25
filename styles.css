@@ -160,11 +160,24 @@ main {
   display: flex;
   margin: auto;
   justify-content: center;
+  font-size: 22px;
 }
 
-#copy-email {
-  width: 45px;
-  height: 45px;
+#copy-email-button {
+  margin-top: 0.7em;
+  margin-left: 0.5em;
+  width: 40px;
+  height: 40px;
+  transition: opacity 200ms;
+}
+
+/* Hover and click actions for copy email button */
+#copy-email-button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+#copy-email-button:active {
+  opacity: 50%;
 }
 
 /* Reduce text size at smaller viewport size */
@@ -191,6 +204,15 @@ main {
 
   #reveal-email-button {
     font-size: 16px;
+  }
+
+  #email {
+    font-size: 20px;
+  }
+
+  #copy-email-button {
+    width: 35px;
+    height: 35px;
   }
 }
 
