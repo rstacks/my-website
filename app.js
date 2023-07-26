@@ -116,6 +116,7 @@ function readMore() {
 // be changed
 const revealEmailButton = document.getElementById("reveal-email-button");
 const emailParagraph = document.getElementById("contact-paragraph1");
+const linkedinParagraph = document.getElementById("contact-paragraph2");
 const emailSection = document.getElementById("email");
 const addrElement = document.getElementById("no-peeking");
 
@@ -131,8 +132,9 @@ function revealEmail() {
   revealEmailButton.style.display = "none";
   // Show email
   emailSection.style.display = "flex";
-  // Change spacing between email and paragraph above it
+  // Change spacing between email and paragraphs around it
   emailParagraph.style.marginBottom = "0px";
+  linkedinParagraph.style.marginTop = "0px";
 
   // Insert address into HTML
   addrElement.innerHTML = addr1 + addr2 + addr3 + addr4;
@@ -150,17 +152,20 @@ const confirmationTooltip = document.getElementById("copy-confirmation");
 // Displays and hides tooltip that appears when user clicks copy
 // email button
 function displayTooltip() {
+  // Adjust margin for paragraph below tooltip
+  linkedinParagraph.style.marginTop = "1.2em";
   // Show the confirmation tooltip
   confirmationTooltip.style.display = "flex";
   // Set animation styles so tooltip will fade away
   confirmationTooltip.style.animationName = "fade-confirmation";
-  confirmationTooltip.style.animationDuration = "3s";
-  confirmationTooltip.style.animationDelay = "2s";
-  // Hide tooltip after animation finishes
+  confirmationTooltip.style.animationDuration = "1s";
+  confirmationTooltip.style.animationDelay = "1s";
+  // Hide tooltip and reset styles after animation finishes
   setTimeout(
     () => {
       confirmationTooltip.style.display = "none";
-    }, 5000
+      linkedinParagraph.style.marginTop = "0px";
+    }, 2000
   );
 }
 
