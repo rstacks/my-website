@@ -214,6 +214,23 @@ main {
   margin-top: 1em;
 }
 
+#contact-in-link {
+  color: #FFFFF0;
+  display: inline-block;
+  /*background-color: red;*/
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  transition: background-color 200ms;
+}
+
+/* Hover and click effects for element above 
+#contact-in-link:hover {
+  background-color: #047377;
+}
+#contact-in-link:active {
+  background-color: 
+}*/
+
 /* Reduce text size at smaller viewport size */
 @media screen and (max-width: 700px) {
   .article-text {
@@ -440,12 +457,14 @@ footer {
 }
 
 /* Navbar hover and click actions (brighten each link) */
-/* Also applies to reveal email button on contact page */
+/* Also applies to buttons and links on contact page */
 #home-button:hover, #resume-button:hover, #qual-button:hover,
-  #contact-button:hover, #reveal-email-button:hover {
+  #contact-button:hover, #reveal-email-button:hover,
+  #contact-in-link:hover {
   background-color: #069ba0;
 }
 #home-button:active, #resume-button:active, #qual-button:active,
-  #contact-button:active, #reveal-email-button:active {
+  #contact-button:active, #reveal-email-button:active,
+  #contact-in-link:active {
   background-color: #07b2b8;
 }
