@@ -182,6 +182,22 @@ main {
   opacity: 50%;
 }
 
+#copy-confirmation {
+  /* Hide element until user uses copy button */
+  visibility: visible;
+  /* Center element */
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bolder;
+  width: 8em;
+  background-color: black;
+  border-radius: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
 /* Reduce text size at smaller viewport size */
 @media screen and (max-width: 700px) {
   .article-text {
@@ -215,6 +231,10 @@ main {
   #copy-email-button {
     width: 35px;
     height: 35px;
+  }
+
+  #copy-confirmation {
+    font-size: 12px;
   }
 }
 
