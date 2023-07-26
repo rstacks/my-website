@@ -119,6 +119,11 @@ const emailParagraph = document.getElementById("contact-paragraph1");
 const emailSection = document.getElementById("email");
 const addrElement = document.getElementById("no-peeking");
 
+const addr1 = "stack";
+const addr2 = "srob910";
+const addr3 = "@gma";
+const addr4 = "il.com";
+
 // Hide reveal email button, reveal email element, and insert
 // address from here
 function revealEmail() {
@@ -130,9 +135,26 @@ function revealEmail() {
   emailParagraph.style.marginBottom = "0px";
 
   // Insert address into HTML
-  const addr1 = "stack";
-  const addr2 = "srob910";
-  const addr3 = "@gma";
-  const addr4 = "il.com";
   addrElement.innerHTML = addr1 + addr2 + addr3 + addr4;
+}
+
+/****************************************************************/
+
+/**
+ * Copies email address to user's clipboard
+ */
+
+function copyAddress() {
+  // Copy address to clipboard
+  navigator.clipboard.writeText(addr1 + addr2 + addr3 + addr4).then(
+    // Executes upon successful copy operation
+    () => {
+      console.log("Copy operation succeeded");
+    },
+
+    // Executes if copy operation failed
+    () => {
+      console.error("Copy operation failed");
+    }
+  );
 }
