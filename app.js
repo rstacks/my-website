@@ -144,17 +144,42 @@ function revealEmail() {
  * Copies email address to user's clipboard
  */
 
+// Grab the copy confirmation tooltip element
+const confirmationTooltip = document.getElementById("copy-confirmation");
+
+// Displays and hides tooltip that appears when user clicks copy
+// email button
+function displayTooltip() {
+  // Show the confirmation tooltip
+  confirmationTooltip.style.display = "flex";
+  // Set animation styles so tooltip will fade away
+  confirmationTooltip.style.animationName = "fade-confirmation";
+  confirmationTooltip.style.animationDuration = "3s";
+  confirmationTooltip.style.animationDelay = "2s";
+  // Hide tooltip after animation finishes
+  setTimeout(
+    () => {
+      confirmationTooltip.style.display = "none";
+    }, 5000
+  );
+}
+
+// Runs when user clicks copy email button
 function copyAddress() {
   // Copy address to clipboard
   navigator.clipboard.writeText(addr1 + addr2 + addr3 + addr4).then(
     // Executes upon successful copy operation
     () => {
-      console.log("Copy operation succeeded");
+      confirmationTooltip.innerHTML = "Copied email!";
+      confirmationTooltip.style.width = "8em";
+      displayTooltip();
     },
 
     // Executes if copy operation failed
     () => {
-      console.error("Copy operation failed");
+      confirmationTooltip.innerHTML = "Could not copy email. Try again.";
+      confirmationTooltip.style.width = "17em";
+      displayTooltip();
     }
   );
 }

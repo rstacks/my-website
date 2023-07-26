@@ -182,11 +182,22 @@ main {
   opacity: 50%;
 }
 
+/* Makes copy-confirmation element fade away */
+@keyframes fade-confirmation {
+  from {
+    background-color: black;
+    color: #FFFFF0;
+  }
+  to {
+    background-color: #3D3D3D;
+    color: #3D3D3D;
+  }
+}
+
 #copy-confirmation {
-  /* Hide element until user uses copy button */
-  visibility: visible;
   /* Center element */
-  display: flex;
+  /* Changes once email is copied */
+  display: none;
   margin: auto;
   justify-content: center;
   font-size: 14px;
