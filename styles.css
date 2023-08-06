@@ -238,14 +238,17 @@ main {
   border-width: 0.15em;
 }
 
-/* Adjust size of resume image */
-#resume-img {
+#resume-img-container {
   /* Centers image horizontally */
   display: flex;
   margin: auto;
-  /* Scales image with viewport */
-  width: 100%;
-  max-width: 800px;
+  justify-content: center;
+  overflow: scroll;
+}
+
+/* Adjust size of resume image */
+#resume-img {
+  width: 800px;
   padding-top: 1.4em;
   padding-bottom: 1.5em;
 }
