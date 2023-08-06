@@ -52,7 +52,8 @@ main {
 /* Properties apply to all text elements */
 .article-text, #header-name, #tagline, #attribution, #home-button,
   #resume-button, #qual-button, #contact-button, #read-more-button,
-  .page-title, #contact-main-text, #reveal-email-button {
+  .page-title, #contact-main-text, #reveal-email-button,
+  #resume-main-text {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
 }
@@ -121,8 +122,8 @@ main {
   margin-bottom: 0.5em;
 }
 
-/* Bigger font for contact page */
-#contact-main-text {
+/* Bigger font for some pages */
+#contact-main-text, #resume-main-text {
   font-size: 26px;
   width: 80%;
 }
@@ -132,8 +133,9 @@ main {
   margin-bottom: 1em;
 }
 
-/* Button to reveal email address */
-#reveal-email-button {
+/* Button to reveal email address; some styles also apply
+  to resume download link */
+#reveal-email-button, #resume-download-link {
   /* Centers button horizontally */
   /* Changes with button press */
   display: flex;
@@ -218,10 +220,22 @@ main {
 #contact-in-link {
   color: #FFFFF0;
   display: inline-block;
-  /*background-color: red;*/
   text-decoration-line: underline;
   text-decoration-style: dotted;
   transition: background-color 200ms;
+}
+
+#download-button-section {
+  display: flex;
+  margin: auto;
+}
+
+/* Remaining style changes for resume download link */
+#resume-download-link {
+  text-decoration: none;
+  color: #FFFFF0;
+  display: inline-block;
+  border-width: 0.15em;
 }
 
 /* Reduce text size at smaller viewport size */
@@ -450,14 +464,14 @@ footer {
 }
 
 /* Navbar hover and click actions (brighten each link) */
-/* Also applies to buttons and links on contact page */
+/* Also applies to buttons and links on contact and resume pages */
 #home-button:hover, #resume-button:hover, #qual-button:hover,
   #contact-button:hover, #reveal-email-button:hover,
-  #contact-in-link:hover {
+  #contact-in-link:hover, #resume-download-link:hover {
   background-color: #069ba0;
 }
 #home-button:active, #resume-button:active, #qual-button:active,
   #contact-button:active, #reveal-email-button:active,
-  #contact-in-link:active {
+  #contact-in-link:active, #resume-download-link:active {
   background-color: #07b2b8;
 }
