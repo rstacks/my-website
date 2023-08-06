@@ -256,11 +256,11 @@ main {
     font-size: 54px;
   }
 
-  #contact-main-text {
+  #contact-main-text, #resume-main-text {
     font-size: 24px;
   }
 
-  #reveal-email-button {
+  #reveal-email-button, #resume-download-link {
     font-size: 16px;
   }
 
