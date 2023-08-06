@@ -238,19 +238,20 @@ main {
   border-width: 0.15em;
 }
 
-#resume-img-container {
-  /* Centers image horizontally */
-  display: flex;
+/* Styling for resume image containing element */
+#resume-img-container {  
+  display: block;
   margin: auto;
   justify-content: center;
-  overflow: scroll;
+  overflow: auto;
+  max-width: 800px;
+  width: 100%;
+  max-height: 1200px;
 }
 
-/* Adjust size of resume image */
+/* Styling for image tag itself */
 #resume-img {
   width: 800px;
-  padding-top: 1.4em;
-  padding-bottom: 1.5em;
 }
 
 /* Reduce text size at smaller viewport size */
