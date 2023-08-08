@@ -224,7 +224,7 @@ main {
   margin-bottom: 8em;
 }
 
-#contact-in-link {
+#contact-in-link, .qual-link {
   color: #FFFFF0;
   display: inline-block;
   text-decoration-line: underline;
@@ -521,11 +521,13 @@ footer {
 /* Also applies to buttons and links on contact and resume pages */
 #home-button:hover, #resume-button:hover, #qual-button:hover,
   #contact-button:hover, #reveal-email-button:hover,
-  #contact-in-link:hover, #resume-download-link:hover {
+  #contact-in-link:hover, #resume-download-link:hover,
+  .qual-link:hover {
   background-color: #069ba0;
 }
 #home-button:active, #resume-button:active, #qual-button:active,
   #contact-button:active, #reveal-email-button:active,
-  #contact-in-link:active, #resume-download-link:active {
+  #contact-in-link:active, #resume-download-link:active,
+  .qual-link:active {
   background-color: #07b2b8;
 }
