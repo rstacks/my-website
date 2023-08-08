@@ -300,6 +300,13 @@ main {
   }
 }
 
+/* Reduce qual page title further */
+@media screen and (max-width: 500px) {
+  #qual-header {
+    font-size: 48px;
+  }
+}
+
 #page-head {
   background-color: #3D3D3D;
 }
