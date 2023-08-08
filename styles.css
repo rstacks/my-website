@@ -7,7 +7,7 @@
       3 buttons
     - I'm thinking about hiding the header buttons entirely at super
       high zoom and instead leaving a message of some kind ("zoom out
-      pls" or "links hidden due to zoom -- see page x for links" idk)
+      pls" or "links hidden due to zoom -- see page x for links")
     - maybe lock homepage text after a certain zoom size by making
       the font size use vw units to prevent nasty overflow
     - maybe change header text to abbreviations at high zoom (ex:
@@ -53,13 +53,14 @@ main {
 .article-text, #header-name, #tagline, #attribution, #home-button,
   #resume-button, #qual-button, #contact-button, #read-more-button,
   .page-title, #contact-main-text, #reveal-email-button,
-  #resume-main-text {
+  #resume-main-text, #qual-main-text {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
 }
 
 /* Text in main content of pages */
-.article-text, #contact-main-text {
+.article-text, #contact-main-text, #resume-main-text,
+  #qual-main-text {
   max-width: 800px;
   display: block;
   font-size: 22px;
@@ -122,8 +123,14 @@ main {
   margin-bottom: 0.5em;
 }
 
+/* Centers qual page title at small viewports */
+#qual-header {
+  display: flex;
+  justify-content: center;
+}
+
 /* Bigger font for some pages */
-#contact-main-text, #resume-main-text {
+#contact-main-text, #resume-main-text, #qual-main-text {
   font-size: 26px;
   width: 80%;
 }
@@ -262,7 +269,7 @@ main {
 
 /* Reduce text size at smaller viewport size */
 @media screen and (max-width: 700px) {
-  .article-text {
+  .article-text, #read-more-button {
     font-size: 18px;
   }
 
@@ -278,7 +285,8 @@ main {
     font-size: 54px;
   }
 
-  #contact-main-text, #resume-main-text, #resume-image-header {
+  #contact-main-text, #resume-main-text, #resume-image-header,
+    #qual-main-text {
     font-size: 24px;
   }
 
