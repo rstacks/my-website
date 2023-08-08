@@ -276,6 +276,9 @@ main {
 #link-list {
   margin-top: 0.5em;
   margin-bottom: 5em;
+  list-style-image: url(images/bullet-arrow-square-small.ico);
+  /* Adjust position and, if we keep the image, add to 
+  attribution */
 }
 
 /* Reduce text size at smaller viewport size */
