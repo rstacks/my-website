@@ -267,6 +267,17 @@ main {
   width: 100%;
 }
 
+/* Reduce margin to qual page link list */
+#link-list-title {
+  margin-bottom: 0px;
+}
+
+/* Applies styles to link list and items */
+#link-list {
+  margin-top: 0.5em;
+  margin-bottom: 5em;
+}
+
 /* Reduce text size at smaller viewport size */
 @media screen and (max-width: 700px) {
   .article-text, #read-more-button {
