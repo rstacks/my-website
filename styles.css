@@ -518,7 +518,7 @@ footer {
 }
 
 /* Navbar hover and click actions (brighten each link) */
-/* Also applies to buttons and links on contact and resume pages */
+/* Also applies to buttons and links on other pages */
 #home-button:hover, #resume-button:hover, #qual-button:hover,
   #contact-button:hover, #reveal-email-button:hover,
   #contact-in-link:hover, #resume-download-link:hover,
