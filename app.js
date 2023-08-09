@@ -120,10 +120,10 @@ const linkedinParagraph = document.getElementById("contact-paragraph2");
 const emailSection = document.getElementById("email");
 const addrElement = document.getElementById("no-peeking");
 
-const addr1 = "stack";
-const addr2 = "srob910";
-const addr3 = "@gma";
-const addr4 = "il.com";
+const addr1 = "c3RhY2";
+const addr2 = "tzcm9iOT";
+const addr3 = "EwQGdtYWl";
+const addr4 = "sLmNvbQo=";
 
 // Hide reveal email button, reveal email element, and insert
 // address from here
@@ -137,7 +137,7 @@ function revealEmail() {
   linkedinParagraph.style.marginTop = "0px";
 
   // Insert address into HTML
-  addrElement.innerHTML = addr1 + addr2 + addr3 + addr4;
+  addrElement.innerHTML = atob(addr1 + addr2 + addr3 + addr4);
 }
 
 /****************************************************************/
@@ -172,7 +172,7 @@ function displayTooltip() {
 // Runs when user clicks copy email button
 function copyAddress() {
   // Copy address to clipboard
-  navigator.clipboard.writeText(addr1 + addr2 + addr3 + addr4).then(
+  navigator.clipboard.writeText(atob(addr1 + addr2 + addr3 + addr4)).then(
     // Executes upon successful copy operation
     () => {
       confirmationTooltip.innerHTML = "Copied email!";
