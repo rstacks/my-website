@@ -228,7 +228,7 @@ main {
   color: #FFFFF0;
   display: inline-block;
   text-decoration-line: underline;
-  text-decoration-style: dotted;
+  text-decoration-style: dashed;
   transition: background-color 200ms;
 }
 
