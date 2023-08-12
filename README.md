@@ -1,6 +1,6 @@
 # My Website — robertstacks.com
 
-# ![site-image](./site-image.png)
+# ![site-image](./images/site-image.png)
 
 ## Description
 This repo contains the source code for my personal homepage and portfolio, built from scratch by me,
