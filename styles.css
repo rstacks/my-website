@@ -1,19 +1,3 @@
-/* 
-  TODO: deal with high zoom issues across the board
-    - for the qual-button specifically, maybe add a JS function
-      that checks for a viewport width less than 450px (do a
-      console log at the minimum browser width at 100% zoom to
-      confirm that number) and then makes it behave like the other
-      3 buttons
-    - I'm thinking about hiding the header buttons entirely at super
-      high zoom and instead leaving a message of some kind ("zoom out
-      pls" or "links hidden due to zoom -- see page x for links")
-    - maybe lock homepage text after a certain zoom size by making
-      the font size use vw units to prevent nasty overflow
-    - maybe change header text to abbreviations at high zoom (ex:
-      RS, CS @ TAMU)
-*/
-
 html, body {
   height: 100%;
   margin: 0px;
@@ -228,7 +212,7 @@ main {
   color: #FFFFF0;
   display: inline-block;
   text-decoration-line: underline;
-  text-decoration-style: dotted;
+  text-decoration-style: dashed;
   transition: background-color 200ms;
 }
 
@@ -518,7 +502,7 @@ footer {
 }
 
 /* Navbar hover and click actions (brighten each link) */
-/* Also applies to buttons and links on contact and resume pages */
+/* Also applies to buttons and links on other pages */
 #home-button:hover, #resume-button:hover, #qual-button:hover,
   #contact-button:hover, #reveal-email-button:hover,
   #contact-in-link:hover, #resume-download-link:hover,
