@@ -6,6 +6,11 @@ function App() {
   return (
     <>
       <Nav />
+      <main>
+        <img src="images/circular_me.png" alt="Robert Stacks Photo" 
+          id="my-photo" />
+        
+      </main>
     </>
   );
 }
