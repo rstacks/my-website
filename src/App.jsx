@@ -1,9 +1,13 @@
 // Should include import for stylesheet
-// import "./styles.css" or something
+import "./styles.css"
 //import { useState } from 'react'
 
 function App() {
-  return "Hello world";
+  return (
+    <>
+      <p>Howdy! Welcome to my website. I</p>
+    </>
+  );
 }
 
 export default App
