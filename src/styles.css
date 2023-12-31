@@ -10,7 +10,7 @@ body {
   font-weight: bold;
   font-size: 1.25em;
   height: 3em;
-  overflow: hidden;
+  overflow: auto;
   /* Vertically centers nav links */
   line-height: 3em;
 }
