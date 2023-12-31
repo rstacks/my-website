@@ -36,3 +36,27 @@ body {
   margin-right: auto;
   margin-top: 2.5em;
 }
+
+#name-tag {
+  font-size: 6em;
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0;
+}
+
+#tagline {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Scales homepage text with viewport */
+@media screen and (max-width: 750px) {
+  #name-tag {
+    font-size: 13vw;
+  }
+
+  #tagline {
+    font-size: 4.3vw;
+  }
+}
