@@ -24,7 +24,7 @@ body {
 
 #social-nav-list {
   margin-top: 0;
-  margin-bottom: 10em;
+  /*margin-bottom: 10em;*/
 }
 
 .main-nav-link {
@@ -87,4 +87,16 @@ body {
   #tagline {
     font-size: 4.3vw;
   }
+}
+
+#openmoji-attribution {
+  font-size: 0.85em;
+  text-align: center;
+  color: #727272;
+  margin-bottom: 3em;
+}
+
+.openmoji-link {
+  color: #727272;
+  text-decoration: underline;
 }
