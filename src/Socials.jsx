@@ -16,10 +16,8 @@ export function Socials() {
             </a>
           </li>
           <li className="social-nav-link">
-            <a href="https://youtube.com">
               <img src="images/improved_mail_icon.png" alt="Mail Icon"
-                id="contact-link" />
-            </a>
+                id="contact-link" title="Copy my email" />
           </li>
         </ul>
       </nav>

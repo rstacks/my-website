@@ -14,6 +14,7 @@ function App() {
         <h1 id="name-tag">Robert Stacks</h1>
         <h2 id="tagline">Computer Science @ Texas A&M University</h2>
         <Socials />
+        <p id="mail-confirmation">Copied "stacksrob910@gmail.com" to clipboard</p>
       </main>
       <Footer />
     </>

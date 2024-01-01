@@ -43,6 +43,7 @@ body {
 /* Hover and click actions for social links */
 .social-nav-link:hover {
   opacity: 70%;
+  cursor: pointer;
 }
 .social-nav-link:active {
   opacity: 30%;
@@ -78,6 +79,11 @@ body {
   margin-top: 0;
 }
 
+#mail-confirmation {
+  text-align: center;
+  font-size: 1em;
+}
+
 /* Scales homepage text with viewport */
 @media screen and (max-width: 750px) {
   #name-tag {
@@ -89,11 +95,20 @@ body {
   }
 }
 
+/* Scales email confirmation with viewport */
+@media screen and (max-width: 450px) {
+  #mail-confirmation {
+    font-size: 3.6vw;
+  }
+}
+
 #openmoji-attribution {
   font-size: 0.85em;
   text-align: center;
   color: #727272;
   margin-bottom: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .openmoji-link {
