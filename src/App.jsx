@@ -1,5 +1,6 @@
 import "./styles.css"
 import { Nav } from "./Nav"
+import { Socials } from "./Socials"
 //import { useState } from 'react'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
           id="my-photo" />
         <h1 id="name-tag">Robert Stacks</h1>
         <h2 id="tagline">Computer Science @ Texas A&M University</h2>
+        <Socials />
       </main>
     </>
   );
