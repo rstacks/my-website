@@ -1,6 +1,7 @@
 import "./styles.css"
 import { Nav } from "./Nav"
 import { Socials } from "./Socials"
+import { Footer } from "./Footer"
 //import { useState } from 'react'
 
 function App() {
@@ -14,19 +15,7 @@ function App() {
         <h2 id="tagline">Computer Science @ Texas A&M University</h2>
         <Socials />
       </main>
-
-      <footer id="openmoji-attribution">
-        <p>
-          Favicon designed by <a href="https://openmoji.org/" target="_blank"
-              className="openmoji-link">
-               OpenMoji 
-            </a> — the open-source emoji and icon project. License: <a
-              href="https://creativecommons.org/licenses/by-sa/4.0/#"
-              target="_blank" className="openmoji-link">
-               CC BY-SA 4.0
-            </a>
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }
