@@ -1,7 +1,7 @@
 import "./styles.css"
-import { Nav } from "./Nav"
-import { Socials } from "./Socials"
-import { Footer } from "./Footer"
+import { Nav } from "./components/Nav"
+import { Socials } from "./components/Socials"
+import { Footer } from "./components/Footer"
 //import { useState } from 'react'
 
 function App() {
