@@ -141,3 +141,9 @@ body {
     font-size: 3vw;
   }
 }
+
+#not-found {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 1.5em;
+}
