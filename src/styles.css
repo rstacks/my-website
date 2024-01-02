@@ -80,13 +80,13 @@ body {
 }
 
 #social-nav {
-  padding-bottom: 2.2em;
+  padding-bottom: 1.95em;
 }
 
 #mail-confirmation {
   display: none;
   text-align: center;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bolder;
   color: #868686;
 }
@@ -135,12 +135,8 @@ body {
   text-decoration: underline;
 }
 
-/* Scales email confirmation and footer */
+/* Scales footer with viewport */
 @media screen and (max-width: 450px) {
-  #mail-confirmation {
-    font-size: 3.6vw;
-  }
-
   #openmoji-attribution {
     font-size: 3vw;
   }

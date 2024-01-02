@@ -21,7 +21,7 @@ export function Socials() {
     setTimeout(
       () => {
         tooltip.style.display = "none";
-        div.style.paddingBottom = "2.2em";
+        div.style.paddingBottom = "1.95em";
       }, 2500
     );
   }
