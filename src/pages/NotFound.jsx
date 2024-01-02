@@ -5,7 +5,7 @@ export function NotFound() {
     <HelmetProvider>
       <Helmet>
         <title>404 Not Found</title>
-        <link rel="icon" href="" />
+        <link rel="icon" href="images/not-found.ico" />
       </Helmet>
       <h1>404 Not Found</h1>
     </HelmetProvider>
