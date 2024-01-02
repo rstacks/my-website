@@ -1,10 +1,13 @@
 export function Socials() {
   // Shows and hides copy email confirmation tooltip
-  function displayTooltip(tooltip) {
+  function displayTooltip(tooltip, div) {
     // Set the fade in animation
+    tooltip.style.display = "block";
     tooltip.style.animationName = "fade-in-tooltip";
     tooltip.style.animationDuration = "0.5s";
     tooltip.style.color = "#FFFFF0";
+    div.style.paddingBottom = "0";
+    
     // Set the fade out animation (after fade in)
     setTimeout(
       () => {
@@ -12,6 +15,14 @@ export function Socials() {
         tooltip.style.animationDuration = "0.5s";
         tooltip.style.color = "#292929";
       }, 2000
+    );
+    
+    // Reset other styles
+    setTimeout(
+      () => {
+        tooltip.style.display = "none";
+        div.style.paddingBottom = "2.35em";
+      }, 2500
     );
   }
   
@@ -23,8 +34,9 @@ export function Socials() {
     const addr3 = "EwQGdtYWl";
     const addr4 = "sLmNvbQo=";
 
-    // Grab tooltip HTML tag
+    // Grab HTML tags
     const confirmationTooltip = document.getElementById("mail-confirmation");
+    const socialsDiv = document.getElementById("social-nav");
 
     // Copy address to clipboard
     navigator.clipboard.writeText(atob(addr1 + addr2 + addr3 + addr4)).then(
@@ -33,20 +45,20 @@ export function Socials() {
         confirmationTooltip.innerHTML = "Copied \"" + atob(addr1 + addr2 + addr3 + addr4);
         confirmationTooltip.innerHTML = confirmationTooltip.innerHTML.trim();
         confirmationTooltip.innerHTML += "\" to clipboard";
-        displayTooltip(confirmationTooltip);
+        displayTooltip(confirmationTooltip, socialsDiv);
       },
 
       // Executes if copy operation failed
       () => {
         confirmationTooltip.innerHTML = "Could not copy email. Try again.";
-        displayTooltip(confirmationTooltip);
+        displayTooltip(confirmationTooltip, socialsDiv);
       }
     );
   }
   
   return (
     <>
-      <nav>
+      <nav id="social-nav">
         <ul className="nav-list" id="social-nav-list">
           <li className="social-nav-link">
             <a href="https://www.linkedin.com/in/robert-stacks/" target="_blank">
@@ -65,8 +77,8 @@ export function Socials() {
                 id="contact-link" title="Copy my email" onClick={copyAddress} />
           </li>
         </ul>
+        <p id="mail-confirmation">My favorite class is the spy</p>
       </nav>
-      <p id="mail-confirmation">-</p>
     </>
   );
 }
