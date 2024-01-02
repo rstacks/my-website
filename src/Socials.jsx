@@ -5,7 +5,7 @@ export function Socials() {
     tooltip.style.display = "block";
     tooltip.style.animationName = "fade-in-tooltip";
     tooltip.style.animationDuration = "0.5s";
-    tooltip.style.color = "#FFFFF0";
+    tooltip.style.color = "#868686";
     div.style.paddingBottom = "0";
     
     // Set the fade out animation (after fade in)
@@ -21,7 +21,7 @@ export function Socials() {
     setTimeout(
       () => {
         tooltip.style.display = "none";
-        div.style.paddingBottom = "2.35em";
+        div.style.paddingBottom = "2.2em";
       }, 2500
     );
   }
@@ -39,7 +39,7 @@ export function Socials() {
     const socialsDiv = document.getElementById("social-nav");
 
     // Copy address to clipboard
-    navigator.clipboard.writeText(atob(addr1 + addr2 + addr3 + addr4)).then(
+    navigator.clipboard.writeText(atob(addr1 + addr2 + addr3 + addr4).trim()).then(
       // Executes upon successful copy operation
       () => {
         confirmationTooltip.innerHTML = "Copied \"" + atob(addr1 + addr2 + addr3 + addr4);
