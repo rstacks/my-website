@@ -33,6 +33,11 @@ body {
   margin-right: 2em;
 }
 
+.main-nav-anchor {
+  text-decoration: none;
+  color: #FFFFF0;
+}
+
 .social-nav-link {
   display: inline;
   margin-left: 0.75em;
