@@ -1,10 +1,15 @@
+import { Helmet, HelmetProvider } from "react-helmet-async"
 import { Nav } from "../components/Nav"
 import { Socials } from "../components/Socials"
 import { Footer } from "../components/Footer"
 
 export function Home() {
   return (
-    <>
+    <HelmetProvider>
+      <Helmet>
+        <title>Home | Robert Stacks</title>
+        <link rel="icon" href="images/favicon.ico" />
+      </Helmet>
       <Nav />
       <main>
         <img src="images/circular_me.png" alt="Robert Stacks Photo" 
@@ -14,6 +19,6 @@ export function Home() {
         <Socials />
       </main>
       <Footer />
-    </>
+    </HelmetProvider>
   );
 }
