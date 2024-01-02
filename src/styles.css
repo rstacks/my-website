@@ -102,13 +102,6 @@ body {
   }
 }
 
-/* Scales email confirmation with viewport */
-@media screen and (max-width: 450px) {
-  #mail-confirmation {
-    font-size: 3.6vw;
-  }
-}
-
 /* Animations for copy email tooltip */
 @keyframes fade-in-tooltip {
   from {
@@ -140,4 +133,15 @@ body {
 .openmoji-link {
   color: #727272;
   text-decoration: underline;
+}
+
+/* Scales email confirmation and footer */
+@media screen and (max-width: 450px) {
+  #mail-confirmation {
+    font-size: 3.6vw;
+  }
+
+  #openmoji-attribution {
+    font-size: 3vw;
+  }
 }
