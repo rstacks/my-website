@@ -82,6 +82,7 @@ body {
 #mail-confirmation {
   text-align: center;
   font-size: 1em;
+  color: #292929;
 }
 
 /* Scales homepage text with viewport */
@@ -99,6 +100,24 @@ body {
 @media screen and (max-width: 450px) {
   #mail-confirmation {
     font-size: 3.6vw;
+  }
+}
+
+/* Animations for copy email tooltip */
+@keyframes fade-in-tooltip {
+  from {
+    color: #292929;
+  }
+  to {
+    color: #FFFFF0;
+  }
+}
+@keyframes fade-out-tooltip {
+  from {
+    color: #FFFFF0;
+  }
+  to {
+    color: #292929;
   }
 }
 
