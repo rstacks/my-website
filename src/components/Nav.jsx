@@ -1,13 +1,29 @@
 export function Nav() {
+  // Displays dropdown menu
+  function showMenu() {
+    // Grab HTML tags
+    const separator = document.getElementById("menu-separator");
+    const menuList = document.getElementById("main-nav-list");
+
+    // Show or hide them
+    if (separator.style.display == "none") {
+      separator.style.display = "block";
+      menuList.style.display = "block";
+    } else {
+      separator.style.display = "none";
+      menuList.style.display = "none";
+    }
+  }
+  
   return (
     <>
       <nav id="main-nav">
-        <button id="menu-button">
+        <button id="menu-button" onClick={showMenu}>
           <img src="images/hamburger.png" alt="Menu" id="burger" />
           MENU
         </button>
         <div id="menu-separator"></div>
-        <ul className="nav-list">
+        <ul className="nav-list" id="main-nav-list">
           <li className="main-nav-link">
             <a href="/home" className="main-nav-anchor">HOME</a>
           </li>
