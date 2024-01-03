@@ -6,12 +6,20 @@ export function Nav() {
     const menuList = document.getElementById("main-nav-list");
 
     // Show or hide them
-    if (separator.style.display == "none") {
+    if (separator.style.display != "block") {
       separator.style.display = "block";
       menuList.style.display = "block";
+      menuList.style.animationName = "display-nav";
+      menuList.style.animationDuration = "0.5s";
     } else {
-      separator.style.display = "none";
-      menuList.style.display = "none";
+      menuList.style.animationName = "hide-nav";
+      menuList.style.animationDuration = "0.5";
+      setTimeout(
+        () => {
+          separator.style.display = "none";
+          menuList.style.display = "none";
+        }, 500
+      );
     }
   }
   

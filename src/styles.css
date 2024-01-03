@@ -64,6 +64,24 @@ body {
   display: none;
 }
 
+/* Animations for nav menu on smaller displays */
+@keyframes display-nav {
+  from {
+    height: 0;
+  }
+  to {
+    height: 12em;
+  }
+}
+@keyframes hide-nav {
+  from {
+    height: 12em;
+  }
+  to {
+    height: 0;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #main-nav {
     overflow: hidden;
