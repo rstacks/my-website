@@ -22,6 +22,26 @@ export function Nav() {
       );
     }
   }
+
+  // Runs media query for menuList and separator
+  const mediaQuery = window.matchMedia("(max-width: 1000px)");
+
+  // Handler for how nav bar display styles change depending on screen size 
+  function navDisplayHandler(e) {
+    // Grab HTML tags
+    const separator = document.getElementById("menu-separator");
+    const menuList = document.getElementById("main-nav-list");
+    
+    if (e.matches) {
+      menuList.style.display = "none";
+    } else {
+      menuList.style.display = "block";
+      separator.style.display = "none";
+    }
+  }
+
+  // Add listener for changes in state of media query
+  mediaQuery.addEventListener("change", navDisplayHandler);
   
   return (
     <>

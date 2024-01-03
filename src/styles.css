@@ -23,7 +23,7 @@ body {
 }
 
 #main-nav-list {
-  display: none;
+  display: block;
 }
 
 #social-nav-list {
@@ -50,6 +50,7 @@ body {
   font-weight: bold;
   height: 2em;
   margin-left: 0.5em;
+  display: none;
 }
 
 #burger {
@@ -82,6 +83,7 @@ body {
   }
 }
 
+/* Change main nav bar into dropdown menu for small screens */
 @media screen and (max-width: 1000px) {
   #main-nav {
     overflow: hidden;
@@ -90,6 +92,10 @@ body {
   
   .main-nav-link {
     display: block;
+  }
+
+  #menu-button {
+    display: inline;
   }
 }
 
