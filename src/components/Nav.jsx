@@ -6,6 +6,7 @@ export function Nav() {
           <img src="images/hamburger.png" alt="Menu" id="burger" />
           MENU
         </button>
+        <div id="menu-separator"></div>
         <ul className="nav-list">
           <li className="main-nav-link">
             <a href="/home" className="main-nav-anchor">HOME</a>

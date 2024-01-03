@@ -38,19 +38,25 @@ body {
 }
 
 #menu-button {
-  border-style: dashed;
+  border-style: none;
   background-color: #047377;
   color: #FFFFF0;
   font-size: 1em;
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   font-weight: bold;
   height: 2em;
+  margin-left: 0.5em;
 }
 
 #burger {
   width: 1.2em;
   margin-right: 1em;
   vertical-align: text-top;
+}
+
+#menu-separator {
+  background-color: #FFFFF0;
+  height: 0.05em;
 }
 
 @media screen and (max-width: 1000px) {
