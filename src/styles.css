@@ -24,7 +24,6 @@ body {
 
 #social-nav-list {
   margin-top: 0;
-  /*margin-bottom: 10em;*/
 }
 
 .main-nav-link {
@@ -36,6 +35,33 @@ body {
 .main-nav-anchor {
   text-decoration: none;
   color: #FFFFF0;
+}
+
+#menu-button {
+  border-style: dashed;
+  background-color: #047377;
+  color: #FFFFF0;
+  font-size: 1em;
+  font-family: 'Rubik', 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  height: 2em;
+}
+
+#burger {
+  width: 1.2em;
+  margin-right: 1em;
+  vertical-align: text-top;
+}
+
+@media screen and (max-width: 1000px) {
+  #main-nav {
+    overflow: hidden;
+    height: fit-content;
+  }
+  
+  .main-nav-link {
+    display: block;
+  }
 }
 
 .social-nav-link {
