@@ -24,7 +24,7 @@ export function Nav() {
   }
 
   // Runs media query for menuList and separator
-  const mediaQuery = window.matchMedia("(max-width: 1000px)");
+  const mediaQuery = window.matchMedia("(max-width: 730px)");
 
   // Handler for how nav bar display styles change depending on screen size 
   function navDisplayHandler(e) {

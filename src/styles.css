@@ -84,7 +84,7 @@ body {
 }
 
 /* Change main nav bar into dropdown menu for small screens */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 730px) {
   #main-nav {
     overflow: hidden;
     height: fit-content;
