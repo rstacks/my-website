@@ -34,12 +34,12 @@ body {
   display: inline;
   margin-left: 2em;
   margin-right: 2em;
-  transition: opacity 200ms;
 }
 
 .main-nav-anchor {
   text-decoration: none;
   color: #FFFFF0;
+  transition: opacity 100ms;
 }
 
 #menu-button {
@@ -109,11 +109,11 @@ body {
 }
 
 /* Hover and click actions for all links */
-.social-nav-link:hover, .main-nav-link:hover, #menu-button:hover {
+.social-nav-link:hover, .main-nav-anchor:hover, #menu-button:hover {
   opacity: 70%;
   cursor: pointer;
 }
-.social-nav-link:active, .main-nav-link:active, #menu-button:active {
+.social-nav-link:active, .main-nav-anchor:active, #menu-button:active {
   opacity: 30%;
 }
 
