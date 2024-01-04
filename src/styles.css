@@ -34,6 +34,7 @@ body {
   display: inline;
   margin-left: 2em;
   margin-right: 2em;
+  transition: opacity 200ms;
 }
 
 .main-nav-anchor {
@@ -51,6 +52,7 @@ body {
   height: 2em;
   margin-left: 0.5em;
   display: none;
+  transition: opacity 100ms;
 }
 
 #burger {
@@ -107,11 +109,11 @@ body {
 }
 
 /* Hover and click actions for social links */
-.social-nav-link:hover {
+.social-nav-link:hover, .main-nav-link:hover, #menu-button:hover {
   opacity: 70%;
   cursor: pointer;
 }
-.social-nav-link:active {
+.social-nav-link:active, .main-nav-link:active, #menu-button:active {
   opacity: 30%;
 }
 
