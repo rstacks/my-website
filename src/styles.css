@@ -108,7 +108,7 @@ body {
   transition: opacity 200ms;
 }
 
-/* Hover and click actions for social links */
+/* Hover and click actions for all links */
 .social-nav-link:hover, .main-nav-link:hover, #menu-button:hover {
   opacity: 70%;
   cursor: pointer;
