@@ -216,6 +216,7 @@ body {
   font-size: 1.5em;
 }
 
+/*
 .page-title {
   text-align: center;
   font-size: 4em;
@@ -224,6 +225,7 @@ body {
   margin-right: 10em;
   border-radius: 0.25em;
 }
+*/
 
 #about-text {
   background-color: #3D3D3D;
@@ -232,4 +234,15 @@ body {
   padding: 1em;
   font-size: 1.5em;
   border-radius: 0.75em;
+}
+
+.page-header {
+  background-color: red;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 4em;
 }
