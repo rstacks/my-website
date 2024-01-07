@@ -236,10 +236,10 @@ body {
   border-radius: 0.75em;
 }
 
-.page-header {
+#page-header {
   background-color: #3D3D3D;
   border-radius: 1em;
-  width: 15em;
+  width: 16em;
   height: 8em;
   display: flex;
   margin: auto;
@@ -250,7 +250,7 @@ body {
 
 }
 
-.page-title {
+#page-title {
   font-size: 3.5em;
   text-align: center;
 }

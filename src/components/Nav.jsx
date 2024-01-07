@@ -53,24 +53,22 @@ export function Nav() {
   });
 
   return (
-    <>
-      <nav id="main-nav">
-        <button id="menu-button" onClick={showMenu}>
-          <img src="images/hamburger.png" alt="Menu" id="burger" />
-          MENU
-        </button>
-        <div id="menu-separator"></div>
-        <ul className="nav-list" id="main-nav-list">
-          <li className="main-nav-link">
-            <a href="/home" className="main-nav-anchor">HOME</a>
-          </li>
-          <li className="main-nav-link">
-            <a href="/about" className="main-nav-anchor">ABOUT</a>
-          </li>
-          <li className="main-nav-link">PORTFOLIO</li>
-          <li className="main-nav-link">MORE</li>
-        </ul>
-      </nav>
-    </>
+    <nav id="main-nav">
+      <button id="menu-button" onClick={showMenu}>
+        <img src="images/hamburger.png" alt="Menu" id="burger" />
+        MENU
+      </button>
+      <div id="menu-separator"></div>
+      <ul className="nav-list" id="main-nav-list">
+        <li className="main-nav-link">
+          <a href="/home" className="main-nav-anchor">HOME</a>
+        </li>
+        <li className="main-nav-link">
+          <a href="/about" className="main-nav-anchor">ABOUT</a>
+        </li>
+        <li className="main-nav-link">PORTFOLIO</li>
+        <li className="main-nav-link">MORE</li>
+      </ul>
+    </nav>
   );
 }
