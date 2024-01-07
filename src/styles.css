@@ -237,12 +237,20 @@ body {
 }
 
 .page-header {
-  background-color: red;
-  margin-left: 10em;
-  margin-right: 10em;
+  background-color: #3D3D3D;
+  border-radius: 1em;
+  width: 15em;
+  height: 8em;
+  display: flex;
+  margin: auto;
+  margin-top: 1em;
+  justify-content: center;
+  /* Centers text vertically within the div */
+  align-items: center;
+
 }
 
 .page-title {
+  font-size: 3.5em;
   text-align: center;
-  font-size: 4em;
 }
