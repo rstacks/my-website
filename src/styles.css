@@ -215,3 +215,21 @@ body {
   text-align: center;
   font-size: 1.5em;
 }
+
+.page-title {
+  text-align: center;
+  font-size: 4em;
+  background-color: #3D3D3D;
+  margin-left: 10em;
+  margin-right: 10em;
+  border-radius: 0.25em;
+}
+
+#about-text {
+  background-color: #3D3D3D;
+  margin-left: 15em;
+  margin-right: 15em;
+  padding: 1em;
+  font-size: 1.5em;
+  border-radius: 0.75em;
+}
