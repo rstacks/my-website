@@ -243,7 +243,7 @@ body {
   height: 8em;
   display: flex;
   margin: auto;
-  margin-top: 1em;
+  margin-top: 2em;
   justify-content: center;
   /* Centers text vertically within the div */
   align-items: center;

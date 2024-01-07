@@ -19,17 +19,19 @@ export function About() {
         <p id="about-text">
           Howdy! As I'm sure you've gathered, I'm Robert, a sophomore computer science
           major at Texas A&M University. Here are some quick facts about me:
-          <ul>
-            <li>I'm a computer science teaching assistant and peer teacher</li>
-            <li>I like coding</li>
-            <li>I like hacking (ethically)</li>
-          </ul>
-          - 
-          - 
-          - 
+        </p>
+        
+        <ul>
+          <li>I'm a computer science teaching assistant and peer teacher</li>
+          <li>I like coding</li>
+          <li>I like hacking (ethically)</li>
+        </ul>
+           
+           
+           
 
           
-
+        <p>
           If you're interested in learning more, have a look around!
 
           link
