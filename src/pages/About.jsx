@@ -11,33 +11,22 @@ export function About() {
         <link rel="icon" href="images/newest-resume-icon.ico" />
       </Helmet>
       <Nav />
-      <main>
-        {/**
-         * <h1 className="page-title">ABOUT</h1>
-         */}
-        <Header text="ABOUT" />
-        <p id="about-text">
+      <Header text="ABOUT" />
+      <main className="article-body">
+        <p>
           Howdy! As I'm sure you've gathered, I'm Robert, a sophomore computer science
           major at Texas A&M University. Here are some quick facts about me:
         </p>
-        
         <ul>
           <li>I'm a computer science teaching assistant and peer teacher</li>
           <li>I like coding</li>
           <li>I like hacking (ethically)</li>
         </ul>
-           
-           
-           
-
-          
         <p>
-          If you're interested in learning more, have a look around!
-
-          link
-          Here's some more quick facts:
-
+          If you're interested in learning more, have a look around! I bet
+          you'll find something cool.
         </p>
+        <p>read more</p>
       </main>
       <Footer />
     </HelmetProvider>

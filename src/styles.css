@@ -217,16 +217,6 @@ body {
 }
 
 /*
-.page-title {
-  text-align: center;
-  font-size: 4em;
-  background-color: #3D3D3D;
-  margin-left: 10em;
-  margin-right: 10em;
-  border-radius: 0.25em;
-}
-*/
-
 #about-text {
   background-color: #3D3D3D;
   margin-left: 15em;
@@ -235,6 +225,7 @@ body {
   font-size: 1.5em;
   border-radius: 0.75em;
 }
+*/
 
 #page-header {
   background-color: #3D3D3D;
@@ -253,4 +244,17 @@ body {
 #page-title {
   font-size: 3.5em;
   text-align: center;
+}
+
+.article-body {
+  background-color: #3D3D3D;
+  font-size: 1.5em;
+  width: 45em;
+  margin: auto;
+  justify-content: center;
+  border-radius: 1em;
+  padding: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1.5em;
 }
