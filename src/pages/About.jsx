@@ -26,7 +26,13 @@ export function About() {
           If you're interested in learning more, have a look around! I bet
           you'll find something cool.
         </p>
-        <p>read more</p>
+        <button id="read-more-button">
+          Read More
+        </button>
+        <hr />
+        <h2>Q&A With Robert</h2>
+        <h3>dogs or cat?</h3>
+        <p>both, if possible</p>
       </main>
       <Footer />
     </HelmetProvider>
