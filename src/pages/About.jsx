@@ -31,8 +31,12 @@ export function About() {
         </button>
         <hr />
         <h2>Q&A With Robert</h2>
-        <h3>dogs or cat?</h3>
-        <p>both, if possible</p>
+        <ol>
+          <li>
+            <p>favorite color?</p>
+            <p>blue</p>
+          </li>
+        </ol>
       </main>
       <Footer />
     </HelmetProvider>
