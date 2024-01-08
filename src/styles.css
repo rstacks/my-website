@@ -249,12 +249,19 @@ body {
 .article-body {
   background-color: #3D3D3D;
   font-size: 1.5em;
-  width: 45em;
+  max-width: 45em;
+  width: 70vw;
   margin: auto;
   justify-content: center;
   border-radius: 1em;
   padding: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   margin-top: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+  .article-body {
+    font-size: 4vw;
+  }
 }
