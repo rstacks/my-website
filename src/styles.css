@@ -279,4 +279,21 @@ hr {
   max-width: 2em;
   margin-top: 0;
   margin-bottom: 1.5em;
+  display: none;
+}
+
+#qa-header {
+  display: none;
+}
+
+#qa-list {
+  display: none;
+}
+
+.qa-item {
+  margin-bottom: 1.5em;
+}
+
+.question {
+  font-weight: bolder;
 }
