@@ -11,6 +11,12 @@ export function Portfolio() {
         <link rel="icon" href="images/quals-icon.ico" />
       </Helmet>
       <Nav />
+      <Header text="PORTFOLIO" />
+      <main>
+        <header className="portfolio-dropdown">
+          <h1>+ Projects</h1>
+        </header>
+      </main>
 
       <Footer />
     </HelmetProvider>
