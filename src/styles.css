@@ -109,11 +109,13 @@ body {
 }
 
 /* Hover and click actions for all links */
-.social-nav-link:hover, .main-nav-anchor:hover, #menu-button:hover {
+.social-nav-link:hover, .main-nav-anchor:hover, #menu-button:hover,
+  #projects-button:hover {
   opacity: 70%;
   cursor: pointer;
 }
-.social-nav-link:active, .main-nav-anchor:active, #menu-button:active {
+.social-nav-link:active, .main-nav-anchor:active, #menu-button:active,
+  #projects-button:active {
   opacity: 30%;
 }
 
@@ -292,22 +294,6 @@ hr {
   font-weight: bolder;
 }
 
-/*
-.article-body {
-  background-color: #3D3D3D;
-  font-size: 1.5em;
-  max-width: 45em;
-  width: 70vw;
-  margin: auto;
-  justify-content: center;
-  border-radius: 1em;
-  padding: 2em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  margin-top: 1.5em;
-}
-*/
-
 .portfolio-dropdown {
   background-color: #3D3D3D;
   font-size: 1em;
@@ -319,7 +305,17 @@ hr {
   padding: 2em;
   padding-top: 0.01em;
   padding-bottom: 0.01em;
-  margin-top: 1.5em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+#projects-button {
+  background: none;
+  border-style: none;
+  font-family: 'Rubik', 'Trebuchet MS', sans-serif;
+  color: #FFFFF0;
+  font-size: 1em;
+  transition: opacity 100ms;
 }
 
 @media screen and (max-width: 600px) {
@@ -330,4 +326,12 @@ hr {
   .portfolio-dropdown {
     font-size: 0.7em;
   }
+}
+
+#project1 {
+  display: none;
+}
+
+#project2 {
+  display: none;
 }
