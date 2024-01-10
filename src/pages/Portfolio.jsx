@@ -23,17 +23,15 @@ export function Portfolio() {
           this website's appearance, which gave me some experience with React and
           responsive web design." techs="HTML, CSS, JavaScript, React"
           github="https://github.com/rstacks/my-website" />
+          
+        <ProjectEntry title="Maroon Engine" imageSrc="images/maroon-engine-example.gif"
+          imageAlt="Maroon Engine Image" text="A 2D side-scrolling game engine developed
+          as a results-focused project for the Aggie Coding Club. I joined a team of 13
+          students, and we each contributed to this project in our free time over the course
+          of three months. I assisted with the implementation of player collision
+          and enemy tracking behavior." techs="C, C++, OpenGL"
+          github="https://github.com/aggie-coding-club/maroon-engine" />
 
-        
-
-        <article className="project-entry">
-          <h2>Maroon Engine</h2>
-          <img src="images/maroon-engine-example.gif" alt="Maroon Engine Image" />
-          <p>
-            Lobortis scelerisque fermentum dui faucibus in ornare. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Ut consequat semper viverra nam libero justo laoreet. Tempus quam pellentesque nec nam aliquam sem et tortor. Pulvinar mattis nunc sed blandit libero volutpat. Cras adipiscing enim eu turpis egestas pretium aenean pharetra magna. Tincidunt ornare massa eget egestas. Id leo in vitae turpis massa. Tristique et egestas quis ipsum suspendisse ultrices. Vel quam elementum pulvinar etiam. Leo a diam sollicitudin tempor id eu. Dui ut ornare lectus sit amet.
-          </p>
-          <a href="https://github.com/aggie-coding-club/maroon-engine" target="_blank">View on GitHub</a>
-        </article>
         <PortfolioDropdown text="Certifications" items="cert-entry" />
         <article className="cert-entry">
           <p>
