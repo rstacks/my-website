@@ -110,12 +110,12 @@ body {
 
 /* Hover and click actions for links and buttons */
 .social-nav-link:hover, .main-nav-anchor:hover, #menu-button:hover,
-  #Projects:hover {
+  #Projects:hover, #Certifications:hover {
   opacity: 70%;
   cursor: pointer;
 }
 .social-nav-link:active, .main-nav-anchor:active, #menu-button:active,
-  #Projects:active {
+  #Projects:active, #Certifications:active {
   opacity: 30%;
 }
 
@@ -237,7 +237,7 @@ body {
   text-align: center;
 }
 
-.article-body, .project-entry {
+.article-body, .project-entry, .cert-entry {
   background-color: #3D3D3D;
   font-size: 1.5em;
   max-width: 45em;
@@ -309,7 +309,7 @@ hr {
   margin-bottom: 1em;
 }
 
-#Projects {
+#Projects, #Certifications {
   background: none;
   border-style: none;
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
@@ -318,12 +318,12 @@ hr {
   transition: opacity 100ms;
 }
 
-.project-entry {
+.project-entry, .cert-entry {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-  .article-body, .project-entry {
+  .article-body, .project-entry, .cert-entry {
     font-size: 4vw;
   }
 
