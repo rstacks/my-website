@@ -237,7 +237,7 @@ body {
   text-align: center;
 }
 
-.article-body {
+.article-body, .project-entry {
   background-color: #3D3D3D;
   font-size: 1.5em;
   max-width: 45em;
@@ -318,20 +318,16 @@ hr {
   transition: opacity 100ms;
 }
 
+.project-entry {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
-  .article-body {
+  .article-body, .project-entry {
     font-size: 4vw;
   }
 
   .portfolio-dropdown {
     font-size: 2.5vw;
   }
-}
-
-#project1 {
-  display: none;
-}
-
-#project2 {
-  display: none;
 }
