@@ -110,12 +110,12 @@ body {
 
 /* Hover and click actions for links and buttons */
 .social-nav-link:hover, .main-nav-anchor:hover, #menu-button:hover,
-  #Projects:hover, #Certifications:hover {
+  #Projects:hover, #Certifications:hover, .project-entry a:hover {
   opacity: 70%;
   cursor: pointer;
 }
 .social-nav-link:active, .main-nav-anchor:active, #menu-button:active,
-  #Projects:active, #Certifications:active {
+  #Projects:active, #Certifications:active, .project-entry a:active {
   opacity: 30%;
 }
 
@@ -229,7 +229,6 @@ body {
   justify-content: center;
   /* Centers text vertically within the div */
   align-items: center;
-
 }
 
 #page-title {
@@ -326,8 +325,30 @@ hr {
   text-decoration: underline;
 }
 
+.project-entry section {
+  display: flex;
+}
+
 .project-entry img {
   width: 10em;
+  height: 9.8402em;
+  margin-right: 1em;
+}
+
+.project-entry p {
+  margin-bottom: 0;
+}
+
+.project-entry a {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border-style: solid;
+  color: #FFFFF0;
+  text-decoration: none;
+  border-radius: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  transition: opacity 100ms;
 }
 
 @media screen and (max-width: 600px) {

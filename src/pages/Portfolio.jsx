@@ -17,11 +17,18 @@ export function Portfolio() {
         <PortfolioDropdown text="Projects" items="project-entry" />
         <article className="project-entry">
           <h2>Personal Website</h2>
-          <img src="images/new-site-image.jpg" alt="Website Image" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames ac. Sodales neque sodales ut etiam sit amet nisl purus in. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Sem viverra aliquet eget sit. Viverra tellus in hac habitasse platea dictumst vestibulum. Augue interdum velit euismod in pellentesque.
-          </p>
-          <a href="https://github.com/rstacks/my-website" target="_blank">View on GitHub</a>
+          <section>
+            <img src="images/new-site-image.jpg" alt="Website Image" />
+            <p>
+              This very website was built by me from scratch! Putting
+              this website together taught me the basics of React and
+              responsive web design.
+            </p>
+          </section>
+          <p>Technologies used: HTML, CSS, JavaScript, React</p>
+          <section>
+            <a href="https://github.com/rstacks/my-website" target="_blank">View on GitHub</a>
+          </section>
         </article>
         <article className="project-entry">
           <h2>Maroon Engine</h2>
