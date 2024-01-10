@@ -322,6 +322,14 @@ hr {
   display: none;
 }
 
+.project-entry h2 {
+  text-decoration: underline;
+}
+
+.project-entry img {
+  width: 10em;
+}
+
 @media screen and (max-width: 600px) {
   .article-body, .project-entry, .cert-entry {
     font-size: 4vw;
