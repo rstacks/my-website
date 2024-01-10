@@ -20,8 +20,10 @@ export function Portfolio() {
           <section>
             <img src="images/new-site-image.jpg" alt="Website Image" />
             <p>
-              This very website was built by me from scratch! Putting
-              this website together taught me the basics of React and
+              This very website was built by me from scratch! My experience 
+              in web development was essentially nonexistent when I began this project,
+              and I'm happy with how things turned out. I recently redesigned 
+              this website's appearance, which introduced me to the basics of React and
               responsive web design.
             </p>
           </section>
