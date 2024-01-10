@@ -1,29 +1,10 @@
 import { Helmet, HelmetProvider } from "react-helmet-async"
 import { Nav } from "../components/Nav"
 import { Header } from "../components/Header"
+import { PortfolioDropdown } from "../components/PortfolioDropdown"
 import { Footer } from "../components/Footer"
 
 export function Portfolio() {
-  // Shows or hides content when a dropdown button is used
-  function dropdownButton(buttonName) {
-    // Get HTML tags to show or hide
-    const project1 = document.getElementById("project1");
-    const project2 = document.getElementById("project2");
-
-    if (buttonName === "projects") {
-      const button = document.getElementById("projects-button");
-      if (button.innerHTML != "<h1>- Projects</h1>") {
-        button.innerHTML = "<h1>- Projects</h1>";
-        project1.style.display = "block";
-        project2.style.display = "block";
-      } else {
-        button.innerHTML = "<h1>+ Projects</h1>";
-        project1.style.display = "none";
-        project2.style.display = "none";
-      }
-    }
-  }
-  
   return (
     <HelmetProvider>
       <Helmet>
@@ -33,13 +14,7 @@ export function Portfolio() {
       <Nav />
       <Header text="PORTFOLIO" />
       <main>
-        <header className="portfolio-dropdown">
-          <button id="projects-button" onClick={() => {
-            dropdownButton("projects");
-          }}>
-            <h1>+ Projects</h1>
-          </button>
-        </header>
+        <PortfolioDropdown text="Projects" items="article-body" />
         <article className="article-body" id="project1">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames ac. Sodales neque sodales ut etiam sit amet nisl purus in. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Sem viverra aliquet eget sit. Viverra tellus in hac habitasse platea dictumst vestibulum. Augue interdum velit euismod in pellentesque.
