@@ -3,6 +3,7 @@ import { Nav } from "../components/Nav"
 import { Header } from "../components/Header"
 import { PortfolioDropdown } from "../components/PortfolioDropdown"
 import { ProjectEntry } from "../components/ProjectEntry"
+import { CertEntry } from "../components/CertEntry"
 import { Footer } from "../components/Footer"
 
 export function Portfolio() {
@@ -23,7 +24,7 @@ export function Portfolio() {
           this website's appearance, which gave me some experience with React and
           responsive web design." techs="HTML, CSS, JavaScript, React"
           github="https://github.com/rstacks/my-website" />
-          
+
         <ProjectEntry title="Maroon Engine" imageSrc="images/maroon-engine-example.gif"
           imageAlt="Maroon Engine Image" text="A 2D side-scrolling game engine developed
           as a results-focused project for the Aggie Coding Club. I joined a team of 13

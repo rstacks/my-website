@@ -110,12 +110,14 @@ body {
 
 /* Hover and click actions for links and buttons */
 .social-nav-link:hover, .main-nav-anchor:hover, #menu-button:hover,
-  #Projects:hover, #Certifications:hover, .project-entry a:hover {
+  #Projects:hover, #Certifications:hover, .project-entry a:hover,
+  .cert-entry a:hover {
   opacity: 70%;
   cursor: pointer;
 }
 .social-nav-link:active, .main-nav-anchor:active, #menu-button:active,
-  #Projects:active, #Certifications:active, .project-entry a:active {
+  #Projects:active, #Certifications:active, .project-entry a:active,
+  .cert-entry a:active {
   opacity: 30%;
 }
 
@@ -321,7 +323,7 @@ hr {
   display: none;
 }
 
-.project-entry h2 {
+.project-entry h2, .cert-entry h2 {
   text-decoration: underline;
 }
 
@@ -335,7 +337,13 @@ hr {
   margin-right: 1em;
 }
 
-.project-entry p {
+.cert-entry img {
+  width: 10em;
+  height: 10em;
+  margin-right: 1em;
+}
+
+.project-entry p, .cert-entry p {
   margin-bottom: 0;
 }
 
@@ -343,7 +351,7 @@ hr {
   text-decoration: underline;
 }
 
-.project-entry a {
+.project-entry a, .cert-entry a {
   margin-top: 0.5em;
   margin-bottom: 1em;
   border-style: solid;
@@ -381,7 +389,7 @@ hr {
     font-size: 1em;
   }
 
-  .project-entry img {
+  .project-entry img, .cert-entry img {
     display: flex;
     margin: auto;
   }
