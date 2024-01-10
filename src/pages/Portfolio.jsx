@@ -17,18 +17,18 @@ export function Portfolio() {
         <PortfolioDropdown text="Projects" items="project-entry" />
         <article className="project-entry">
           <h2>Personal Website</h2>
-          <section>
+          <section className="project-desc">
             <img src="images/new-site-image.jpg" alt="Website Image" />
-            <p>
+            <p className="project-paragraph">
               This very website was built by me from scratch! My experience 
               in web development was essentially nonexistent when I began this project,
               and I'm happy with how things turned out. I recently redesigned 
-              this website's appearance, which introduced me to the basics of React and
+              this website's appearance, which gave me some experience with React and
               responsive web design.
             </p>
           </section>
-          <p>Technologies used: HTML, CSS, JavaScript, React</p>
-          <section>
+          <p><span className="tech-list">Technologies used</span>: HTML, CSS, JavaScript, React</p>
+          <section className="project-github">
             <a href="https://github.com/rstacks/my-website" target="_blank">View on GitHub</a>
           </section>
         </article>

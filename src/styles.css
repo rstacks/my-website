@@ -325,7 +325,7 @@ hr {
   text-decoration: underline;
 }
 
-.project-entry section {
+.project-github, .project-desc {
   display: flex;
 }
 
@@ -339,6 +339,10 @@ hr {
   margin-bottom: 0;
 }
 
+.tech-list {
+  text-decoration: underline;
+}
+
 .project-entry a {
   margin-top: 0.5em;
   margin-bottom: 1em;
@@ -346,6 +350,7 @@ hr {
   color: #FFFFF0;
   text-decoration: none;
   border-radius: 1em;
+  border-width: 0.11em;
   padding-left: 0.5em;
   padding-right: 0.5em;
   transition: opacity 100ms;
@@ -358,5 +363,26 @@ hr {
 
   .portfolio-dropdown {
     font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .project-paragraph {
+    font-size: 1.95vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .project-desc {
+    display: inline;
+  }
+
+  .project-paragraph {
+    font-size: 1em;
+  }
+
+  .project-entry img {
+    display: flex;
+    margin: auto;
   }
 }
