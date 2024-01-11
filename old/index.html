@@ -1,0 +1,169 @@
+<!-- Home Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon inclusion -->
+  <link rel="icon" href="images/favicon.ico">
+  <title>Home | Robert Stacks</title>
+  <!-- Using a non-web safe font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Page header -->
+  <header id="page-head">
+    <!-- Name and info; clicking will link back to homepage -->
+    <a href="index.html">
+      <div id="page-head-name">
+        <h1 id="header-name">Robert Stacks</h1>
+        <h2 id="tagline">Computer Science @ Texas A&M University</h2>
+      </div>
+    </a>
+    
+    <!-- Links to external content -->
+    <nav id="header-links">
+      <a href="https://www.linkedin.com/in/robert-stacks/" target="_blank"
+        id="in-link">
+        <img src="images/legal-in-logo.png" alt="LinkedIn Bug"
+          id="in-logo">
+      </a>
+      <!-- Link separators allow the link images to be displayed side by side -->
+      <div class="link-separator"></div>
+      <a href="https://github.com/rstacks" target="_blank"
+        id="github-link">
+        <img src="images/legal-github-logo.png" alt="GitHub Logo"
+          id="github-logo">
+      </a>
+      <div class="link-separator"></div>
+      <a href="contact.html" id="contact-link">
+        <img src="images/improved_mail_icon.png" alt="Mail Icon"
+          id="mail-icon">
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main nav bar -->
+  <nav id="main-nav">
+    <a href="index.html" id="home-button">
+      HOME
+    </a>
+    <a href="resume.html" id="resume-button">
+      RESUME
+    </a>
+    <!-- Special character indicates hyphen when text overflows -->
+    <a href="qualifications.html" id="qual-button">
+      QUALIFICA&shy;TIONS
+    </a>
+    <a href="contact.html" id="contact-button">
+      CONTACT
+    </a>
+  </nav>
+
+  <!-- Contains all page elements beneath the header -->
+  <main>
+    <!-- Div for my about me section -->
+    <article id="about-me">
+      <!-- Personal photograph -->
+      <figure id="my-photo">
+        <img src="images/circular_me.png" alt="Robert Stacks Photo"
+          id="my-photo-img-tag">
+      </figure>
+  
+      <!-- Text for my about me section -->
+      <div class="article-text">
+        <p>
+          Howdy! Welcome to my website. I am a sophomore computer science
+          major at Texas A&M University. Engineering has always been an
+          integral part of my life, and it is important to me that I continue
+          to hone my skills by challenging myself both within and beyond
+          the classroom. I hope to share my efforts with you here.
+        </p>
+        <p class="ending-paragraph">
+          In addition to providing general information about me,
+          this website serves as a repository of my personal accomplishments
+          and endeavors. Feel free to explore my pages using the navigation
+          bar above. My goal is for you to have a good idea of what I
+          am capable of by the end of your visit.
+        </p>
+        <!-- Additional information, hidden by button -->
+        <button type="button" id="read-more-button" onclick="readMore()">
+          Read more
+        </button>
+        <section id="more-about-me">
+          <hr id="content-separator">
+          <h2 id="more-about-me-header">A Little More About Me</h2>
+          <h3 class="about-me-subheading">Background</h3>
+          <p>
+            I was born and raised in The Woodlands, Texas. My father
+            spent most of his life in Texas, too, but my mother hails
+            from Thailand. This, of course, makes me half Thai! My
+            family and I visit Thailand often to spend time with
+            relatives.
+          </p>
+          <p>
+            I attended the Academy of Science and Technology at The
+            Woodlands College Park High School. I competed in science
+            fairs throughout my time there, earning several awards
+            along the way. The process of developing research
+            projects and presenting them to teachers, peers, and
+            industry professionals was grueling at times, but I
+            consider science fair to be one of my most valuable
+            academic experiences.
+          </p>
+          <p>
+            I was always intrigued by technology, but taking
+            computer science electives in high school and incorporating
+            that knowledge into some of my science fair projects are
+            what solidified my choice to pursue further study in the
+            field. Now, as a college student, I am excited to build my
+            skills and apply them in the real world.
+          </p>
+          <h3 class="about-me-subheading">Hobbies</h3>
+          <p>
+            I started playing the trombone in intermediate school, and 
+            I have yet to put my horn down. I was a member of my high
+            school's wind ensemble and a section leader in our marching
+            band. Today, I play the trombone for the University Symphonic
+            Band at Texas A&M.
+          </p>
+          <p class="ending-paragraph">
+            Beyond that, I enjoy editing videos (usually skits starring
+            me and/or my friends) and finishing 3D printed models. I
+            recently finished painting a clone trooper helmet from Star 
+            Wars that I am quite proud of.
+          </p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <!-- Page footer -->
+  <footer>
+    <div id="footer-separator"></div>
+    <p id="attribution">Favicon designed by 
+      <a href="https://openmoji.org/" target="_blank"
+        id="openmoji-links">
+        OpenMoji
+      </a>
+      — the open-source
+      emoji and icon project. License:
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/#"
+        target="_blank" id="openmoji-links">
+        CC BY-SA 4.0
+      </a>
+    </p>
+  </footer>
+
+  <!-- Load JS -->
+  <script src="app.js"></script>
+</body>
+
+</html>
