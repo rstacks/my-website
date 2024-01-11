@@ -2,13 +2,14 @@ import { Helmet, HelmetProvider } from "react-helmet-async"
 import { Nav } from "../components/Nav"
 import { Socials } from "../components/Socials"
 import { Footer } from "../components/Footer"
+import faviconUrl from "../favicons/favicon.ico"
 
 export function Home() {
   return (
     <HelmetProvider>
       <Helmet>
         <title>Home | Robert Stacks</title>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href={faviconUrl} />
       </Helmet>
       <Nav />
       <main>

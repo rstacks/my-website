@@ -2,6 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async"
 import { Nav } from "../components/Nav"
 import { Header } from "../components/Header"
 import { Footer } from "../components/Footer"
+import faviconUrl from "../favicons/newest-resume-icon.ico"
 
 export function About() {
   // Shows or hides additional content on this page
@@ -29,7 +30,7 @@ export function About() {
     <HelmetProvider>
       <Helmet>
         <title>About | Robert Stacks</title>
-        <link rel="icon" href="/images/newest-resume-icon.ico" />
+        <link rel="icon" href={faviconUrl} />
       </Helmet>
       <Nav />
       <Header text="ABOUT" />
