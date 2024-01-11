@@ -1,7 +1,13 @@
 export function CertEntry(props) {
+  // Displays additional text if cert is still in progress
+  let inProgress = "";
+  if (props.inProgress === "true") {
+    inProgress = "IN PROGRESS: ";
+  }
+  
   return (
     <article className="cert-entry">
-      <h2>{props.title}</h2>
+      <h2><span>{inProgress}</span>{props.title}</h2>
       <section className="project-desc">
         <img src={props.imageSrc} alt={props.imageAlt} />
         <p className="project-paragraph">

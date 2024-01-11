@@ -44,6 +44,14 @@ export function Portfolio() {
           in cybersecurity."
           link="https://www.giac.org/certifications/foundational-cybersecurity-technologies-gfact/" 
           issuingOrg="GIAC" />
+
+        <CertEntry title="CompTIA Security+" 
+          imageSrc="images/logosecurityplus-adjusted.png"
+          imageAlt="Security Plus Image" text="CompTIA Security+ is a global
+          certification that validates the baseline skills necessary to
+          perform core security functions and pursue an IT security career."
+          link="https://www.comptia.org/certifications/security"
+          issuingOrg="CompTIA" inProgress="true" />
       </main>
       <Footer />
     </HelmetProvider>

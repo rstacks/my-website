@@ -327,6 +327,10 @@ hr {
   text-decoration: underline;
 }
 
+.cert-entry span {
+  font-style: italic;
+}
+
 .project-github, .project-desc {
   display: flex;
 }
