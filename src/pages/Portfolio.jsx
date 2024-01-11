@@ -34,11 +34,16 @@ export function Portfolio() {
           github="https://github.com/aggie-coding-club/maroon-engine" />
 
         <PortfolioDropdown text="Certifications" items="cert-entry" />
-        <article className="cert-entry">
-          <p>
-            Be me shall purse my ought times. Joy years doors all would again rooms these. Solicitude announcing as to sufficient my. No my reached suppose proceed pressed perhaps he. Eagerness it delighted pronounce repulsive furniture no. Excuse few the remain highly feebly add people manner say. It high at my mind by roof. No wonder worthy in dinner.
-          </p>
-        </article>
+        <CertEntry title="GIAC Foundational Cybersecurity Technologies (GFACT)"
+          imageSrc="images/GFACT.png" imageAlt="GFACT Image"
+          text="The GIAC Foundational Cybersecurity Technologies (GFACT)
+          certification validates a practitioner's knowledge of essential
+          foundational cybersecurity concepts. GFACT-certified professionals
+          are familiar with practical skills in computers, technology,
+          and security fundamentals that are needed to kickstart a career
+          in cybersecurity."
+          link="https://www.giac.org/certifications/foundational-cybersecurity-technologies-gfact/" 
+          issuingOrg="GIAC" />
       </main>
       <Footer />
     </HelmetProvider>

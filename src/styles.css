@@ -364,6 +364,10 @@ hr {
   transition: opacity 100ms;
 }
 
+.cert-entry a {
+  margin-top: 1em;
+}
+
 @media screen and (max-width: 600px) {
   .article-body, .project-entry, .cert-entry {
     font-size: 4vw;
