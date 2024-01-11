@@ -11,13 +11,13 @@ export function Portfolio() {
     <HelmetProvider>
       <Helmet>
         <title>Portfolio | Robert Stacks</title>
-        <link rel="icon" href="images/quals-icon.ico" />
+        <link rel="icon" href="../../images/quals-icon.ico" />
       </Helmet>
       <Nav />
       <Header text="PORTFOLIO" />
       <main>
         <PortfolioDropdown text="Projects" items="project-entry" />
-        <ProjectEntry title="Personal Website" imageSrc="images/new-site-image.jpg"
+        <ProjectEntry title="Personal Website" imageSrc="../../images/new-site-image.jpg"
           imageAlt="Website Image" text="This very website was built by me from scratch!
           My experience in web development was essentially nonexistent when I began
           this project, and I'm happy with how things turned out. I recently redesigned 
@@ -25,7 +25,7 @@ export function Portfolio() {
           responsive web design." techs="HTML, CSS, JavaScript, React"
           github="https://github.com/rstacks/my-website" />
 
-        <ProjectEntry title="Maroon Engine" imageSrc="images/maroon-engine-example.gif"
+        <ProjectEntry title="Maroon Engine" imageSrc="../../images/maroon-engine-example.gif"
           imageAlt="Maroon Engine Image" text="A 2D side-scrolling game engine developed
           as a results-focused project for the Aggie Coding Club. I joined a team of 13
           students, and we each contributed to this project in our free time over the course
@@ -35,7 +35,7 @@ export function Portfolio() {
 
         <PortfolioDropdown text="Certifications" items="cert-entry" />
         <CertEntry title="GIAC Foundational Cybersecurity Technologies (GFACT)"
-          imageSrc="images/GFACT.png" imageAlt="GFACT Image"
+          imageSrc="../../images/GFACT.png" imageAlt="GFACT Image"
           text="The GIAC Foundational Cybersecurity Technologies (GFACT)
           certification validates a practitioner's knowledge of essential
           foundational cybersecurity concepts. GFACT-certified professionals
@@ -46,7 +46,7 @@ export function Portfolio() {
           issuingOrg="GIAC" />
 
         <CertEntry title="CompTIA Security+" 
-          imageSrc="images/logosecurityplus-adjusted.png"
+          imageSrc="../../images/logosecurityplus-adjusted.png"
           imageAlt="Security Plus Image" text="CompTIA Security+ is a global
           certification that validates the baseline skills necessary to
           perform core security functions and pursue an IT security career."

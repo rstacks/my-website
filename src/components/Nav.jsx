@@ -55,7 +55,7 @@ export function Nav() {
   return (
     <nav id="main-nav">
       <button id="menu-button" onClick={showMenu}>
-        <img src="images/hamburger.png" alt="Menu" id="burger" />
+        <img src="../../images/hamburger.png" alt="Menu" id="burger" />
         MENU
       </button>
       <div id="menu-separator"></div>

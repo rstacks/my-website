@@ -29,7 +29,7 @@ export function About() {
     <HelmetProvider>
       <Helmet>
         <title>About | Robert Stacks</title>
-        <link rel="icon" href="images/newest-resume-icon.ico" />
+        <link rel="icon" href="../../images/newest-resume-icon.ico" />
       </Helmet>
       <Nav />
       <Header text="ABOUT" />
