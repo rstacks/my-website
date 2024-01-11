@@ -8,7 +8,7 @@ export function More() {
     <HelmetProvider>
       <Helmet>
         <title>More | Robert Stacks</title>
-        <link rel="icon" href="../../images/more-page-icon.ico" />
+        <link rel="icon" href="/images/more-page-icon.ico" />
       </Helmet>
       <Nav />
       <Header text="MORE" />
@@ -19,7 +19,7 @@ export function More() {
           check out this 3D printed clone trooper helmet from Star Wars that
           I recently finished!
         </p>
-        <img src="../../images/jesse-helmet.JPG" alt="Clone Trooper Helmet" id="jesse-img" />
+        <img src="/images/jesse-helmet.JPG" alt="Clone Trooper Helmet" id="jesse-img" />
       </main>
       <Footer />
     </HelmetProvider>

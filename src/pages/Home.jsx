@@ -8,11 +8,11 @@ export function Home() {
     <HelmetProvider>
       <Helmet>
         <title>Home | Robert Stacks</title>
-        <link rel="icon" href="../../images/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Helmet>
       <Nav />
       <main>
-        <img src="../../images/circular_me.png" alt="Robert Stacks Photo" 
+        <img src="/images/circular_me.png" alt="Robert Stacks Photo" 
           id="my-photo" />
         <h1 id="name-tag">Robert Stacks</h1>
         <h2 id="tagline">Computer Science @ Texas A&M University</h2>
