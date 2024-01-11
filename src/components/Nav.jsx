@@ -69,7 +69,9 @@ export function Nav() {
         <li className="main-nav-link">
           <a href="/portfolio" className="main-nav-anchor">PORTFOLIO</a>
         </li>
-        <li className="main-nav-link">MORE</li>
+        <li className="main-nav-link">
+          <a href="/more" className="main-nav-anchor">MORE</a>
+        </li>
       </ul>
     </nav>
   );
