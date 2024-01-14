@@ -13,7 +13,7 @@ export function More() {
       </Helmet>
       <Nav />
       <Header text="MORE" />
-      <main className="article-body">
+      <main className="article-body" id="more-for-now">
         <p>
           This is where I'll post additional stuff about me that doesn't 
           fit elsewhere. I currently don't have much to show, but for now, 
