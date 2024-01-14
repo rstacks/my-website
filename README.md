@@ -4,7 +4,7 @@
 
 ## Description
 This repo contains the source code for my personal homepage and portfolio, built from scratch by me,
-Robert Stacks, using vanilla HTML, CSS, and JavaScript. Feel free to have a look around and explore this repo's history.
+Robert Stacks. Feel free to have a look around and explore this repo's history.
 
 ## Downloading This Repo
 You are free to download the contents of this repo for any purpose. No additional modules, packages,
