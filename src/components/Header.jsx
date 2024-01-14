@@ -28,16 +28,18 @@ export function Header(props) {
   });
   */
 
-  let resourcesLoading = true;
-  while (resourcesLoading) {
-    if (document.readyState === "complete") {
-      const pageHeader = document.getElementById("page-header");
-      pageHeader.style.width = String(props.text.length * 3.2) + "em";
-      changeWidth(mediaQuery);
-      // Break loop
-      resourcesLoading = false;
+  setTimeout(() => {
+    let resourcesLoading = true;
+    while (resourcesLoading) {
+      if (document.readyState === "complete") {
+        const pageHeader = document.getElementById("page-header");
+        pageHeader.style.width = String(props.text.length * 3.2) + "em";
+        changeWidth(mediaQuery);
+        // Break loop
+        resourcesLoading = false;
+      }
     }
-  }
+  }, 500);
 
   return (
     <header id="page-header">

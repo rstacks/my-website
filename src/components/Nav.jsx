@@ -54,19 +54,20 @@ export function Nav() {
   });
   */
   
-
-  let resourcesLoading = true;
-  while (resourcesLoading) {
-    if (document.readyState === "complete") {
-      const menuList = document.getElementById("main-nav-list");
-      // Only hide dropdown on small screens
-      if (mediaQuery.matches) {
-        menuList.style.display = "none";
+  setTimeout(() => {
+    let resourcesLoading = true;
+    while (resourcesLoading) {
+      if (document.readyState === "complete") {
+        const menuList = document.getElementById("main-nav-list");
+        // Only hide dropdown on small screens
+        if (mediaQuery.matches) {
+          menuList.style.display = "none";
+        }
+        // Break loop
+        resourcesLoading = false;
       }
-      // Break loop
-      resourcesLoading = false;
     }
-  }
+  }, 500);
 
   return (
     <nav id="main-nav">
