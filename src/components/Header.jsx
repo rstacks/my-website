@@ -28,6 +28,7 @@ export function Header(props) {
   });
   */
 
+  /*
   setTimeout(() => {
     let resourcesLoading = true;
     while (resourcesLoading) {
@@ -40,6 +41,18 @@ export function Header(props) {
       }
     }
   }, 500);
+  */
+
+  let loadOperationsDone = {bool: false};
+
+  setInterval(() => {
+    if (!(loadOperationsDone.bool) && document.readyState === "complete") {
+      const pageHeader = document.getElementById("page-header");
+      pageHeader.style.width = String(props.text.length * 3.2) + "em";
+      changeWidth(mediaQuery);
+      loadOperationsDone.bool = true;
+    }
+  }, 10);
 
   return (
     <header id="page-header">

@@ -54,6 +54,7 @@ export function Nav() {
   });
   */
   
+  /*
   setTimeout(() => {
     let resourcesLoading = true;
     while (resourcesLoading) {
@@ -68,6 +69,30 @@ export function Nav() {
       }
     }
   }, 500);
+  */
+
+  /*
+  function stopStateCheck(loadOpsDone, intervalId) {
+    if (loadOpsDone.bool) {
+      clearInterval(intervalId);
+      loadOpsDone.bool = true;
+    }
+  }
+  */
+
+  // Object that tracks whether page has loaded and dropdown has been hidden
+  let loadOperationsDone = {bool: false};
+
+  setInterval(() => {
+    if (!(loadOperationsDone.bool) && document.readyState === "complete") {
+      const menuList = document.getElementById("main-nav-list");
+      // Only hide dropdown on small screens
+      if (mediaQuery.matches) {
+        menuList.style.display = "none";
+      }
+      loadOperationsDone.bool = true;
+    }
+  }, 10);
 
   return (
     <nav id="main-nav">
