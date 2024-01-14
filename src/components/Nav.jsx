@@ -42,15 +42,19 @@ export function Nav() {
 
   // Add listener for changes in state of media query
   mediaQuery.addEventListener("change", navDisplayHandler);
-  
-  // Add listener for hiding dropdown menu on page load
-  window.addEventListener("load", (event) => {
-    const menuList = document.getElementById("main-nav-list");
-    // Only hide dropdown on small screens
-    if (mediaQuery.matches) {
-      menuList.style.display = "none";
+
+  // Hide dropdown menu on page load
+  let loadOperationsDone = {bool: false};
+  setInterval(() => {
+    if (!(loadOperationsDone.bool) && document.readyState === "complete") {
+      const menuList = document.getElementById("main-nav-list");
+      // Only hide dropdown on small screens
+      if (mediaQuery.matches) {
+        menuList.style.display = "none";
+      }
+      loadOperationsDone.bool = true;
     }
-  });
+  }, 10);
 
   return (
     <nav id="main-nav">
