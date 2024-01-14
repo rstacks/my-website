@@ -20,11 +20,24 @@ export function Header(props) {
 
   // Adjusts width of header based on text length
   // Adjustments occur after resources load
+  /*
   window.addEventListener("load", (event) => {
     const pageHeader = document.getElementById("page-header");
     pageHeader.style.width = String(props.text.length * 3.2) + "em";
     changeWidth(mediaQuery);
   });
+  */
+
+  let resourcesLoading = true;
+  while (resourcesLoading) {
+    if (document.readyState === "complete") {
+      const pageHeader = document.getElementById("page-header");
+      pageHeader.style.width = String(props.text.length * 3.2) + "em";
+      changeWidth(mediaQuery);
+      // Break loop
+      resourcesLoading = false;
+    }
+  }
 
   return (
     <header id="page-header">

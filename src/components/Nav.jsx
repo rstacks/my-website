@@ -44,6 +44,7 @@ export function Nav() {
   mediaQuery.addEventListener("change", navDisplayHandler);
   
   // Add listener for hiding dropdown menu on page load
+  /*
   window.addEventListener("load", (event) => {
     const menuList = document.getElementById("main-nav-list");
     // Only hide dropdown on small screens
@@ -51,6 +52,21 @@ export function Nav() {
       menuList.style.display = "none";
     }
   });
+  */
+  
+
+  let resourcesLoading = true;
+  while (resourcesLoading) {
+    if (document.readyState === "complete") {
+      const menuList = document.getElementById("main-nav-list");
+      // Only hide dropdown on small screens
+      if (mediaQuery.matches) {
+        menuList.style.display = "none";
+      }
+      // Break loop
+      resourcesLoading = false;
+    }
+  }
 
   return (
     <nav id="main-nav">
