@@ -135,7 +135,8 @@ body {
 }
 
 #my-photo {
-  max-width: 25em;
+  /*max-width: 25em;*/
+  max-width: 23em;
   width: 80vw;
   display: block;
   margin-left: auto;
@@ -144,14 +145,16 @@ body {
 }
 
 #name-tag {
-  font-size: 6em;
+  /*font-size: 6em;*/
+  font-size: 5em;
   text-align: center;
   margin-top: 0.2em;
   margin-bottom: 0;
 }
 
 #tagline {
-  font-size: 2em;
+  /*font-size: 2em;*/
+  font-size: 1.8em;
   text-align: center;
   margin-top: 0;
 }
@@ -169,7 +172,7 @@ body {
 }
 
 /* Scales homepage text with viewport */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
   #name-tag {
     font-size: 13vw;
   }
@@ -230,6 +233,7 @@ body {
   border-radius: 1em;
   width: 16em;
   height: 8em;
+  font-size: 0.85em;
   display: flex;
   margin: auto;
   margin-top: 2em;
@@ -239,13 +243,14 @@ body {
 }
 
 #page-title {
-  font-size: 3.5em;
+  /*font-size: 3.5em;*/
   text-align: center;
 }
 
 .article-body, .project-entry, .cert-entry {
   background-color: #3D3D3D;
-  font-size: 1.5em;
+  /*font-size: 1.5em;*/
+  font-size: 1.3em;
   max-width: 45em;
   width: 70vw;
   margin: auto;
@@ -277,7 +282,8 @@ body {
 }
 
 hr {
-  color: #FFFFF0;
+  /*color: #FFFFF0;*/
+  color: #1a1a1a;
   max-width: 2em;
   margin-top: 0;
   margin-bottom: 1.5em;
@@ -285,6 +291,7 @@ hr {
 }
 
 #home-separator {
+  color: #3D3D3D;
   display: block;
   max-width: 70em;
   width: 80%;
@@ -384,10 +391,18 @@ hr {
   margin-top: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 470px) {
   .article-body, .project-entry, .cert-entry {
     font-size: 4vw;
   }
+}
+
+@media screen and (max-width: 600px) {
+  /*
+  .article-body, .project-entry, .cert-entry {
+    font-size: 4vw;
+  }
+  */
 
   .portfolio-dropdown {
     font-size: 2.5vw;
