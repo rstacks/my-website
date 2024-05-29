@@ -2,6 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async"
 import { Nav } from "../components/Nav"
 import { Socials } from "../components/Socials"
 import { Footer } from "../components/Footer"
+import { About } from "./About"
 import faviconUrl from "../favicons/favicon.ico"
 
 export function Home() {
@@ -20,6 +21,8 @@ export function Home() {
         <Socials />
         
         <hr id="home-separator" />
+
+        <About />
 
       </main>
       <Footer />
