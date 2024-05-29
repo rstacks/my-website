@@ -19,7 +19,8 @@ export function Home() {
         <h1 id="name-tag">Robert Stacks</h1>
         <h2 id="tagline">Computer Science @ Texas A&M University</h2>
         <Socials />
-        <hr id="home-separator" />
+        {/**<hr id="home-separator" /> */}
+        <div className="home-separator" />
         <AboutComponent />
       </main>
       <Footer />
