@@ -1,6 +1,6 @@
 import { Header } from "./Header"
 
-export function About() {
+export function AboutComponent() {
   // Shows or hides additional content on this page
   function readMoreButton() {
     // Get HTML tags to display or hide
@@ -27,7 +27,7 @@ export function About() {
       <Header text="ABOUT" />
       <article className="article-body">
         <p>
-          Howdy! As I'm sure you've gathered, I'm Robert, a sophomore computer science
+          Howdy! As I'm sure you've gathered, I'm Robert, a junior computer science
           major at Texas A&M University. Here are some quick facts about me:
         </p>
         <ul>
