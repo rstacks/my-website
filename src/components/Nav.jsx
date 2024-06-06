@@ -67,7 +67,11 @@ export function Nav() {
       <div id="menu-separator"></div>
       <ul className="nav-list" id="main-nav-list">
         <li className="main-nav-link">
-          <a href="/home" className="main-nav-anchor">HOME</a>
+          {/*<a href="/home" className="main-nav-anchor">HOME</a>*/}
+          <Link to="home-top" smooth={true} duration={500}
+            offset={-200} className="main-nav-anchor">
+            HOME
+          </Link>
         </li>
         <li className="main-nav-link">
           {/*<a href="/about" className="main-nav-anchor">ABOUT</a>*/}

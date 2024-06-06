@@ -15,8 +15,10 @@ export function Home() {
       </Helmet>
       <Nav />
       <main>
-        <img src="/images/circular_me.png" alt="Robert Stacks Photo" 
-          id="my-photo" />
+        <Element name="home-top">
+          <img src="/images/circular_me.png" alt="Robert Stacks Photo" 
+            id="my-photo" />
+        </Element>
         <h1 id="name-tag">Robert Stacks</h1>
         <h2 id="tagline">Computer Science @ Texas A&M University</h2>
         <Socials />
