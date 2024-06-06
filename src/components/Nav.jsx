@@ -1,3 +1,5 @@
+import { Link } from "react-scroll"
+
 export function Nav() {
   // Displays dropdown menu
   function showMenu() {
@@ -68,7 +70,11 @@ export function Nav() {
           <a href="/home" className="main-nav-anchor">HOME</a>
         </li>
         <li className="main-nav-link">
-          <a href="/about" className="main-nav-anchor">ABOUT</a>
+          {/*<a href="/about" className="main-nav-anchor">ABOUT</a>*/}
+          <Link to="about-section" smooth={true} duration={500}
+            offset={-80} className="main-nav-anchor">
+            ABOUT
+          </Link>
         </li>
         <li className="main-nav-link">
           <a href="/portfolio" className="main-nav-anchor">PORTFOLIO</a>

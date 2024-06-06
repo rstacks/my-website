@@ -1,4 +1,5 @@
 import { Helmet, HelmetProvider } from "react-helmet-async"
+import { Element } from "react-scroll"
 import { Nav } from "../components/Nav"
 import { Socials } from "../components/Socials"
 import { Footer } from "../components/Footer"
@@ -19,9 +20,10 @@ export function Home() {
         <h1 id="name-tag">Robert Stacks</h1>
         <h2 id="tagline">Computer Science @ Texas A&M University</h2>
         <Socials />
-        {/**<hr id="home-separator" /> */}
         <div className="home-separator" />
-        <AboutComponent />
+        <Element name="about-section">
+          <AboutComponent />
+        </Element>
       </main>
       <Footer />
     </HelmetProvider>
