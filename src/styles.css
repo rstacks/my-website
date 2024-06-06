@@ -227,7 +227,7 @@ body {
   font-size: 1.5em;
 }
 
-#page-header {
+.page-header {
   background-color: #3D3D3D;
   border-radius: 1em;
   width: 16em;
@@ -241,7 +241,7 @@ body {
   align-items: center;
 }
 
-#page-title {
+.page-title {
   /*font-size: 3.5em;*/
   text-align: center;
 }

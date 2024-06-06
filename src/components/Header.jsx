@@ -4,14 +4,20 @@ export function Header(props) {
 
   // Resizes header width at different screen sizes
   function changeWidth(e) {
-    const pageHeader = document.getElementById("page-header");
-    const pageTitle = document.getElementById("page-title");
+    const pageHeaders = document.getElementsByClassName("page-header");
+    const pageTitles = document.getElementsByClassName("page-title");
+    
     if (e.matches && props.text.length > 5) {
-      pageHeader.style.width = String(props.text.length * 3.2 * 0.65) + "em";
-      pageTitle.style.fontSize = "2.75em";
+      // Apply to all Header components
+      for (let i = 0; i < pageHeaders.length; i++) {
+        pageHeaders[i].style.width = String(props.text.length * 3.2 * 0.65) + "em";
+        pageTitles[i].style.fontSize = "2.75em";
+      }
     } else {
-      pageHeader.style.width = String(props.text.length * 3.2) + "em";
-      pageTitle.style.fontSize = "3.5em";
+      for (let i = 0; i < pageHeaders.length; i++) {
+        pageHeaders[i].style.width = String(props.text.length * 3.2) + "em";
+        pageTitles[i].style.fontSize = "3.5em";
+      }
     }
   }
 
@@ -23,16 +29,18 @@ export function Header(props) {
   let loadOperationsDone = {bool: false};
   setInterval(() => {
     if (!(loadOperationsDone.bool) && document.readyState === "complete") {
-      const pageHeader = document.getElementById("page-header");
-      pageHeader.style.width = String(props.text.length * 3.2) + "em";
+      const pageHeaders = document.getElementsByClassName("page-header");
+      for (let i = 0; i < pageHeaders.length; i++) {
+        pageHeaders[i].style.width = String(props.text.length * 3.2) + "em";
+      }
       changeWidth(mediaQuery);
       loadOperationsDone.bool = true;
     }
   }, 10);
 
   return (
-    <header id="page-header">
-      <h1 id="page-title">{props.text}</h1>
+    <header className="page-header">
+      <h1 className="page-title">{props.text}</h1>
     </header>
   );
 }
