@@ -300,6 +300,10 @@ hr {
   border-radius: 1em;
 }
 
+#home-sep-space {
+  margin-top: 2em;
+}
+
 #qa-header {
   display: none;
 }

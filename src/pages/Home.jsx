@@ -4,6 +4,7 @@ import { Nav } from "../components/Nav"
 import { Socials } from "../components/Socials"
 import { Footer } from "../components/Footer"
 import { AboutComponent } from "../components/AboutComponent"
+import { PortfolioComponent } from "../components/PortfolioComponent"
 import faviconUrl from "../favicons/favicon.ico"
 
 export function Home() {
@@ -26,6 +27,8 @@ export function Home() {
         <Element name="about-section">
           <AboutComponent />
         </Element>
+        <div className="home-separator" id="home-sep-space" />
+        <PortfolioComponent />
       </main>
       <Footer />
     </HelmetProvider>
