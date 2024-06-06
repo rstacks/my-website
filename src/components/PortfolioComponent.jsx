@@ -1,4 +1,5 @@
 import { Header } from "./Header"
+import { PortfolioItem } from "./PortfolioItem"
 
 export function PortfolioComponent() {
 
@@ -6,7 +7,11 @@ export function PortfolioComponent() {
     <>
       <Header text="PORTFOLIO" />
       <article>
-        
+        <ul>
+          <li>
+            <PortfolioItem imageSrc="/images/logosecurityplus.png" imageAlt="temp" />
+          </li>
+        </ul>
       </article>
     </>
   );

@@ -344,6 +344,13 @@ hr {
   transition: opacity 100ms;
 }
 
+.portfolio-item {
+  background-color: #3D3D3D;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 1em;
+}
+
 .project-entry, .cert-entry {
   display: none;
 }
