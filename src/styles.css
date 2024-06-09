@@ -345,10 +345,24 @@ hr {
 }
 
 .portfolio-item {
-  background-color: #3D3D3D;
+  background-color: #595959;
   display: inline-block;
   font-size: 1.3em;
   border-radius: 1em;
+}
+
+.portfolio-section-header {
+  background-color: #3D3D3D;
+  margin: auto;
+  width: 70vw;
+  max-width: 50em;
+  font-size: 1.3em;
+  border-radius: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin-top: 1.5em;
 }
 
 .project-entry, .cert-entry {
@@ -405,7 +419,7 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
-  .article-body, .project-entry, .cert-entry {
+  .article-body, .project-entry, .cert-entry, .portfolio-section-header {
     font-size: 4vw;
   }
 }
