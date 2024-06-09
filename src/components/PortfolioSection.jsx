@@ -9,6 +9,9 @@ export function PortfolioSection(props) {
         <li>
           <PortfolioItem imageSrc="/images/l3ak-ctf-logo.png" />
         </li>
+        <li>
+          <PortfolioItem imageSrc="/images/uscg-2024-logo.png" />
+        </li>
       </ul>
     </section>
   );
