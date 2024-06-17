@@ -1,10 +1,14 @@
 import { PortfolioItem } from "./PortfolioItem"
 
-export function PortfolioSection(props) {
+export function WriteupsSection() {
   return (
     <section className="portfolio-section-header">
-      <h2>{props.title}</h2>
-      <p>{props.text}</p>
+      <h2>Writeups</h2>
+      <p>
+        My writeups for cybersecurity competitions that I've participated in.
+        Click on a tile below to see how I solved challenges in OSINT, reverse
+        engineering, web exploitation, cryptography, digital forensics, and more!
+      </p>
       <ul>
         <li>
           <PortfolioItem imageSrc="/images/uscg-2024-logo.png" imageAlt="USCG 2024 Logo"
