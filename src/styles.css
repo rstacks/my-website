@@ -384,11 +384,21 @@ hr {
 .portfolio-section-header ul {
   list-style-type: none;
   display: flex;
+  overflow: auto;
+  padding-left: 0;
 }
 
 .portfolio-section-header li {
   margin-left: 1em;
   margin-right: 1em;
+}
+
+#writeups-left-button {
+  color: blue;
+}
+
+#writeups-right-button {
+  color: red;
 }
 
 .project-entry, .cert-entry {
