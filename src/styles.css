@@ -345,10 +345,26 @@ hr {
 }
 
 .portfolio-item {
-  background-color: #595959;
+  /*background-color: #595959;*/
+  border-color: #595959;
+  border-style: solid;
   display: inline-block;
-  font-size: 1.3em;
   border-radius: 1em;
+  width: 10em;
+  height: 12em;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 9em;
+  margin-top: 0.5em;
+}
+
+.portfolio-item h3 {
+  margin-top: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-decoration: underline;
 }
 
 .portfolio-section-header {
@@ -367,6 +383,12 @@ hr {
 
 .portfolio-section-header ul {
   list-style-type: none;
+  display: flex;
+}
+
+.portfolio-section-header li {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .project-entry, .cert-entry {
