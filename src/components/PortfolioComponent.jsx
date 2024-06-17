@@ -9,7 +9,9 @@ export function PortfolioComponent() {
       <article>
         <section>
           <PortfolioSection title="Writeups" text="My writeups for cybersecurity
-            competitions that I've participated in. Click on a tile below to learn more!" />
+            competitions that I've participated in. Click on a tile below to see how I solved
+            challenges in OSINT, reverse engineering, web exploitation, cryptography, digital
+            forensics, and more!" />
           <ul>
             <li>
               <PortfolioItem imageSrc="/images/logosecurityplus.png" imageAlt="temp" />

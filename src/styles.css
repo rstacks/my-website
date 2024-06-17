@@ -365,6 +365,10 @@ hr {
   margin-top: 1.5em;
 }
 
+.portfolio-section-header ul {
+  list-style-type: none;
+}
+
 .project-entry, .cert-entry {
   display: none;
 }
