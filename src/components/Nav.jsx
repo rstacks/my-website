@@ -28,8 +28,7 @@ export function Nav() {
   // Hides dropdown menu after one of its buttons is pressed
   function hideMenu() {
     // Check if the dropdown menu is invisible (so no need to hide it)
-    const menuButton = document.getElementById("menu-button");
-    if (menuButton.style.display == "none") {
+    if (window.innerWidth > 730) {
       return;
     }
     
