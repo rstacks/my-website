@@ -7,14 +7,7 @@ export function PortfolioComponent() {
     <>
       <Header text="PORTFOLIO" />
       <article>
-        <section>
-          <WriteupsSection />
-          <ul>
-            <li>
-              <PortfolioItem imageSrc="/images/logosecurityplus.png" imageAlt="temp" />
-            </li>
-          </ul>
-        </section>
+        <WriteupsSection />
       </article>
     </>
   );
