@@ -1,11 +1,11 @@
 import { PortfolioItem } from "./PortfolioItem"
 
 export function WriteupsSection() {
-  const unorderedList = document.getElementById("writeups-list-scroller");
   // Amount to scroll by when a button is pressed
   const scrollDist = 150;
 
   function scrollLeft() {
+    const unorderedList = document.getElementById("writeups-list-scroller");
     unorderedList.scrollBy({
       left: -scrollDist,
       behavior: "smooth"
@@ -13,6 +13,7 @@ export function WriteupsSection() {
   }
 
   function scrollRight() {
+    const unorderedList = document.getElementById("writeups-list-scroller");
     unorderedList.scrollBy({
       left: scrollDist,
       behavior: "smooth"
@@ -28,7 +29,7 @@ export function WriteupsSection() {
         engineering, web exploitation, cryptography, digital forensics, and more!
       </p>
       <div id="writeups-list">
-        <button id="writeups-left-button" onClick={scrollLeft}>←</button>
+        <button id="writeups-left-button" onClick={scrollLeft}>⬅</button>
         <ul id="writeups-list-scroller">
           <li>
             <PortfolioItem imageSrc="/images/uscg-2024-logo.png" imageAlt="USCG 2024 Logo"
@@ -39,7 +40,7 @@ export function WriteupsSection() {
               title="L3akCTF 2024" />
           </li>
         </ul>
-        <button id="writeups-right-button" onClick={scrollRight}>→</button>
+        <button id="writeups-right-button" onClick={scrollRight}>➡</button>
       </div>
     </section>
   );

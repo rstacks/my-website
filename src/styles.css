@@ -384,7 +384,7 @@ hr {
 .portfolio-section-header ul {
   list-style-type: none;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
   padding-left: 0;
 }
 
@@ -410,6 +410,7 @@ hr {
   padding: 0em;
   padding-left: 0.17em;
   padding-right: 0.17em;
+  display: none;
 }
 
 #writeups-left-button {
@@ -418,6 +419,12 @@ hr {
 
 #writeups-right-button {
   right: 0em;
+}
+
+@media screen and (max-width: 725px) {
+  #writeups-left-button, #writeups-right-button {
+    display: inline;
+  }
 }
 
 .project-entry, .cert-entry {
