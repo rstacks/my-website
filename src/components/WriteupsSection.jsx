@@ -32,12 +32,17 @@ export function WriteupsSection() {
         <button id="writeups-left-button" onClick={scrollLeft}>⬅</button>
         <ul id="writeups-list-scroller">
           <li>
-            <PortfolioItem imageSrc="/images/uscg-2024-logo.png" imageAlt="USCG 2024 Logo"
-              title="USCG Season IV: Beginner's Game Room" />
+            <a href="https://github.com/rstacks/USCyberOpenSeasonIV-BeginnersGameRoom-writeup"
+              target="_blank">
+              <PortfolioItem imageSrc="/images/uscg-2024-logo.png" imageAlt="USCG 2024 Logo"
+                title="USCG Season IV: Beginner's Game Room" />
+            </a>
           </li>
           <li>
-            <PortfolioItem imageSrc="/images/l3ak-ctf-logo.png" imageAlt="L3akCTF 2024 Logo"
-              title="L3akCTF 2024" />
+            <a href="https://github.com/rstacks/L3akCTF2024-writeup" target="_blank">
+              <PortfolioItem imageSrc="/images/l3ak-ctf-logo.png" imageAlt="L3akCTF 2024 Logo"
+                title="L3akCTF 2024" />
+            </a>
           </li>
         </ul>
         <button id="writeups-right-button" onClick={scrollRight}>➡</button>
