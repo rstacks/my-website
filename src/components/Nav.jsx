@@ -25,6 +25,29 @@ export function Nav() {
     }
   }
 
+  // Hides dropdown menu after one of its buttons is pressed
+  function hideMenu() {
+    // Check if the dropdown menu is invisible (so no need to hide it)
+    const menuButton = document.getElementById("menu-button");
+    if (menuButton.style.display == "none") {
+      return;
+    }
+    
+    // Grab HTML tags
+    const separator = document.getElementById("menu-separator");
+    const menuList = document.getElementById("main-nav-list");
+
+    // Hide dropdown menu
+    menuList.style.animationName = "hide-nav";
+    menuList.style.animationDuration = "0.5";
+    setTimeout(
+      () => {
+        separator.style.display = "none";
+        menuList.style.display = "none";
+      }, 500
+    );
+  }
+
   // Runs media query for menuList and separator
   const mediaQuery = window.matchMedia("(max-width: 730px)");
 
@@ -69,14 +92,14 @@ export function Nav() {
         <li className="main-nav-link">
           {/*<a href="/home" className="main-nav-anchor">HOME</a>*/}
           <Link to="home-top" smooth={true} duration={500}
-            offset={-200} className="main-nav-anchor">
+            offset={-200} className="main-nav-anchor" onClick={hideMenu}>
             HOME
           </Link>
         </li>
         <li className="main-nav-link">
           {/*<a href="/about" className="main-nav-anchor">ABOUT</a>*/}
           <Link to="about-section" smooth={true} duration={500}
-            offset={-80} className="main-nav-anchor">
+            offset={-80} className="main-nav-anchor" onClick={hideMenu}>
             ABOUT
           </Link>
         </li>
