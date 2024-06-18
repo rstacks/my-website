@@ -358,6 +358,7 @@ hr {
 .portfolio-item img {
   width: 9em;
   margin-top: 0.5em;
+  border-radius: 1em;
 }
 
 .portfolio-item h3 {
