@@ -28,7 +28,9 @@ export function Home() {
           <AboutComponent />
         </Element>
         <div className="home-separator" id="home-sep-space" />
-        <PortfolioComponent />
+        <Element name="portfolio-section">
+          <PortfolioComponent />
+        </Element>
       </main>
       <Footer />
     </HelmetProvider>

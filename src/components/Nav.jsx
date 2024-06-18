@@ -103,7 +103,11 @@ export function Nav() {
           </Link>
         </li>
         <li className="main-nav-link">
-          <a href="/portfolio" className="main-nav-anchor">PORTFOLIO</a>
+          {/*<a href="/portfolio" className="main-nav-anchor">PORTFOLIO</a>*/}
+          <Link to="portfolio-section" smooth={true} duration={500}
+            offset={-80} className="main-nav-anchor" onClick={hideMenu}>
+            PORTFOLIO
+          </Link>
         </li>
         <li className="main-nav-link">
           <a href="/more" className="main-nav-anchor">MORE</a>
