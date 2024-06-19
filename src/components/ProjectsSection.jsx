@@ -34,7 +34,7 @@ export function ProjectsSection() {
               title="Personal Website" id="website-tile" />
           </li>
           <li>
-            <PortfolioItem imageSrc="/images/maroon-engine-example.gif" imageAlt="Maroon Engine Image"
+            <PortfolioItem imageSrc="/images/maroon-engine-example-cropped.gif" imageAlt="Maroon Engine Image"
               title="Maroon Engine" />
           </li>
         </ul>
