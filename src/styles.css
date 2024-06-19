@@ -438,6 +438,11 @@ hr {
   }
 }
 
+.tile-text {
+  margin: 0.5em;
+  text-align: left;
+}
+
 .project-entry, .cert-entry {
   display: none;
 }

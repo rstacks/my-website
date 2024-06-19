@@ -6,7 +6,7 @@ export function ProjectsSection() {
     const websiteTile = document.getElementById("website-tile");
     const originalHTML = websiteTile.innerHTML;
     websiteTile.addEventListener("mouseenter", () => {
-      websiteTile.innerHTML = '<p>I built this website from scratch! Click to learn more.</p><p><span class="tech-list">Technologies used</span>: HTML, CSS, JavaScript, React</p>';
+      websiteTile.innerHTML = '<p class="tile-text">I built this website from scratch! Click to learn more.</p><p class="tile-text"><span class="tech-list">Technologies used</span>: HTML, CSS, JavaScript, React</p>';
     });
     websiteTile.addEventListener("mouseleave", () => {
       websiteTile.innerHTML = originalHTML;
