@@ -352,6 +352,8 @@ hr {
   width: 10em;
   height: 12em;
   text-align: center;
+  color: #FFFFF0;
+  transition: opacity 200ms, background-color 200ms;
 }
 
 .portfolio-item img {
@@ -365,6 +367,14 @@ hr {
   padding-left: 0.5em;
   padding-right: 0.5em;
   text-decoration: underline;
+}
+
+/* Hover and click styling for portfolio items */
+.portfolio-item:hover {
+  background-color: #595959;
+}
+.portfolio-item:active {
+  opacity: 60%;
 }
 
 .portfolio-section-header {
@@ -400,6 +410,7 @@ hr {
 #writeups-left-button, #writeups-right-button {
   position: absolute;
   top: 50%;
+  z-index: 1000;
   transform: translateY(-50%);
   background-color: #047377;
   color: #FFFFF0;
