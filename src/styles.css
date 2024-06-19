@@ -403,7 +403,7 @@ hr {
   margin-right: 1em;
 }
 
-#writeups-list {
+.tile-list {
   position: relative;
 }
 

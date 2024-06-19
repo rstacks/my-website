@@ -28,7 +28,7 @@ export function WriteupsSection() {
         Click on a tile below to see how I solved challenges in OSINT, reverse
         engineering, web exploitation, cryptography, digital forensics, and more!
       </p>
-      <div id="writeups-list">
+      <div className="tile-list">
         <button id="writeups-left-button" onClick={scrollLeft}>⬅</button>
         <ul id="writeups-list-scroller">
           <li>
