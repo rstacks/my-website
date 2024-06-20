@@ -345,7 +345,8 @@ hr {
 }
 
 .portfolio-item {
-  border-color: #595959;
+  /*border-color: #595959;*/
+  border-color: #047377;
   border-style: solid;
   display: inline-block;
   border-radius: 1em;
@@ -371,7 +372,8 @@ hr {
 
 /* Hover and click styling for portfolio items */
 .portfolio-item:hover {
-  background-color: #595959;
+  /*background-color: #595959;*/
+  background-color: #047377;
 }
 .portfolio-item:active {
   opacity: 60%;
