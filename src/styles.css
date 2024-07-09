@@ -3,6 +3,7 @@ body {
   font-family: 'Rubik', 'Trebuchet MS', sans-serif;
   color: #FFFFF0;
   margin: 0;
+  /*opacity: 20%;*/
 }
 
 #main-nav {
@@ -10,7 +11,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: 2000;
   background-color: #047377;
   font-weight: bold;
   font-size: 1.25em;
@@ -116,13 +117,13 @@ body {
 /* Hover and click actions for links and buttons */
 .social-nav-link:hover, .main-nav-anchor:hover, #menu-button:hover,
   #Projects:hover, #Certifications:hover, .project-entry a:hover,
-  .cert-entry a:hover {
+  .cert-entry a:hover, .project-entry-button:hover {
   opacity: 70%;
   cursor: pointer;
 }
 .social-nav-link:active, .main-nav-anchor:active, #menu-button:active,
   #Projects:active, #Certifications:active, .project-entry a:active,
-  .cert-entry a:active {
+  .cert-entry a:active, .project-entry-button:active {
   opacity: 30%;
 }
 
@@ -447,6 +448,14 @@ hr {
 
 .project-entry, .cert-entry {
   display: none;
+  /* Content will sit on top of everything
+  z-index: 1500;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  */
 }
 
 .project-entry h2, .cert-entry h2 {
@@ -465,6 +474,17 @@ hr {
   width: 10em;
   height: 9.8402em;
   margin-right: 1em;
+}
+
+.project-entry-button {
+  position: absolute;
+  right: 0;
+  transform: translateX(-50%);
+  font-size: 2em;
+  background-color: transparent;
+  border-style: none;
+  color: #FFFFF0;
+  transition: opacity 200ms;
 }
 
 .cert-entry img {
@@ -516,7 +536,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1100px) {
   .project-paragraph {
     font-size: 1.95vw;
   }
@@ -534,6 +554,10 @@ hr {
   .project-entry img, .cert-entry img {
     display: flex;
     margin: auto;
+  }
+
+  .project-entry {
+    top: 50%;
   }
 }
 
