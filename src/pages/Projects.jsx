@@ -17,13 +17,14 @@ export function Projects() {
       <nav id="back-home-nav">
         <ul className="nav-list" id="back-home-nav-list">
           <li className="main-nav-link">
-            <a href="https://www.youtube.com" className="main-nav-anchor" id="back-home-anchor">&lt;&lt; Back to Home</a>
+            <a href="/home" className="main-nav-anchor" id="back-home-anchor">&lt;&lt; Back to Home</a>
           </li>
         </ul>
       </nav>
+      <div className="spacer" />
       <Header text="PROJECTS" />
       <main>
-        <PortfolioDropdown text="Projects" items="project-entry" />
+        {/*<PortfolioDropdown text="Projects" items="project-entry" />*/}
         <ProjectEntry title="Personal Website" imageSrc="/images/new-site-image.jpg"
           imageAlt="Website Image" text="This very website was built by me from scratch!
           My experience in web development was essentially nonexistent when I began
@@ -40,6 +41,7 @@ export function Projects() {
           and enemy tracking behavior." techs="C, C++, OpenGL"
           github="https://github.com/aggie-coding-club/maroon-engine" />
 
+        {/*
         <PortfolioDropdown text="Certifications" items="cert-entry" />
         <CertEntry title="GIAC Foundational Cybersecurity Technologies (GFACT)"
           imageSrc="/images/GFACT.png" imageAlt="GFACT Image"
@@ -59,6 +61,7 @@ export function Projects() {
           perform core security functions and pursue an IT security career."
           link="https://www.comptia.org/certifications/security"
           issuingOrg="CompTIA" inProgress="true" />
+        */}
       </main>
       <Footer />
     </HelmetProvider>

@@ -322,6 +322,10 @@ hr {
   font-weight: bolder;
 }
 
+.spacer {
+  margin-top: 5.5em;
+}
+
 .portfolio-dropdown {
   background-color: #3D3D3D;
   font-size: 1em;
@@ -448,7 +452,8 @@ hr {
 }
 
 .project-entry, .cert-entry {
-  display: none;
+  /*display: none;*/
+  display: block;
 }
 
 .project-entry h2, .cert-entry h2 {
