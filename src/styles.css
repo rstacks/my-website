@@ -448,14 +448,6 @@ hr {
 
 .project-entry, .cert-entry {
   display: none;
-  /* Content will sit on top of everything
-  z-index: 1500;
-  position: fixed;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  overflow-y: scroll;
-  */
 }
 
 .project-entry h2, .cert-entry h2 {
