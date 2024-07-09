@@ -28,7 +28,7 @@ body {
   text-align: center;
 }
 
-#main-nav-list {
+#main-nav-list, #back-home-nav-list {
   display: block;
 }
 

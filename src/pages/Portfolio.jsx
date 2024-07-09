@@ -15,9 +15,13 @@ export function Portfolio() {
         <link rel="icon" href={faviconUrl} />
       </Helmet>
       <nav id="back-home-nav">
-        
+        <ul className="nav-list" id="back-home-nav-list">
+          <li className="main-nav-link">
+            <a href="https://www.youtube.com" className="main-nav-anchor" id="back-home-anchor">&lt;&lt; Back to Home</a>
+          </li>
+        </ul>
       </nav>
-      <Header text="PORTFOLIO" />
+      <Header text="PROJECTS" />
       <main>
         <PortfolioDropdown text="Projects" items="project-entry" />
         <ProjectEntry title="Personal Website" imageSrc="/images/new-site-image.jpg"
