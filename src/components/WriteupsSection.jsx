@@ -31,6 +31,13 @@ export function WriteupsSection() {
       <div className="tile-list">
         <button id="writeups-left-button" onClick={scrollLeft}>⬅</button>
         <ul id="writeups-list-scroller">
+          <li>{/** Update link and verify title */}
+            <a href="https://github.com/rstacks/USCyberOpenSeasonIV-BeginnersGameRoom-writeup"
+              target="_blank">
+              <PortfolioItem imageSrc="/images/waniCTF-logo.png" imageAlt="WaniCTF 2024 Logo"
+                title="WaniCTF 2024" />
+            </a>
+          </li>
           <li>
             <a href="https://github.com/rstacks/USCyberOpenSeasonIV-BeginnersGameRoom-writeup"
               target="_blank">
