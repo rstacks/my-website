@@ -7,11 +7,11 @@ import { CertEntry } from "../components/CertEntry"
 import { Footer } from "../components/Footer"
 import faviconUrl from "../favicons/quals-icon.ico"
 
-export function Portfolio() {
+export function Projects() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Portfolio | Robert Stacks</title>
+        <title>Projects | Robert Stacks</title>
         <link rel="icon" href={faviconUrl} />
       </Helmet>
       <nav id="back-home-nav">
