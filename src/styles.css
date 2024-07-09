@@ -6,7 +6,7 @@ body {
   /*opacity: 20%;*/
 }
 
-#main-nav {
+#main-nav, #back-home-nav {
   /* Fixes navbar to top of screen */
   position: fixed;
   width: 100%;
@@ -161,6 +161,7 @@ body {
 
 #social-nav {
   padding-bottom: 1.95em;
+  margin-bottom: 1em;
 }
 
 #mail-confirmation {

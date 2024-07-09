@@ -14,7 +14,9 @@ export function Portfolio() {
         <title>Portfolio | Robert Stacks</title>
         <link rel="icon" href={faviconUrl} />
       </Helmet>
-      <Nav />
+      <nav id="back-home-nav">
+        
+      </nav>
       <Header text="PORTFOLIO" />
       <main>
         <PortfolioDropdown text="Projects" items="project-entry" />
