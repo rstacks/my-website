@@ -420,7 +420,8 @@ hr {
   top: 50%;
   z-index: 1000;
   transform: translateY(-50%);
-  background-color: #047377;
+  /*background-color: #047377;*/
+  background-color: #808080;
   color: #FFFFF0;
   font-weight: bold;
   border-radius: 1em;
