@@ -33,6 +33,13 @@ export function WriteupsSection() {
         <button id="writeups-left-button" onClick={scrollLeft}>⬅</button>
         <ul id="writeups-list-scroller">
           <li>
+            <a href="https://github.com/rstacks/DownUnderCTF2024-writeup"
+              target="_blank">
+              <PortfolioItem imageSrc="maroon-engine-example.gif" imageAlt="DUCTF 2024 Logo"
+                title="DownUnderCTF 2024" />
+            </a>
+          </li>
+          <li>
             <a href="https://github.com/rstacks/WaniCTF2024-writeup"
               target="_blank">
               <PortfolioItem imageSrc="/images/waniCTF-logo-resized.png" imageAlt="WaniCTF 2024 Logo"
