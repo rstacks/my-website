@@ -2,7 +2,7 @@ import { PortfolioItem } from "./PortfolioItem"
 
 export function WriteupsSection() {
   // Amount to scroll by when a button is pressed
-  const scrollDist = 150;
+  const scrollDist = 200;
 
   function scrollLeft() {
     const unorderedList = document.getElementById("writeups-list-scroller");
