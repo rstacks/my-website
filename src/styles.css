@@ -376,12 +376,12 @@ hr {
   text-decoration: underline;
 }
 
-/* Hover and click styling for portfolio items */
-.portfolio-item:hover {
+/* Hover and click styling for portfolio items and paragraph links */
+.portfolio-item:hover, .paragraph-link:hover {
   /*background-color: #595959;*/
   background-color: #047377;
 }
-.portfolio-item:active {
+.portfolio-item:active, .paragraph-link:active {
   opacity: 60%;
 }
 
@@ -439,6 +439,12 @@ hr {
 
 #writeups-right-button {
   right: 0em;
+}
+
+.paragraph-link {
+  color: #FFFFF0;
+  text-decoration: underline;
+  transition: opacity 200ms, background-color 200ms
 }
 
 @media screen and (max-width: 725px) {

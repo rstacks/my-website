@@ -26,13 +26,14 @@ export function WriteupsSection() {
       <p>
         My writeups for cybersecurity competitions that I've participated in.
         Click on a tile below to see how I solved challenges in OSINT, reverse
-        engineering, web exploitation, cryptography, digital forensics, and more!
+        engineering, web exploitation, cryptography, digital forensics, and more! You can also
+        view all of my writeups on GitHub by clicking <a href="https://github.com/rstacks/ctf-writeups" target="_blank" className="paragraph-link">here</a>.
       </p>
       <div className="tile-list">
         <button id="writeups-left-button" onClick={scrollLeft}>⬅</button>
         <ul id="writeups-list-scroller">
-          <li>{/** Update link and verify title */}
-            <a href="https://github.com/rstacks/USCyberOpenSeasonIV-BeginnersGameRoom-writeup"
+          <li>
+            <a href="https://github.com/rstacks/WaniCTF2024-writeup"
               target="_blank">
               <PortfolioItem imageSrc="/images/waniCTF-logo.png" imageAlt="WaniCTF 2024 Logo"
                 title="WaniCTF 2024" />
