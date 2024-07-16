@@ -35,7 +35,7 @@ export function WriteupsSection() {
           <li>
             <a href="https://github.com/rstacks/WaniCTF2024-writeup"
               target="_blank">
-              <PortfolioItem imageSrc="/images/waniCTF-logo.png" imageAlt="WaniCTF 2024 Logo"
+              <PortfolioItem imageSrc="/images/waniCTF-logo-resized.png" imageAlt="WaniCTF 2024 Logo"
                 title="WaniCTF 2024" />
             </a>
           </li>
