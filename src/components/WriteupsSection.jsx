@@ -35,7 +35,7 @@ export function WriteupsSection() {
           <li>
             <a href="https://github.com/rstacks/DownUnderCTF2024-writeup"
               target="_blank">
-              <PortfolioItem imageSrc="maroon-engine-example.gif" imageAlt="DUCTF 2024 Logo"
+              <PortfolioItem imageSrc="/images/ductf-logo.png" imageAlt="DUCTF 2024 Logo"
                 title="DownUnderCTF 2024" />
             </a>
           </li>
