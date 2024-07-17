@@ -432,6 +432,7 @@ hr {
   padding-right: 0.17em;
   display: none;
   cursor: pointer;
+  transition: color 100ms, background-color 100ms;
 }
 
 #writeups-left-button {
@@ -445,13 +446,25 @@ hr {
 .paragraph-link {
   color: #FFFFF0;
   text-decoration: underline;
-  transition: opacity 200ms, background-color 200ms
+  transition: opacity 200ms, background-color 200ms;
 }
 
 @media screen and (max-width: 1475px) {
   #writeups-left-button, #writeups-right-button {
     display: inline;
   }
+}
+
+/* Hover and click styles for scroll buttons */
+#writeups-left-button:hover, #writeups-right-button:hover,
+  .back-to-top-button:hover {
+  background-color: #737373;
+  color: #d9d9d9;
+}
+#writeups-left-button:active, #writeups-right-button:active,
+  .back-to-top-button:active {
+  background-color: #595959;
+  color: #a6a6a6;
 }
 
 .tile-text {
@@ -539,6 +552,7 @@ hr {
   border-radius: 0.15em;
   opacity: 100%;
   display: none;
+  transition: color 100ms, background-color 100ms;
 }
 
 @media screen and (max-width: 500px) {
