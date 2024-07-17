@@ -8,6 +8,36 @@ import { PortfolioComponent } from "../components/PortfolioComponent"
 import faviconUrl from "../favicons/favicon.ico"
 
 export function Home() {
+  // Distance from top of homepage where back to top button appears
+  const distanceFromTop = 600;
+  
+  // Show or hide the back to top button based on page position
+  function showTopButton() {
+    const topButton = document.getElementById("home-top-button");
+    if (window.scrollY > distanceFromTop && window.innerWidth > 1100) {
+      topButton.style.display = "inline";
+    } else {
+      topButton.style.display = "none";
+    }
+  }
+
+  // Hides the back to top button on small screens
+  function visibilityHandler(e) {
+    const topButton = document.getElementById("home-top-button");
+    if (e.matches || window.scrollY <= distanceFromTop) {
+      topButton.style.display = "none";
+    } else {
+      topButton.style.display = "inline";
+    }
+  }
+
+  // Media query for hiding back to top button on small screens
+  const mediaQuery = window.matchMedia("(max-width: 1100px)");
+
+  // Event listeners for back to top button visibility
+  mediaQuery.addEventListener("change", visibilityHandler);
+  addEventListener("scroll", (e) => {showTopButton()})
+
   return (
     <HelmetProvider>
       <Helmet>
@@ -32,9 +62,8 @@ export function Home() {
           <PortfolioComponent />
         </Element>
       </main>
-      {/** This was here too: onClick={hideMenu} */}
       <Link to="home-top" smooth={true} duration={500}
-        offset={-200} className="back-to-top-button">
+        offset={-200} className="back-to-top-button" id="home-top-button">
         ^
       </Link>
       <Footer />
