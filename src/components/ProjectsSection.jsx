@@ -12,7 +12,7 @@ export function ProjectsSection() {
         see all of my projects on one page.
       </p>
       <div className="tile-list">
-        <ul>
+        <ul id="projects-list-scroller">
           <li>
             <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Website Image"
               title="Personal Website" />
