@@ -415,7 +415,7 @@ hr {
   position: relative;
 }
 
-#writeups-left-button, #writeups-right-button {
+.scroll-button {
   position: absolute;
   top: 50%;
   z-index: 1000;
@@ -435,11 +435,11 @@ hr {
   transition: color 100ms, background-color 100ms;
 }
 
-#writeups-left-button {
+#writeups-left-button, #projects-left-button {
   left: 0em;
 }
 
-#writeups-right-button {
+#writeups-right-button, #projects-right-button {
   right: 0em;
 }
 
@@ -449,18 +449,24 @@ hr {
   transition: opacity 200ms, background-color 200ms;
 }
 
+/* Show scroll buttons once tile content overflows */
 @media screen and (max-width: 1475px) {
   #writeups-left-button, #writeups-right-button {
     display: inline;
   }
 }
+@media screen and (max-width: 720px) {
+  #projects-left-button, #projects-right-button {
+    display: inline;
+  }
+}
 
 /* Hover and click styles for scroll buttons */
-#writeups-left-button:hover, #writeups-right-button:hover {
+.scroll-button:hover {
   background-color: #737373;
   color: #d9d9d9;
 }
-#writeups-left-button:active, #writeups-right-button:active {
+.scroll-button:active {
   background-color: #595959;
   color: #a6a6a6;
 }

@@ -12,6 +12,7 @@ export function ProjectsSection() {
         see all of my projects on one page.
       </p>
       <div className="tile-list">
+        <button id="projects-left-button" className="scroll-button">⬅</button>
         <ul id="projects-list-scroller">
           <li>
             <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Website Image"
@@ -22,6 +23,7 @@ export function ProjectsSection() {
               title="Maroon Engine" />
           </li>
         </ul>
+        <button id="projects-right-button" className="scroll-button">➡</button>
       </div>
     </section>
   );
