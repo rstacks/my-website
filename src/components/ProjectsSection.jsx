@@ -2,6 +2,25 @@ import { PortfolioItem } from "./PortfolioItem"
 /*import { ProjectEntry } from "./ProjectEntry"*/
 
 export function ProjectsSection() {
+  // Amount to scroll by when a button is pressed
+  const scrollDist = 200;
+
+  function scrollLeft() {
+    const unorderedList = document.getElementById("projects-list-scroller");
+    unorderedList.scrollBy({
+      left: -scrollDist,
+      behavior: "smooth"
+    });
+  }
+
+  function scrollRight() {
+    const unorderedList = document.getElementById("projects-list-scroller");
+    unorderedList.scrollBy({
+      left: scrollDist,
+      behavior: "smooth"
+    });
+  }
+
   return (
     <section className="portfolio-section-header">
       <h2>Projects</h2>
@@ -12,7 +31,7 @@ export function ProjectsSection() {
         see all of my projects on one page.
       </p>
       <div className="tile-list">
-        <button id="projects-left-button" className="scroll-button">⬅</button>
+        <button id="projects-left-button" className="scroll-button" onClick={scrollLeft}>⬅</button>
         <ul id="projects-list-scroller">
           <li>
             <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Website Image"
@@ -23,7 +42,7 @@ export function ProjectsSection() {
               title="Maroon Engine" />
           </li>
         </ul>
-        <button id="projects-right-button" className="scroll-button">➡</button>
+        <button id="projects-right-button" className="scroll-button" onClick={scrollRight}>➡</button>
       </div>
     </section>
   );
