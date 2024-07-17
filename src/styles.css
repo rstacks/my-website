@@ -431,6 +431,7 @@ hr {
   padding-left: 0.17em;
   padding-right: 0.17em;
   display: none;
+  cursor: pointer;
 }
 
 #writeups-left-button {
@@ -521,6 +522,20 @@ hr {
 
 .cert-entry a {
   margin-top: 1em;
+}
+
+.back-to-top-button {
+  position: fixed;
+  cursor: pointer;
+  font-size: 6em;
+  z-index: 1000;
+  bottom: 0.5em;
+  right: 0.7em;
+  background-color: #3D3D3D;
+  height: 0.6em;
+  width: 0.6em;
+  text-align: center;
+  border-radius: 0.15em;
 }
 
 @media screen and (max-width: 500px) {

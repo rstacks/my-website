@@ -1,5 +1,5 @@
 import { Helmet, HelmetProvider } from "react-helmet-async"
-import { Element } from "react-scroll"
+import { Link, Element } from "react-scroll"
 import { Nav } from "../components/Nav"
 import { Socials } from "../components/Socials"
 import { Footer } from "../components/Footer"
@@ -32,6 +32,11 @@ export function Home() {
           <PortfolioComponent />
         </Element>
       </main>
+      {/** This was here too: onClick={hideMenu} */}
+      <Link to="home-top" smooth={true} duration={500}
+        offset={-200} className="back-to-top-button">
+        ^
+      </Link>
       <Footer />
     </HelmetProvider>
   );

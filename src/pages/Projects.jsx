@@ -17,7 +17,7 @@ export function Projects() {
       <nav id="back-home-nav">
         <ul className="nav-list" id="back-home-nav-list">
           <li className="main-nav-link">
-            <a href="/home" className="main-nav-anchor" id="back-home-anchor">&lt;&lt; Back to Home</a>
+            <a href="/home" className="main-nav-anchor" id="back-home-anchor">&lt;&lt; BACK TO HOME</a>
           </li>
         </ul>
       </nav>
