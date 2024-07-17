@@ -8,7 +8,8 @@ export function ProjectsSection() {
       <p>
         My computer science projects, including personal projects I worked on in
         my spare time and school projects. Click on a tile below to learn more about
-        a specific project!
+        a specific project! You can also click <a href="/projects" className="paragraph-link">here</a> to
+        see all of my projects on one page.
       </p>
       <div className="tile-list">
         <ul>
