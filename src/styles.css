@@ -79,12 +79,12 @@ body {
     height: 0;
   }
   to {
-    height: 12em;
+    height: 9em;
   }
 }
 @keyframes hide-nav {
   from {
-    height: 12em;
+    height: 9em;
   }
   to {
     height: 0;
