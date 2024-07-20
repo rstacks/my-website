@@ -25,7 +25,14 @@ export function Projects() {
       <Header text="PROJECTS" />
       <main>
         {/*<PortfolioDropdown text="Projects" items="project-entry" />*/}
-        <ProjectEntry title="Wordy (Wordle Clone)" imageSrc="/images/wordy-cropped-2.png" />
+        <ProjectEntry title="Wordy (Wordle Clone)" imageSrc="/images/wordy-cropped-2.png"
+          imageAlt="Wordy Image" text="My final project for CSCE 314 at Texas A&M University.
+          This is a recreation of the online game Wordle using JavaFX. All of Wordle's features
+          are present in this project, including a post-game statistics screen. I also implemented
+          a load & save feature that enables players to resume an unfinished game at any time."
+          techs="Java, JavaFX, Scene Builder" github="https://github.com/rstacks/wordy" />
+
+
 
         <ProjectEntry title="Personal Website" imageSrc="/images/new-site-image.jpg"
           imageAlt="Website Image" text="This very website was built by me from scratch!
