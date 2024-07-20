@@ -25,6 +25,8 @@ export function Projects() {
       <Header text="PROJECTS" />
       <main>
         {/*<PortfolioDropdown text="Projects" items="project-entry" />*/}
+        <ProjectEntry title="Wordy (Wordle Clone)" imageSrc="/images/wordy-cropped-2.png" />
+
         <ProjectEntry title="Personal Website" imageSrc="/images/new-site-image.jpg"
           imageAlt="Website Image" text="This very website was built by me from scratch!
           My experience in web development was essentially nonexistent when I began
