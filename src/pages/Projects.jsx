@@ -35,7 +35,10 @@ export function Projects() {
 
         <ProjectEntryNoGitHub id="processor-entry" title="Y86 Multi-Cycle Processor Design"
           imageSrc="/images/processor-cropped2.png" imageAlt="Processor Project Image"
-          text="No." techs="Y86 (x86-like ISA), Logisim" />
+          text="My final project for CSCE 312 at Texas A&M University. My partner and I used Logisim,
+          a digital logic design tool, to create a processor that could execute Y86 assembly, including
+          push, pop, jump, and move instructions. Our design follows the sequence of fetch, decode,
+          execute, memory, write back, and PC update as it reads Y86 programs." techs="Y86 (x86-like ISA), Logisim" />
 
         <ProjectEntry title="Personal Website" imageSrc="/images/new-site-image.jpg"
           imageAlt="Website Image" text="This very website was built by me from scratch!
