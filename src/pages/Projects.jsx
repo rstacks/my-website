@@ -3,6 +3,7 @@ import { Nav } from "../components/Nav"
 import { Header } from "../components/Header"
 import { PortfolioDropdown } from "../components/PortfolioDropdown"
 import { ProjectEntry } from "../components/ProjectEntry"
+import { ProjectEntryNoGitHub } from "../components/ProjectEntryNoGitHub"
 import { CertEntry } from "../components/CertEntry"
 import { Footer } from "../components/Footer"
 import faviconUrl from "../favicons/quals-icon.ico"
@@ -32,7 +33,7 @@ export function Projects() {
           a load & save feature that enables players to resume an unfinished game at any time."
           techs="Java, JavaFX, Scene Builder" github="https://github.com/rstacks/wordy" />
 
-
+        <ProjectEntryNoGitHub title="Y86 Multi-Cycle Processor Design" />
 
         <ProjectEntry title="Personal Website" imageSrc="/images/new-site-image.jpg"
           imageAlt="Website Image" text="This very website was built by me from scratch!
