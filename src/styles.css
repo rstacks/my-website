@@ -530,6 +530,10 @@ hr {
   text-decoration: underline;
 }
 
+#processor-entry {
+  padding-bottom: 1.5em;
+}
+
 .project-entry a, .cert-entry a {
   margin-top: 0.5em;
   margin-bottom: 1em;

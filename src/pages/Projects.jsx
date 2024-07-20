@@ -33,7 +33,9 @@ export function Projects() {
           a load & save feature that enables players to resume an unfinished game at any time."
           techs="Java, JavaFX, Scene Builder" github="https://github.com/rstacks/wordy" />
 
-        <ProjectEntryNoGitHub title="Y86 Multi-Cycle Processor Design" />
+        <ProjectEntryNoGitHub id="processor-entry" title="Y86 Multi-Cycle Processor Design"
+          imageSrc="/images/processor-cropped2.png" imageAlt="Processor Project Image"
+          text="No." techs="Y86 (x86-like ISA), Logisim" />
 
         <ProjectEntry title="Personal Website" imageSrc="/images/new-site-image.jpg"
           imageAlt="Website Image" text="This very website was built by me from scratch!
