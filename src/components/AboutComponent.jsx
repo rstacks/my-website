@@ -24,7 +24,7 @@ export function AboutComponent() {
   
   return (
     <>
-      <Header text="ABOUT" />
+      <Header text="ABOUT" header_id="about-header" h1_id="about-h1" />
       <article className="article-body">
         <p>
           Howdy! As I'm sure you've gathered, I'm Robert, a junior computer science

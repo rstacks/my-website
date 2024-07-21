@@ -2,9 +2,7 @@ import React, { useEffect } from "react"
 import { Link, Element, scroller } from "react-scroll"
 import { useLocation } from "react-router-dom"
 import { Helmet, HelmetProvider } from "react-helmet-async"
-import { Nav } from "../components/Nav"
 import { Header } from "../components/Header"
-import { PortfolioDropdown } from "../components/PortfolioDropdown"
 import { ProjectEntry } from "../components/ProjectEntry"
 import { ProjectEntryNoGitHub } from "../components/ProjectEntryNoGitHub"
 import { CertEntry } from "../components/CertEntry"
@@ -80,7 +78,7 @@ export function Projects() {
       </nav>
       <div className="spacer" />
       <Element name="projects-top">
-        <Header text="PROJECTS" />
+        <Header text="PROJECTS" header_id="projects-page-header" h1_id="projects-page-h1" />
       </Element>
       <main>
         {/*<PortfolioDropdown text="Projects" items="project-entry" />*/}
