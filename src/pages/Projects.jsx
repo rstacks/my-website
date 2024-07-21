@@ -12,8 +12,11 @@ import { Footer } from "../components/Footer"
 import faviconUrl from "../favicons/quals-icon.ico"
 
 export function Projects() {
+  /**
+   * Handles scrolling based on URL
+   */
   const pageURL = useLocation();
-  
+
   // Runs on page load and whenever URL changes
   useEffect(() => {
     // Get scroll location (includes #)
@@ -28,6 +31,39 @@ export function Projects() {
       });
     }
   }, [pageURL]);
+
+  /**
+   * Handles back to top button
+   */
+  // Distance from top of homepage where back to top button appears
+  const distanceFromTop = 300;
+  
+  // Show or hide the back to top button based on page position
+  function showTopButton() {
+    const topButton = document.getElementById("projects-top-button");
+    if (window.scrollY > distanceFromTop && window.innerWidth > 1100) {
+      topButton.style.display = "inline";
+    } else {
+      topButton.style.display = "none";
+    }
+  }
+
+  // Hides the back to top button on small screens
+  function visibilityHandler(e) {
+    const topButton = document.getElementById("projects-top-button");
+    if (e.matches || window.scrollY <= distanceFromTop) {
+      topButton.style.display = "none";
+    } else {
+      topButton.style.display = "inline";
+    }
+  }
+
+  // Media query for hiding back to top button on small screens
+  const mediaQuery = window.matchMedia("(max-width: 1100px)");
+
+  // Event listeners for back to top button visibility
+  mediaQuery.addEventListener("change", visibilityHandler);
+  addEventListener("scroll", (e) => {showTopButton()})
 
   return (
     <HelmetProvider>
