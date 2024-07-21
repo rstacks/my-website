@@ -35,14 +35,14 @@ export function ProjectsSection() {
         <ul id="projects-list-scroller">
           <li>
             <a href="/projects#wordy">
-              <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Wordy Image"
+              <PortfolioItem imageSrc="/images/wordy-tile2.png" imageAlt="Wordy Image"
                 title="Wordy (Wordle Clone)" />
             </a>
           </li>
           <li>
             <a href="/projects#y86-processor">
-              <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Processor Image"
-                title="Y86 Multi-Cycle Processor Design" />
+              <PortfolioItem imageSrc="/images/processor-tile.png" imageAlt="Processor Image"
+                title="Y86 Processor Design" />
             </a>
           </li>
           <li>
