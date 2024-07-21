@@ -34,6 +34,18 @@ export function ProjectsSection() {
         <button id="projects-left-button" className="scroll-button" onClick={scrollLeft}>⬅</button>
         <ul id="projects-list-scroller">
           <li>
+            <a href="/projects#wordy">
+              <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Wordy Image"
+                title="Wordy (Wordle Clone)" />
+            </a>
+          </li>
+          <li>
+            <a href="/projects#y86-processor">
+              <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Processor Image"
+                title="Y86 Multi-Cycle Processor Design" />
+            </a>
+          </li>
+          <li>
             <a href="/projects#website">
               <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Website Image"
                 title="Personal Website" />
