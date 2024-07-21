@@ -1,7 +1,6 @@
 import "./styles.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Home } from "./pages/Home"
-import { About } from "./pages/About"
 import { Projects } from "./pages/Projects"
 import { More } from "./pages/More"
 import { NotFound } from "./pages/NotFound"

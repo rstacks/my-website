@@ -5,6 +5,7 @@ import { Socials } from "../components/Socials"
 import { Footer } from "../components/Footer"
 import { AboutComponent } from "../components/AboutComponent"
 import { PortfolioComponent } from "../components/PortfolioComponent"
+import { MoreComponent } from "../components/MoreComponent"
 import faviconUrl from "../favicons/favicon.ico"
 
 export function Home() {
@@ -60,6 +61,10 @@ export function Home() {
         <div className="home-separator" id="home-sep-space" />
         <Element name="portfolio-section">
           <PortfolioComponent />
+        </Element>
+        <div className="home-separator" id="home-sep-space2" />
+        <Element name="more-section">
+          <MoreComponent />
         </Element>
       </main>
       <Link to="home-top" smooth={true} duration={500}
