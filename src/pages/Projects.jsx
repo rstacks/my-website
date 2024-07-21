@@ -1,3 +1,6 @@
+import React, { useEffect } from "react"
+import { Element, scroller } from "react-scroll"
+import { useLocation } from "react-router-dom"
 import { Helmet, HelmetProvider } from "react-helmet-async"
 import { Nav } from "../components/Nav"
 import { Header } from "../components/Header"
@@ -26,35 +29,43 @@ export function Projects() {
       <Header text="PROJECTS" />
       <main>
         {/*<PortfolioDropdown text="Projects" items="project-entry" />*/}
-        <ProjectEntry title="Wordy (Wordle Clone)" imageSrc="/images/wordy-cropped-2.png"
-          imageAlt="Wordy Image" text="My final project for CSCE 314 at Texas A&M University.
-          This is a recreation of the online game Wordle using JavaFX. All of Wordle's features
-          are present in this project, including a post-game statistics screen. I also implemented
-          a load & save feature that enables players to resume an unfinished game at any time."
-          techs="Java, JavaFX, Scene Builder" github="https://github.com/rstacks/wordy" />
+        <Element name="wordy-project">
+          <ProjectEntry title="Wordy (Wordle Clone)" imageSrc="/images/wordy-cropped-2.png"
+            imageAlt="Wordy Image" text="My final project for CSCE 314 at Texas A&M University.
+            This is a recreation of the online game Wordle using JavaFX. All of Wordle's features
+            are present in this project, including a post-game statistics screen. I also implemented
+            a load & save feature that enables players to resume an unfinished game at any time."
+            techs="Java, JavaFX, Scene Builder" github="https://github.com/rstacks/wordy" />
+        </Element>
 
-        <ProjectEntryNoGitHub id="processor-entry" title="Y86 Multi-Cycle Processor Design"
-          imageSrc="/images/processor-cropped2.png" imageAlt="Processor Project Image"
-          text="My final project for CSCE 312 at Texas A&M University. My partner and I used Logisim,
-          a digital logic design tool, to create a processor that could execute Y86 assembly, including
-          push, pop, jump, and move instructions. Our design follows the sequence of fetch, decode,
-          execute, memory, write back, and PC update as it reads Y86 programs." techs="Y86 (x86-like ISA), Logisim" />
+        <Element name="processor-project">
+          <ProjectEntryNoGitHub id="processor-entry" title="Y86 Multi-Cycle Processor Design"
+            imageSrc="/images/processor-cropped2.png" imageAlt="Processor Project Image"
+            text="My final project for CSCE 312 at Texas A&M University. My partner and I used Logisim,
+            a digital logic design tool, to create a processor that can execute Y86 assembly, including
+            push, pop, jump, and move instructions. Our design follows the sequence of fetch, decode,
+            execute, memory, write back, and PC update as it reads Y86 programs." techs="Y86 (x86-like ISA), Logisim" />
+        </Element>
 
-        <ProjectEntry title="Personal Website" imageSrc="/images/new-site-image.jpg"
-          imageAlt="Website Image" text="This very website was built by me from scratch!
-          My experience in web development was essentially nonexistent when I began
-          this project, and I'm happy with how things turned out. I recently redesigned 
-          this website's appearance, which gave me some experience with React and
-          responsive web design." techs="HTML, CSS, JavaScript, React"
-          github="https://github.com/rstacks/my-website" />
+        <Element name="website-project">
+          <ProjectEntry title="Personal Website" imageSrc="/images/new-site-image.jpg"
+            imageAlt="Website Image" text="This very website was built by me from scratch!
+            My experience in web development was essentially nonexistent when I began
+            this project, and I'm happy with how things turned out. I recently redesigned 
+            this website's appearance, which gave me some experience with React and
+            responsive web design." techs="HTML, CSS, JavaScript, React"
+            github="https://github.com/rstacks/my-website" />
+        </Element>
 
-        <ProjectEntry title="Maroon Engine" imageSrc="/images/maroon-engine-example.gif"
-          imageAlt="Maroon Engine Image" text="A 2D side-scrolling game engine developed
-          as a results-focused project for the Aggie Coding Club. I joined a team of 13
-          students, and we each contributed to this project in our free time over the course
-          of three months. I assisted with the implementation of player collision
-          and enemy tracking behavior." techs="C, C++, OpenGL"
-          github="https://github.com/aggie-coding-club/maroon-engine" />
+        <Element name="maroon-engine-project">
+          <ProjectEntry title="Maroon Engine" imageSrc="/images/maroon-engine-example.gif"
+            imageAlt="Maroon Engine Image" text="A 2D side-scrolling game engine developed
+            as a results-focused project for the Aggie Coding Club. I joined a team of 13
+            students, and we each contributed to this project in our free time over the course
+            of three months. I assisted with the implementation of player collision
+            and enemy tracking behavior." techs="C, C++, OpenGL"
+            github="https://github.com/aggie-coding-club/maroon-engine" />
+        </Element>
 
         {/*
         <PortfolioDropdown text="Certifications" items="cert-entry" />
