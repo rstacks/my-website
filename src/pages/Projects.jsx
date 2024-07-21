@@ -46,7 +46,7 @@ export function Projects() {
       <Header text="PROJECTS" />
       <main>
         {/*<PortfolioDropdown text="Projects" items="project-entry" />*/}
-        <Element name="wordy-project">
+        <Element name="wordy">
           <ProjectEntry title="Wordy (Wordle Clone)" imageSrc="/images/wordy-cropped-2.png"
             imageAlt="Wordy Image" text="My final project for CSCE 314 at Texas A&M University.
             This is a recreation of the online game Wordle using JavaFX. All of Wordle's features
@@ -55,7 +55,7 @@ export function Projects() {
             techs="Java, JavaFX, Scene Builder" github="https://github.com/rstacks/wordy" />
         </Element>
 
-        <Element name="processor-project">
+        <Element name="y86-processor">
           <ProjectEntryNoGitHub id="processor-entry" title="Y86 Multi-Cycle Processor Design"
             imageSrc="/images/processor-cropped2.png" imageAlt="Processor Project Image"
             text="My final project for CSCE 312 at Texas A&M University. My partner and I used Logisim,
@@ -64,7 +64,7 @@ export function Projects() {
             execute, memory, write back, and PC update as it reads Y86 programs." techs="Y86 (x86-like ISA), Logisim" />
         </Element>
 
-        <Element name="website-project">
+        <Element name="website">
           <ProjectEntry title="Personal Website" imageSrc="/images/new-site-image.jpg"
             imageAlt="Website Image" text="This very website was built by me from scratch!
             My experience in web development was essentially nonexistent when I began
@@ -74,7 +74,7 @@ export function Projects() {
             github="https://github.com/rstacks/my-website" />
         </Element>
 
-        <Element name="maroon-engine-project">
+        <Element name="maroon-engine">
           <ProjectEntry title="Maroon Engine" imageSrc="/images/maroon-engine-example.gif"
             imageAlt="Maroon Engine Image" text="A 2D side-scrolling game engine developed
             as a results-focused project for the Aggie Coding Club. I joined a team of 13

@@ -34,12 +34,16 @@ export function ProjectsSection() {
         <button id="projects-left-button" className="scroll-button" onClick={scrollLeft}>⬅</button>
         <ul id="projects-list-scroller">
           <li>
-            <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Website Image"
-              title="Personal Website" />
+            <a href="/projects#website">
+              <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Website Image"
+                title="Personal Website" />
+            </a>
           </li>
           <li>
-            <PortfolioItem imageSrc="/images/maroon-engine-example-cropped.gif" imageAlt="Maroon Engine Image"
-              title="Maroon Engine" />
+            <a href="/projects#maroon-engine">
+              <PortfolioItem imageSrc="/images/maroon-engine-example-cropped.gif" imageAlt="Maroon Engine Image"
+                title="Maroon Engine" />            
+            </a>
           </li>
         </ul>
         <button id="projects-right-button" className="scroll-button" onClick={scrollRight}>➡</button>
