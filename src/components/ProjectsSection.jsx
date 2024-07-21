@@ -47,7 +47,7 @@ export function ProjectsSection() {
           </li>
           <li>
             <a href="/projects#website">
-              <PortfolioItem imageSrc="/images/new-site-image.jpg" imageAlt="Website Image"
+              <PortfolioItem imageSrc="/images/website-tile2.png" imageAlt="Website Image"
                 title="Personal Website" />
             </a>
           </li>
