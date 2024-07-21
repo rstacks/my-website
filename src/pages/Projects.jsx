@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { Element, scroller } from "react-scroll"
+import { Link, Element, scroller } from "react-scroll"
 import { useLocation } from "react-router-dom"
 import { Helmet, HelmetProvider } from "react-helmet-async"
 import { Nav } from "../components/Nav"
@@ -43,7 +43,9 @@ export function Projects() {
         </ul>
       </nav>
       <div className="spacer" />
-      <Header text="PROJECTS" />
+      <Element name="projects-top">
+        <Header text="PROJECTS" />
+      </Element>
       <main>
         {/*<PortfolioDropdown text="Projects" items="project-entry" />*/}
         <Element name="wordy">
@@ -106,6 +108,10 @@ export function Projects() {
           issuingOrg="CompTIA" inProgress="true" />
         */}
       </main>
+      <Link to="projects-top" smooth={true} duration={500}
+        offset={-200} className="back-to-top-button" id="projects-top-button">
+        ^
+      </Link>
       <Footer />
     </HelmetProvider>
   );
