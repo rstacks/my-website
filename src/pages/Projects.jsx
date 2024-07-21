@@ -12,6 +12,23 @@ import { Footer } from "../components/Footer"
 import faviconUrl from "../favicons/quals-icon.ico"
 
 export function Projects() {
+  const pageURL = useLocation();
+  
+  // Runs on page load and whenever URL changes
+  useEffect(() => {
+    // Get scroll location (includes #)
+    const scrollLocation = pageURL.hash;
+
+    // Only scroll if a location was specified
+    if (scrollLocation.length > 0) {
+      scroller.scrollTo(scrollLocation.substring(1), {
+        duration: 500,
+        offset: -80,
+        smooth: true
+      });
+    }
+  }, [pageURL]);
+
   return (
     <HelmetProvider>
       <Helmet>
