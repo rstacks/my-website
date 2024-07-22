@@ -30,7 +30,8 @@ export function ProjectsSection() {
         see all of my projects on one page.
       </p>
       <div className="tile-list">
-        <button id="projects-left-button" className="scroll-button" onClick={scrollLeft}>⬅</button>
+        <img src="/images/left-scroll-arrow.png" alt="Left Scroll Arrow"
+          id="projects-left-button" className="scroll-button" onClick={scrollLeft}/>
         <ul id="projects-list-scroller">
           <li>
             <a href="/projects#wordy">
@@ -57,7 +58,8 @@ export function ProjectsSection() {
             </a>
           </li>
         </ul>
-        <button id="projects-right-button" className="scroll-button" onClick={scrollRight}>➡</button>
+        <img src="/images/right-scroll-arrow.png" alt="Right Scroll Arrow"
+          id="projects-right-button" className="scroll-button" onClick={scrollRight}/>
       </div>
     </section>
   );

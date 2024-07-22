@@ -30,7 +30,8 @@ export function WriteupsSection() {
         view all of my writeups on GitHub by clicking <a href="https://github.com/rstacks/ctf-writeups" target="_blank" className="paragraph-link">here</a>.
       </p>
       <div className="tile-list">
-        <button id="writeups-left-button" className="scroll-button" onClick={scrollLeft}>⬅</button>
+        <img src="/images/left-scroll-arrow.png" alt="Left Scroll Arrow"
+          id="writeups-left-button" className="scroll-button" onClick={scrollLeft}/>
         <ul id="writeups-list-scroller">
           <li>
             <a href="https://github.com/rstacks/DownUnderCTF2024-writeup"
@@ -60,7 +61,8 @@ export function WriteupsSection() {
             </a>
           </li>
         </ul>
-        <button id="writeups-right-button" className="scroll-button" onClick={scrollRight}>➡</button>
+        <img src="/images/right-scroll-arrow.png" alt="Right Scroll Arrow"
+          id="writeups-right-button" className="scroll-button" onClick={scrollRight}/>
       </div>
     </section>
   );

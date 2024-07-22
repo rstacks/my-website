@@ -34,8 +34,7 @@ export function MoreComponent() {
           learn more about a specific badge.
         </p>
         <div className="tile-list">
-          {/*<button id="badges-left-button" className="scroll-button" onClick={scrollLeft}>⬅</button>*/}
-          <img src="/images/left-scroll-arrow.png" alt="left-scroll-arrow"
+          <img src="/images/left-scroll-arrow.png" alt="Left Scroll Arrow"
             id="badges-left-button" className="scroll-button" onClick={scrollLeft}/>
           <ul id="badge-list-scroller">
             <li>
@@ -81,7 +80,8 @@ export function MoreComponent() {
               </a>
             </li>
           </ul>
-          <button id="badges-right-button" className="scroll-button" onClick={scrollRight}>➡</button>
+          <img src="/images/right-scroll-arrow.png" alt="Right Scroll Arrow"
+            id="badges-right-button" className="scroll-button" onClick={scrollRight}/>
         </div>
       </article>
     </>
