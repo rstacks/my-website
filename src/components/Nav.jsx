@@ -1,3 +1,5 @@
+import { Link } from "react-scroll"
+
 export function Nav() {
   // Displays dropdown menu
   function showMenu() {
@@ -21,6 +23,28 @@ export function Nav() {
         }, 500
       );
     }
+  }
+
+  // Hides dropdown menu after one of its buttons is pressed
+  function hideMenu() {
+    // Check if the dropdown menu is invisible (so no need to hide it)
+    if (window.innerWidth > 730) {
+      return;
+    }
+    
+    // Grab HTML tags
+    const separator = document.getElementById("menu-separator");
+    const menuList = document.getElementById("main-nav-list");
+
+    // Hide dropdown menu
+    menuList.style.animationName = "hide-nav";
+    menuList.style.animationDuration = "0.5";
+    setTimeout(
+      () => {
+        separator.style.display = "none";
+        menuList.style.display = "none";
+      }, 500
+    );
   }
 
   // Runs media query for menuList and separator
@@ -65,16 +89,22 @@ export function Nav() {
       <div id="menu-separator"></div>
       <ul className="nav-list" id="main-nav-list">
         <li className="main-nav-link">
-          <a href="/home" className="main-nav-anchor">HOME</a>
+          <Link to="about-section" smooth={true} duration={500}
+            offset={-80} className="main-nav-anchor" onClick={hideMenu}>
+            ABOUT
+          </Link>
         </li>
         <li className="main-nav-link">
-          <a href="/about" className="main-nav-anchor">ABOUT</a>
+          <Link to="portfolio-section" smooth={true} duration={500}
+            offset={-80} className="main-nav-anchor" onClick={hideMenu}>
+            PORTFOLIO
+          </Link>
         </li>
         <li className="main-nav-link">
-          <a href="/portfolio" className="main-nav-anchor">PORTFOLIO</a>
-        </li>
-        <li className="main-nav-link">
-          <a href="/more" className="main-nav-anchor">MORE</a>
+          <Link to="more-section" smooth={true} duration={500}
+          offset={-80} className="main-nav-anchor" onClick={hideMenu}>
+            MORE
+          </Link>
         </li>
       </ul>
     </nav>

@@ -1,10 +1,6 @@
-import { Helmet, HelmetProvider } from "react-helmet-async"
-import { Nav } from "../components/Nav"
-import { Header } from "../components/Header"
-import { Footer } from "../components/Footer"
-import faviconUrl from "../favicons/newest-resume-icon.ico"
+import { Header } from "./Header"
 
-export function About() {
+export function AboutComponent() {
   // Shows or hides additional content on this page
   function readMoreButton() {
     // Get HTML tags to display or hide
@@ -27,16 +23,11 @@ export function About() {
   }
   
   return (
-    <HelmetProvider>
-      <Helmet>
-        <title>About | Robert Stacks</title>
-        <link rel="icon" href={faviconUrl} />
-      </Helmet>
-      <Nav />
-      <Header text="ABOUT" />
-      <main className="article-body">
+    <>
+      <Header text="ABOUT" header_id="about-header" h1_id="about-h1" />
+      <article className="article-body">
         <p>
-          Howdy! As I'm sure you've gathered, I'm Robert, a sophomore computer science
+          Howdy! As I'm sure you've gathered, I'm Robert, a junior computer science
           major at Texas A&M University. Here are some quick facts about me:
         </p>
         <ul>
@@ -93,8 +84,7 @@ export function About() {
             <p>Probably the kidney.</p>
           </li>
         </ol>
-      </main>
-      <Footer />
-    </HelmetProvider>
+      </article>
+    </>
   );
 }
