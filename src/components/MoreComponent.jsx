@@ -2,6 +2,25 @@ import { Header } from "./Header"
 import { PortfolioItem } from "./PortfolioItem"
 
 export function MoreComponent() {
+  // Amount to scroll by when a button is pressed
+  const scrollDist = 200;
+
+  function scrollLeft() {
+    const unorderedList = document.getElementById("badge-list-scroller");
+    unorderedList.scrollBy({
+      left: -scrollDist,
+      behavior: "smooth"
+    });
+  }
+
+  function scrollRight() {
+    const unorderedList = document.getElementById("badge-list-scroller");
+    unorderedList.scrollBy({
+      left: scrollDist,
+      behavior: "smooth"
+    });
+  }
+
   return (
     <>
       <Header text="MORE" header_id="more-header" h1_id="more-h1" />
@@ -15,7 +34,7 @@ export function MoreComponent() {
           learn more about a specific badge.
         </p>
         <div className="tile-list">
-          <button id="badges-left-button" className="scroll-button">⬅</button>
+          <button id="badges-left-button" className="scroll-button" onClick={scrollLeft}>⬅</button>
           <ul id="badge-list-scroller">
             <li>
               <PortfolioItem imageSrc="/images/uscg-badge.png"
@@ -38,7 +57,7 @@ export function MoreComponent() {
                 imageAlt="National Cyber Scholarship Semifinalist Badge" />
             </li>
           </ul>
-          <button id="badges-right-button" className="scroll-button">➡</button>
+          <button id="badges-right-button" className="scroll-button" onClick={scrollRight}>➡</button>
         </div>
       </article>
     </>

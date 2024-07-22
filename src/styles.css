@@ -435,11 +435,11 @@ hr {
   transition: color 100ms, background-color 100ms;
 }
 
-#writeups-left-button, #projects-left-button {
+#writeups-left-button, #projects-left-button, #badges-left-button {
   left: 0em;
 }
 
-#writeups-right-button, #projects-right-button {
+#writeups-right-button, #projects-right-button, #badges-right-button {
   right: 0em;
 }
 
@@ -459,6 +459,9 @@ hr {
   #projects-left-button, #projects-right-button {
     display: inline;
   }
+}
+#badges-left-button, #badges-right-button {
+  display: inline;
 }
 
 /* Hover and click styles for scroll buttons */
