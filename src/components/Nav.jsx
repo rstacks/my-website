@@ -88,28 +88,23 @@ export function Nav() {
       </button>
       <div id="menu-separator"></div>
       <ul className="nav-list" id="main-nav-list">
-        {/*<li className="main-nav-link">
-          <Link to="home-top" smooth={true} duration={500}
-            offset={-200} className="main-nav-anchor" onClick={hideMenu}>
-            HOME
-          </Link>
-        </li>*/}
         <li className="main-nav-link">
-          {/*<a href="/about" className="main-nav-anchor">ABOUT</a>*/}
           <Link to="about-section" smooth={true} duration={500}
             offset={-80} className="main-nav-anchor" onClick={hideMenu}>
             ABOUT
           </Link>
         </li>
         <li className="main-nav-link">
-          {/*<a href="/portfolio" className="main-nav-anchor">PORTFOLIO</a>*/}
           <Link to="portfolio-section" smooth={true} duration={500}
             offset={-80} className="main-nav-anchor" onClick={hideMenu}>
             PORTFOLIO
           </Link>
         </li>
         <li className="main-nav-link">
-          <a href="/more" className="main-nav-anchor">MORE</a>
+          <Link to="more-section" smooth={true} duration={500}
+          offset={-80} className="main-nav-anchor" onClick={hideMenu}>
+            MORE
+          </Link>
         </li>
       </ul>
     </nav>
