@@ -34,7 +34,9 @@ export function MoreComponent() {
           learn more about a specific badge.
         </p>
         <div className="tile-list">
-          <button id="badges-left-button" className="scroll-button" onClick={scrollLeft}>⬅</button>
+          {/*<button id="badges-left-button" className="scroll-button" onClick={scrollLeft}>⬅</button>*/}
+          <img src="/images/left-scroll-arrow.png" alt="left-scroll-arrow"
+            id="badges-left-button" className="scroll-button" onClick={scrollLeft}/>
           <ul id="badge-list-scroller">
             <li>
               <a href="https://api.badgr.io/public/assertions/wpQQcsY2SsGOFopkAGbV8Q"
