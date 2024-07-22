@@ -1,4 +1,5 @@
 import { Header } from "./Header"
+import { PortfolioItem } from "./PortfolioItem"
 
 export function MoreComponent() {
   return (
@@ -13,6 +14,32 @@ export function MoreComponent() {
           see my full badge collection, or click on a tile below to
           learn more about a specific badge.
         </p>
+        <div className="tile-list">
+          <button id="badges-left-button" className="scroll-button">⬅</button>
+          <ul id="badge-list-scroller">
+            <li>
+              <PortfolioItem imageSrc="/images/uscg-badge.png"
+                imageAlt="USCG Beginner's Game Room 2024 Badge" />
+            </li>
+            <li>
+              <PortfolioItem imageSrc="/images/gfact-badge.png"
+                imageAlt="GFACT Badge" />
+            </li>
+            <li>
+              <PortfolioItem imageSrc="/images/cyber-honors-badge.png"
+                imageAlt="National Cyber Scholar with Honors Badge" />
+            </li>
+            <li>
+              <PortfolioItem imageSrc="/images/sans-badge.svg"
+                imageAlt="SANS Foundations Badge" />
+            </li>
+            <li>
+              <PortfolioItem imageSrc="/images/cyber-semifinalist-badge.png"
+                imageAlt="National Cyber Scholarship Semifinalist Badge" />
+            </li>
+          </ul>
+          <button id="badges-right-button" className="scroll-button">➡</button>
+        </div>
       </article>
     </>
   );
