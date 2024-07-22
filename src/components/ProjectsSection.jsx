@@ -1,5 +1,4 @@
 import { PortfolioItem } from "./PortfolioItem"
-/*import { ProjectEntry } from "./ProjectEntry"*/
 
 export function ProjectsSection() {
   // Amount to scroll by when a button is pressed
