@@ -1,5 +1,5 @@
 import { Header } from "./Header"
-import { PortfolioItem } from "./PortfolioItem"
+import { BadgeItem } from "./BadgeItem"
 
 export function MoreComponent() {
   // Amount to scroll by when a button is pressed
@@ -37,27 +37,27 @@ export function MoreComponent() {
           <button id="badges-left-button" className="scroll-button" onClick={scrollLeft}>⬅</button>
           <ul id="badge-list-scroller">
             <li>
-              <PortfolioItem imageSrc="/images/uscg-badge.png"
+              <BadgeItem imageSrc="/images/uscg-badge.png"
                 imageAlt="USCG Beginner's Game Room 2024 Badge" />
             </li>
             <li>
-              <PortfolioItem imageSrc="/images/gfact-badge.png"
+              <BadgeItem imageSrc="/images/gfact-badge.png"
                 imageAlt="GFACT Badge" />
             </li>
             <li>
-              <PortfolioItem imageSrc="/images/cyber-honors-badge.png"
+              <BadgeItem imageSrc="/images/cyber-honors-badge.png"
                 imageAlt="National Cyber Scholar with Honors Badge" />
             </li>
             <li>
-              <PortfolioItem imageSrc="/images/sans-badge.svg"
+              <BadgeItem imageSrc="/images/sans-badge.svg"
                 imageAlt="SANS Foundations Badge" />
             </li>
             <li>
-              <PortfolioItem imageSrc="/images/cyber-semifinalist-badge.png"
+              <BadgeItem imageSrc="/images/cyber-semifinalist-badge.png"
                 imageAlt="National Cyber Scholarship Semifinalist Badge" />
             </li>
             <li>
-              <PortfolioItem imageSrc="/images/cyber-scholar-badge.png"
+              <BadgeItem imageSrc="/images/cyber-scholar-badge.png"
                 imageAlt="National Cyber Scholar Badge" />
             </li>
           </ul>

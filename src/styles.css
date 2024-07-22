@@ -350,7 +350,7 @@ hr {
   transition: opacity 100ms;
 }
 
-.portfolio-item {
+.portfolio-item, .badge-item {
   /*border-color: #595959;*/
   border-color: #047377;
   border-style: solid;
@@ -363,7 +363,12 @@ hr {
   transition: opacity 200ms, background-color 200ms;
 }
 
-.portfolio-item img {
+.badge-item {
+  height: 10em;
+  border-style: none;
+}
+
+.portfolio-item img, .badge-item img {
   width: 9em;
   margin-top: 0.5em;
   border-radius: 1em;
@@ -376,12 +381,12 @@ hr {
   text-decoration: underline;
 }
 
-/* Hover and click styling for portfolio items and paragraph links */
-.portfolio-item:hover, .paragraph-link:hover {
+/* Hover and click styling for tile items and paragraph links */
+.portfolio-item:hover, .paragraph-link:hover, .badge-item:hover {
   /*background-color: #595959;*/
   background-color: #047377;
 }
-.portfolio-item:active, .paragraph-link:active {
+.portfolio-item:active, .paragraph-link:active, .badge-item:active {
   opacity: 60%;
 }
 
