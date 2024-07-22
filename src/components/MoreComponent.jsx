@@ -3,7 +3,7 @@ import { PortfolioItem } from "./PortfolioItem"
 
 export function MoreComponent() {
   // Amount to scroll by when a button is pressed
-  const scrollDist = 200;
+  const scrollDist = 300;
 
   function scrollLeft() {
     const unorderedList = document.getElementById("badge-list-scroller");
@@ -55,6 +55,10 @@ export function MoreComponent() {
             <li>
               <PortfolioItem imageSrc="/images/cyber-semifinalist-badge.png"
                 imageAlt="National Cyber Scholarship Semifinalist Badge" />
+            </li>
+            <li>
+              <PortfolioItem imageSrc="/images/cyber-scholar-badge.png"
+                imageAlt="National Cyber Scholar Badge" />
             </li>
           </ul>
           <button id="badges-right-button" className="scroll-button" onClick={scrollRight}>➡</button>
