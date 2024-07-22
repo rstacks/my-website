@@ -5,7 +5,6 @@ import { Helmet, HelmetProvider } from "react-helmet-async"
 import { Header } from "../components/Header"
 import { ProjectEntry } from "../components/ProjectEntry"
 import { ProjectEntryNoGitHub } from "../components/ProjectEntryNoGitHub"
-import { CertEntry } from "../components/CertEntry"
 import { Footer } from "../components/Footer"
 import faviconUrl from "../favicons/quals-icon.ico"
 
@@ -81,7 +80,6 @@ export function Projects() {
         <Header text="PROJECTS" header_id="projects-page-header" h1_id="projects-page-h1" />
       </Element>
       <main>
-        {/*<PortfolioDropdown text="Projects" items="project-entry" />*/}
         <Element name="wordy">
           <ProjectEntry title="Wordy (Wordle Clone)" imageSrc="/images/wordy-cropped-2.png"
             imageAlt="Wordy Image" text="My final project for CSCE 314 at Texas A&M University.
@@ -119,28 +117,6 @@ export function Projects() {
             and enemy tracking behavior." techs="C, C++, OpenGL"
             github="https://github.com/aggie-coding-club/maroon-engine" />
         </Element>
-
-        {/*
-        <PortfolioDropdown text="Certifications" items="cert-entry" />
-        <CertEntry title="GIAC Foundational Cybersecurity Technologies (GFACT)"
-          imageSrc="/images/GFACT.png" imageAlt="GFACT Image"
-          text="The GIAC Foundational Cybersecurity Technologies (GFACT)
-          certification validates a practitioner's knowledge of essential
-          foundational cybersecurity concepts. GFACT-certified professionals
-          are familiar with practical skills in computers, technology,
-          and security fundamentals that are needed to kickstart a career
-          in cybersecurity."
-          link="https://www.giac.org/certifications/foundational-cybersecurity-technologies-gfact/" 
-          issuingOrg="GIAC" />
-
-        <CertEntry title="CompTIA Security+" 
-          imageSrc="/images/logosecurityplus-adjusted.png"
-          imageAlt="Security Plus Image" text="CompTIA Security+ is a global
-          certification that validates the baseline skills necessary to
-          perform core security functions and pursue an IT security career."
-          link="https://www.comptia.org/certifications/security"
-          issuingOrg="CompTIA" inProgress="true" />
-        */}
       </main>
       <Link to="projects-top" smooth={true} duration={500}
         offset={-200} className="back-to-top-button" id="projects-top-button">
