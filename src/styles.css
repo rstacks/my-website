@@ -457,11 +457,10 @@ hr {
 }
 
 /* Show scroll buttons once tile content overflows */
-@media screen and (max-width: 1475px) {
-  #writeups-left-button, #writeups-right-button {
-    display: inline;
-  }
+#writeups-left-button, #writeups-right-button {
+  display: inline;
 }
+
 @media screen and (max-width: 1475px) {
   #projects-left-button, #projects-right-button {
     display: inline;
