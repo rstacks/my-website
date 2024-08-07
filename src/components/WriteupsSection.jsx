@@ -1,23 +1,41 @@
 import { PortfolioItem } from "./PortfolioItem"
 
 export function WriteupsSection() {
-  // Amount to scroll by when a button is pressed
-  const scrollDist = 200;
+  // Amounts to scroll by when a button is pressed; choice depends on screen size
+  const bigScrollDist = 300;
+  const smallScrollDist = 200;
+
+  // Screen size cutoff for reduced scrolling speed
+  const reducedScrollWidth = 600;
 
   function scrollLeft() {
     const unorderedList = document.getElementById("writeups-list-scroller");
-    unorderedList.scrollBy({
-      left: -scrollDist,
-      behavior: "smooth"
-    });
+    if (window.innerWidth < reducedScrollWidth) {
+      unorderedList.scrollBy({
+        left: -smallScrollDist,
+        behavior: "smooth"
+      });
+    } else {
+      unorderedList.scrollBy({
+        left: -bigScrollDist,
+        behavior: "smooth"
+      });
+    }
   }
 
   function scrollRight() {
     const unorderedList = document.getElementById("writeups-list-scroller");
-    unorderedList.scrollBy({
-      left: scrollDist,
-      behavior: "smooth"
-    });
+    if (window.innerWidth < reducedScrollWidth) {
+      unorderedList.scrollBy({
+        left: smallScrollDist,
+        behavior: "smooth"
+      });
+    } else {
+      unorderedList.scrollBy({
+        left: bigScrollDist,
+        behavior: "smooth"
+      });
+    }
   }
 
   return (
