@@ -1,23 +1,41 @@
 import { PortfolioItem } from "./PortfolioItem"
 
 export function WriteupsSection() {
-  // Amount to scroll by when a button is pressed
-  const scrollDist = 200;
+  // Amounts to scroll by when a button is pressed; choice depends on screen size
+  const bigScrollDist = 300;
+  const smallScrollDist = 200;
+
+  // Screen size cutoff for reduced scrolling speed
+  const reducedScrollWidth = 600;
 
   function scrollLeft() {
     const unorderedList = document.getElementById("writeups-list-scroller");
-    unorderedList.scrollBy({
-      left: -scrollDist,
-      behavior: "smooth"
-    });
+    if (window.innerWidth < reducedScrollWidth) {
+      unorderedList.scrollBy({
+        left: -smallScrollDist,
+        behavior: "smooth"
+      });
+    } else {
+      unorderedList.scrollBy({
+        left: -bigScrollDist,
+        behavior: "smooth"
+      });
+    }
   }
 
   function scrollRight() {
     const unorderedList = document.getElementById("writeups-list-scroller");
-    unorderedList.scrollBy({
-      left: scrollDist,
-      behavior: "smooth"
-    });
+    if (window.innerWidth < reducedScrollWidth) {
+      unorderedList.scrollBy({
+        left: smallScrollDist,
+        behavior: "smooth"
+      });
+    } else {
+      unorderedList.scrollBy({
+        left: bigScrollDist,
+        behavior: "smooth"
+      });
+    }
   }
 
   return (
@@ -33,6 +51,13 @@ export function WriteupsSection() {
         <img src="/images/left-scroll-arrow.png" alt="Left Scroll Arrow"
           id="writeups-left-button" className="scroll-button" onClick={scrollLeft}/>
         <ul id="writeups-list-scroller">
+          <li>
+            <a href="https://github.com/rstacks/n00bzCTF2024-writeup"
+              target="_blank">
+              <PortfolioItem imageSrc="/images/n00bz-logo.png" imageAlt="n00bzCTF 2024 Logo"
+                title="n00bzCTF 2024" />
+            </a>
+          </li>
           <li>
             <a href="https://github.com/rstacks/corCTF2024-writeup"
               target="_blank">
