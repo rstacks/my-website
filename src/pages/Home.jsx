@@ -48,7 +48,7 @@ export function Home() {
       <Nav />
       <main>
         <Element name="home-top">
-          <img src="/images/circular_me.png" alt="Robert Stacks Photo" 
+          <img src="/images/updated-circular-me.png" alt="Robert Stacks Photo" 
             id="my-photo" />
         </Element>
         <h1 id="name-tag">Robert Stacks</h1>
