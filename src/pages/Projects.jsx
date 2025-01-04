@@ -99,7 +99,7 @@ export function Projects() {
         </Element>
 
         <Element name="website">
-          <ProjectEntry title="Personal Website" imageSrc="/images/site-image-summer24-square.png"
+          <ProjectEntry title="Personal Website" imageSrc="/images/site-image-winter25-square.png"
             imageAlt="Website Image" text="This very website was built by me from scratch!
             My experience in web development was essentially nonexistent when I began
             this project, and I'm happy with how things turned out. I have redesigned 
