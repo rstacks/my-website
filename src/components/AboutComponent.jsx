@@ -31,7 +31,7 @@ export function AboutComponent() {
           major at Texas A&M University. Here are some quick facts about me:
         </p>
         <ul>
-          <li>I'm a computer science teaching assistant and peer teacher</li>
+          <li>I'm a computer science peer teacher and former teaching assistant</li>
           <li>I like coding</li>
           <li>I like hacking (ethically)</li>
         </ul>
