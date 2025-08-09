@@ -27,10 +27,11 @@ export function AboutComponent() {
       <Header text="ABOUT" header_id="about-header" h1_id="about-h1" />
       <article className="article-body">
         <p>
-          Howdy! As I'm sure you've gathered, I'm Robert, a junior computer science
+          Howdy! As I'm sure you've gathered, I'm Robert, a senior computer science
           major at Texas A&M University. Here are some quick facts about me:
         </p>
         <ul>
+          <li>I was a summer 2025 IT consulting intern at Plante Moran</li>
           <li>I'm a computer science peer teacher and former teaching assistant</li>
           <li>I like coding</li>
           <li>I like hacking (ethically)</li>
@@ -56,15 +57,16 @@ export function AboutComponent() {
             <p className="question">Why are you studying computer science?</p>
             <p>
               It's fun, I'm pretty good at it, and I'm interested in a
-              career in cybersecurity.
+              career in IT and/or cybersecurity.
             </p>
           </li>
           <li className="qa-item">
             <p className="question">Do you have any hobbies?</p>
             <p>
               I'm a trombone player! I currently play for the Texas A&M
-              Symphonic Band. I'm also into cooking, video editing, and
-              finishing 3D prints — basically, I like making stuff.
+              Symphonic Band. I'm also into cooking, video editing, finishing
+              3D prints, and running D&D adventures with my friends — basically,
+              I like making stuff.
             </p>
           </li>
           <li className="qa-item">
