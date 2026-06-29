@@ -48,11 +48,11 @@ export function Home() {
       <Nav />
       <main>
         <Element name="home-top">
-          <img src="/images/updated-circular-me.png" alt="Robert Stacks Photo" 
+          <img src="/images/circular-me-webp.webp" alt="Robert Stacks Photo" 
             id="my-photo" />
         </Element>
         <h1 id="name-tag">Robert Stacks</h1>
-        <h2 id="tagline">Computer Science @ Texas A&M University</h2>
+        <h2 id="tagline">IT Consultant @ Plante Moran</h2>
         <Socials />
         <div className="home-separator" />
         <Element name="about-section">

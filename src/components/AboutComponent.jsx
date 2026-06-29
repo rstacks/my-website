@@ -27,18 +27,9 @@ export function AboutComponent() {
       <Header text="ABOUT" header_id="about-header" h1_id="about-h1" />
       <article className="article-body">
         <p>
-          Howdy! As I'm sure you've gathered, I'm Robert, a senior computer science
-          major at Texas A&M University. Here are some quick facts about me:
-        </p>
-        <ul>
-          <li>I was a summer 2025 IT consulting intern at Plante Moran</li>
-          <li>I'm a computer science peer teacher and former teaching assistant</li>
-          <li>I like coding</li>
-          <li>I like hacking (ethically)</li>
-        </ul>
-        <p>
-          If you're interested in learning more, have a look around! I bet
-          you'll find something cool.
+          Hello! As I'm sure you've gathered, I'm Robert, a managed IT consultant
+          at Plante Moran. If you're interested in learning more about me, have a
+          look around! I bet you'll find something cool.
         </p>
         <button id="read-more-button" onClick={readMoreButton}>
           Read more
@@ -50,21 +41,23 @@ export function AboutComponent() {
             <p className="question">Where are you from?</p>
             <p>
               I was born and raised in The Woodlands, Texas.
-              My mom is Thai.
+              I am half Thai.
             </p>
           </li>
           <li className="qa-item">
-            <p className="question">Why are you studying computer science?</p>
+            <p className="question">What's your educational background?</p>
             <p>
-              It's fun, I'm pretty good at it, and I'm interested in a
-              career in IT and/or cybersecurity.
+              I graduated from Texas A&M University in May 2026 with Summa
+              Cum Laude institutional honors. My degree was in Computer Science.
+              I was also awarded with a Certificate in Cyber Operations.
             </p>
           </li>
           <li className="qa-item">
             <p className="question">Do you have any hobbies?</p>
             <p>
-              I'm a trombone player! I currently play for the Texas A&M
-              Symphonic Band. I'm also into cooking, video editing, finishing
+              I'm a trombone player! I started playing in the 5th grade and have
+              participated in many marching and concert band programs since then,
+              including the Texas A&M Symphonic Band. I'm also into cooking, video editing, finishing
               3D prints, and running D&D adventures with my friends — basically,
               I like making stuff.
             </p>
@@ -76,6 +69,10 @@ export function AboutComponent() {
           <li className="qa-item">
             <p className="question">What's your favorite animal?</p>
             <p>Dogs are pretty cool.</p>
+          </li>
+          <li className="qa-item">
+            <p className="question">What's your preferred mode of transport?</p>
+            <p>Electric unicycle.</p>
           </li>
           <li className="qa-item">
             <p className="question">What's your favorite type of bean?</p>
