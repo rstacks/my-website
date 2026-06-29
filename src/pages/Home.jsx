@@ -52,7 +52,7 @@ export function Home() {
             id="my-photo" />
         </Element>
         <h1 id="name-tag">Robert Stacks</h1>
-        <h2 id="tagline">Computer Science @ Texas A&M University</h2>
+        <h2 id="tagline">IT Consultant @ Plante Moran</h2>
         <Socials />
         <div className="home-separator" />
         <Element name="about-section">
